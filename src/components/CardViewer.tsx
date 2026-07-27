@@ -28,7 +28,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 const TYPE_TAG_KEYS = ['单选题', '多选题', '判断题']
 
-export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props) {
+export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOnly }: Props) {
   const now = useMemo(() => new Date(), [])
 
   const typeTags = useMemo(() => {
