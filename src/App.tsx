@@ -9,6 +9,7 @@ import PackList from './components/PackList'
 import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
 import StatsPage from './components/StatsPage'
+import WrongBook from './components/WrongBook'
 
 function seedPack(pack: CardPack, cards: import('./types').CardItem[], force: boolean = false) {
   storage.savePack(pack)
@@ -45,6 +46,7 @@ export default function App() {
     mode: StudyMode
     tagId?: string
     limit: QuestionLimit
+    wrongOnly?: boolean
   } | null>(null)
   const [packs, setPacks] = useState<CardPack[]>([])
   const [currentPackId, setCurrentPackId] = useState<string | null>(null)
@@ -71,14 +73,20 @@ export default function App() {
     setView('pack-detail')
   }
 
-  function handleStart(mode: StudyMode, tagId: string | undefined, limit: QuestionLimit) {
-    setStudyConfig({ mode, tagId, limit })
+  function handleStart(mode: StudyMode, tagId: string | undefined, limit: QuestionLimit, wrongOnly?: boolean) {
+    setStudyConfig({ mode, tagId, limit, wrongOnly: wrongOnly ?? false })
     setView('study')
   }
 
+  function handleWrongStudy(pack: CardPack, limit: QuestionLimit) {
+    setCurrentPackId(pack.id)
+    handleStart('random-tag', undefined, limit, true)
+  }
+
   function handleFinish() {
+    const prev = studyConfig?.wrongOnly ? 'wrong-book' : 'pack-detail'
     setStudyConfig(null)
-    setView('pack-detail')
+    setView(prev)
   }
 
   function handleBack() {
@@ -111,6 +119,17 @@ export default function App() {
         tagId={studyConfig.tagId}
         limit={studyConfig.limit}
         onFinish={handleFinish}
+        wrongOnly={studyConfig.wrongOnly}
+      />
+    )
+  }
+
+  if (view === 'wrong-book') {
+    return (
+      <WrongBook
+        packs={packs}
+        onStartWrongStudy={handleWrongStudy}
+        onBack={handleBack}
       />
     )
   }
@@ -131,6 +150,7 @@ export default function App() {
       <PackList
         packs={packs}
         onSelect={handleSelectPack}
+        onOpenWrongBook={() => setView('wrong-book')}
       />
     )
   }

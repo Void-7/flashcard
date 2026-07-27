@@ -4,6 +4,7 @@ const PACKS_KEY = 'fc_packs'
 const CARDS_KEY = (pid: string) => `fc_cards_${pid}`
 const STATES_KEY = 'fc_states'
 const LOGS_KEY = 'fc_logs'
+const WRONG_KEY = 'fc_wrong'
 
 function json<T>(key: string, fallback: T): T {
   try {
@@ -20,7 +21,7 @@ function reviveCardState(c: PersistentCard): PersistentCard {
     fsrsCard: {
       ...c.fsrsCard,
       due: new Date(c.fsrsCard.due),
-      last_review: c.fsrsCard.last_review ? new Date(c.fsrsCard.last_review) : null,
+      last_review: c.fsrsCard.last_review ? new Date(c.fsrsCard.last_review) : undefined,
     },
   }
 }
@@ -110,5 +111,26 @@ export const storage: IStorage = {
 
   clearReviewLogs(): void {
     localStorage.setItem(LOGS_KEY, JSON.stringify([]))
+  },
+
+  getWrongCardIds(): string[] {
+    return json<string[]>(WRONG_KEY, [])
+  },
+
+  addWrongCardId(id: string): void {
+    const ids = this.getWrongCardIds()
+    if (!ids.includes(id)) {
+      ids.push(id)
+      localStorage.setItem(WRONG_KEY, JSON.stringify(ids))
+    }
+  },
+
+  removeWrongCardId(id: string): void {
+    const ids = this.getWrongCardIds().filter((i) => i !== id)
+    localStorage.setItem(WRONG_KEY, JSON.stringify(ids))
+  },
+
+  clearWrongCardIds(): void {
+    localStorage.setItem(WRONG_KEY, JSON.stringify([]))
   },
 }

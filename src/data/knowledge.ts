@@ -22,7 +22,7 @@ const tags = {
 
 const tagList = Object.values(tags)
 
-const E = (s: string) => s
+const E = (s: TemplateStringsArray, ...args: any[]): string => String.raw(s, ...args)
 
 function K(tag: Tag, title: string, description: string, code: string, notes?: string): CardItem {
   return {

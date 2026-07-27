@@ -1,4 +1,4 @@
-import { createEmptyCard, fsrs, Rating, State, type Card, type FSRS } from 'ts-fsrs'
+import { createEmptyCard, fsrs, Rating, State, type Card, type FSRS, type Grade } from 'ts-fsrs'
 import type { CardItem, PersistentCard, ReviewLog } from '../types'
 import { storage } from './storage'
 
@@ -14,7 +14,7 @@ export function initFsrsCard(): Card {
   return createEmptyCard(new Date())
 }
 
-export function applyRating(card: Card, rating: Rating, now: Date, cardId: string): Card {
+export function applyRating(card: Card, rating: Grade, now: Date, cardId: string): Card {
   const result = getScheduler().next(card, now, rating)
   const log: ReviewLog = {
     id: `log_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
@@ -44,7 +44,7 @@ export function getDueCards(cards: PersistentCard[], now: Date): PersistentCard[
 
 export function getRetrievability(card: Card, now: Date): number {
   try {
-    return getScheduler().get_retrievability(card, now)
+    return getScheduler().get_retrievability(card, now, false)
   } catch {
     return 1
   }

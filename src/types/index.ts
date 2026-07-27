@@ -3,7 +3,7 @@ import type { Card as FSRSCard, Rating } from 'ts-fsrs'
 export type QuestionType = 'single' | 'multiple' | 'true-false'
 export type CardType = 'knowledge' | 'question'
 export type StudyMode = 'random-tag' | 'tag-focused' | 'mock-exam'
-export type AppView = 'pack-list' | 'pack-detail' | 'study' | 'stats'
+export type AppView = 'pack-list' | 'pack-detail' | 'study' | 'stats' | 'wrong-book'
 
 export interface Tag {
   id: string
@@ -79,12 +79,18 @@ export interface IStorage {
   getAllReviewLogs(): ReviewLog[]
   addReviewLog(log: ReviewLog): void
   clearReviewLogs(): void
+
+  getWrongCardIds(): string[]
+  addWrongCardId(id: string): void
+  removeWrongCardId(id: string): void
+  clearWrongCardIds(): void
 }
 
 export interface StudyConfig {
   pack: CardPack
   mode: StudyMode
   tagId?: string
+  wrongOnly?: boolean
 }
 
 export const QUESTION_LIMITS = [20, 40, 50, 100] as const

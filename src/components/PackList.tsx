@@ -5,17 +5,27 @@ import { storage } from '../utils/storage'
 interface Props {
   packs: CardPack[]
   onSelect: (packId: string) => void
+  onOpenWrongBook: () => void
 }
 
-export default function PackList({ packs, onSelect }: Props) {
+export default function PackList({ packs, onSelect, onOpenWrongBook }: Props) {
   const now = new Date()
   const reviewed = countReviewsToday(now)
   const allStates = storage.getAllCardStates()
   const totalDue = getDueCounts(allStates, now)
+  const wrongCount = storage.getWrongCardIds().length
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
-      <h1 className="text-xl font-bold text-gray-800 mb-1">闪卡学习</h1>
+      <div className="flex items-center justify-between mb-1">
+        <h1 className="text-xl font-bold text-gray-800">闪卡学习</h1>
+        {wrongCount > 0 && (
+          <button onClick={onOpenWrongBook}
+            className="text-xs bg-red-50 text-red-600 border border-red-200 px-3 py-1.5 rounded-full font-medium active:bg-red-100 transition-colors">
+            错题本 ({wrongCount})
+          </button>
+        )}
+      </div>
       <p className="text-xs text-gray-400 mb-6">
         今日复习 {reviewed} 张 · 待复习 {totalDue.due} 张 · 明日 {totalDue.tomorrow} 张
       </p>

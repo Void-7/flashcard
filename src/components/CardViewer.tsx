@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef } from 'react'
-import { Rating } from 'ts-fsrs'
+import { Rating, type Grade } from 'ts-fsrs'
 import type { CardItem, CardPack, StudyMode, QuestionLimit, KnowledgeContent, QuestionContent } from '../types'
 import { storage } from '../utils/storage'
 import { applyRating, countReviewsToday, initFsrsCard } from '../utils/scheduler'
@@ -14,6 +14,7 @@ interface Props {
   tagId?: string
   limit: QuestionLimit
   onFinish: () => void
+  wrongOnly?: boolean
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -45,6 +46,9 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
 
   const sessionCards = useMemo(() => {
     const allCards = storage.getCards(pack.id)
+    const wrongIds = wrongOnly ? new Set(storage.getWrongCardIds()) : null
+    const filtered = wrongIds ? allCards.filter((c) => wrongIds.has(c.id)) : allCards
+    if (wrongOnly && filtered.length === 0) return []
 
     if (mode === 'mock-exam') {
       const byType = (qtype: string) => {
@@ -61,7 +65,7 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     }
 
     if (mode === 'tag-focused' && tagId) {
-      return shuffle(allCards.filter((c) => c.tagIds.includes(tagId))).slice(0, limit)
+      return shuffle(filtered.filter((c) => c.tagIds.includes(tagId))).slice(0, limit)
     }
 
     if (mode === 'random-tag') {
@@ -73,16 +77,16 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
         for (const [name, count] of Object.entries(counts)) {
           const tid = typeTagIdByName[name]
           if (!tid) continue
-          const pool = allCards.filter((c) => c.type === 'question' && c.tagIds.includes(tid))
+          const pool = filtered.filter((c) => c.type === 'question' && c.tagIds.includes(tid))
           sel.push(...shuffle(pool).slice(0, Math.min(count, pool.length)))
         }
         return shuffle(sel)
       }
-      return shuffle(allCards).slice(0, limit)
+      return shuffle(filtered).slice(0, limit)
     }
 
-    return allCards.slice(0, limit)
-  }, [pack, mode, tagId, limit, typeTagIdByName, hasTypeTags])
+    return filtered.slice(0, limit)
+  }, [pack, mode, tagId, limit, typeTagIdByName, hasTypeTags, wrongOnly])
 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [ratedIdxSet, setRatedIdxSet] = useState<Set<number>>(new Set())
@@ -120,9 +124,12 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     const now = new Date()
     let state = storage.getCardState(card.id)
     if (!state) state = { metaId: card.id, fsrsCard: initFsrsCard() }
-    const updated = applyRating(state.fsrsCard, rating, now, card.id)
+    const updated = applyRating(state.fsrsCard, rating as Grade, now, card.id)
     storage.saveCardState({ metaId: card.id, fsrsCard: updated })
     setRatedIdxSet((prev) => new Set(prev).add(currentIdx))
+    if (wrongOnly && (rating === Rating.Good || rating === Rating.Easy)) {
+      storage.removeWrongCardId(card.id)
+    }
     if (autoTimer.current) clearTimeout(autoTimer.current)
     autoTimer.current = setTimeout(goNext, 600)
   }
@@ -133,6 +140,10 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     next[currentIdx] = correct
     setExamCorrect(next)
     setRatedIdxSet((prev) => new Set(prev).add(currentIdx))
+    if (!correct) {
+      const card = sessionCards[currentIdx]
+      if (card) storage.addWrongCardId(card.id)
+    }
   }
 
   function handleJump(idx: number) {
