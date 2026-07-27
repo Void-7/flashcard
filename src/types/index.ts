@@ -3,7 +3,7 @@ import type { Card as FSRSCard, Rating } from 'ts-fsrs'
 export type QuestionType = 'single' | 'multiple' | 'true-false'
 export type CardType = 'knowledge' | 'question'
 export type StudyMode = 'random-tag' | 'tag-focused'
-export type AppView = 'pack-list' | 'pack-detail' | 'study'
+export type AppView = 'pack-list' | 'pack-detail' | 'study' | 'stats'
 
 export interface Tag {
   id: string

@@ -6,6 +6,7 @@ import { applyRating, getDueCards, countReviewsToday, initFsrsCard } from '../ut
 import KnowledgeCard from './KnowledgeCard'
 import QuestionCard from './QuestionCard'
 import Progress from './Progress'
+import CardIndexNav from './CardIndexNav'
 
 interface Props {
   pack: CardPack
@@ -46,9 +47,7 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
         const tagCards = shuffle(allCards.filter((c) => c.tagIds.includes(tag.id)))
         const dueIds = new Set(
           getDueCards(
-            tagCards
-              .map((c) => states.find((s) => s.metaId === c.id))
-              .filter(Boolean),
+            tagCards.map((c) => states.find((s) => s.metaId === c.id)).filter(Boolean),
             now,
           ).map((d) => d.metaId),
         )
@@ -66,40 +65,59 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     return allCards.slice(0, limit)
   }, [pack, mode, tagId, limit, now])
 
-  const [ratedIds, setRatedIds] = useState<Set<string>>(new Set())
+  const [currentIdx, setCurrentIdx] = useState(0)
+  const [ratedIdxSet, setRatedIdxSet] = useState<Set<number>>(new Set())
+  const [waiting, setWaiting] = useState(false)
 
-  const remaining = useMemo(() => {
-    return sessionCards.filter((c) => !ratedIds.has(c.id))
-  }, [sessionCards, ratedIds])
+  const current = sessionCards[currentIdx]
 
-  const current = remaining[0]
+  function findNextUnrated(fromIdx: number): number {
+    for (let i = fromIdx; i < sessionCards.length; i++) {
+      if (!ratedIdxSet.has(i)) return i
+    }
+    for (let i = 0; i < fromIdx; i++) {
+      if (!ratedIdxSet.has(i)) return i
+    }
+    return -1
+  }
 
   const handleRate = useCallback((rating: Rating) => {
-    if (!current) return
+    const card = sessionCards[currentIdx]
+    if (!card) return
     const now = new Date()
-    let state = storage.getCardState(current.id)
-    if (!state) {
-      state = { metaId: current.id, fsrsCard: initFsrsCard() }
+    let state = storage.getCardState(card.id)
+    if (!state) state = { metaId: card.id, fsrsCard: initFsrsCard() }
+    const updated = applyRating(state.fsrsCard, rating, now, card.id)
+    storage.saveCardState({ metaId: card.id, fsrsCard: updated })
+    setRatedIdxSet((prev) => new Set(prev).add(currentIdx))
+    setWaiting(true)
+  }, [currentIdx, sessionCards])
+
+  function handleNext() {
+    const next = findNextUnrated(currentIdx + 1)
+    if (next < 0) {
+      onFinish()
+      return
     }
-    const updatedCard = applyRating(state.fsrsCard, rating, now, current.id)
-    storage.saveCardState({ metaId: current.id, fsrsCard: updatedCard })
-    setRatedIds((prev) => new Set(prev).add(current.id))
-  }, [current])
+    setCurrentIdx(next)
+    setWaiting(false)
+  }
+
+  function handleJump(idx: number) {
+    setCurrentIdx(idx)
+    setWaiting(false)
+  }
 
   const reviewed = countReviewsToday(now)
-  const totalCards = storage.getCards(pack.id).length
 
-  if (!current) {
+  if (!current && ratedIdxSet.size > 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-dvh px-4">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-sm w-full text-center">
           <div className="text-4xl mb-3 text-green-500">完成!</div>
           <h2 className="text-lg font-semibold text-gray-800 mb-2">本轮复习完成</h2>
-          <p className="text-sm text-gray-500 mb-4">共复习 {ratedIds.size} 张卡片 · 今日共 {reviewed} 张</p>
-          <button
-            onClick={onFinish}
-            className="w-full py-3 rounded-xl bg-blue-500 text-white font-semibold active:bg-blue-600"
-          >
+          <p className="text-sm text-gray-500 mb-4">共复习 {ratedIdxSet.size} 张 · 今日共 {reviewed} 张</p>
+          <button onClick={onFinish} className="w-full py-3 rounded-xl bg-blue-500 text-white font-semibold active:bg-blue-600">
             返回
           </button>
         </div>
@@ -107,10 +125,11 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     )
   }
 
-  const tagNames = current.tagIds
-    .map((tid) => pack.tags.find((t) => t.id === tid)?.name)
-    .filter(Boolean)
-    .join(', ')
+  if (!current) {
+    return <div className="flex items-center justify-center min-h-dvh text-gray-400">暂无卡片</div>
+  }
+
+  const isNew = !ratedIdxSet.has(currentIdx)
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -122,24 +141,31 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
         </button>
         <div className="flex-1 min-w-0">
           <h1 className="text-sm font-semibold text-gray-800 truncate">{pack.name}</h1>
-          <Progress total={totalCards} reviewed={reviewed} />
+          <Progress total={sessionCards.length} reviewed={ratedIdxSet.size} />
         </div>
         <span className="text-xs text-gray-400 ml-2">
-          {ratedIds.size}/{ratedIds.size + remaining.length} · {tagNames}
+          {currentIdx + 1}/{sessionCards.length}
         </span>
       </header>
 
+      {sessionCards.length > 1 && (
+        <CardIndexNav
+          total={sessionCards.length}
+          currentIndex={currentIdx}
+          ratedIds={ratedIdxSet}
+          onJump={handleJump}
+        />
+      )}
+
       <div className="flex-1 flex flex-col justify-center py-4">
-        <div className="text-center mb-2">
-          {current.tagIds.map((tid) => {
-            const t = pack.tags.find((tag) => tag.id === tid)
-            return t ? (
-              <span key={tid} className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full mx-0.5">
-                {t.name}
-              </span>
-            ) : null
-          })}
-        </div>
+        {current.tagIds.map((tid) => {
+          const t = pack.tags.find((tag) => tag.id === tid)
+          return t ? (
+            <span key={tid} className="text-xs text-gray-400 text-center mb-1">
+              {t.name} · {current.type === 'knowledge' ? '知识' : '题目'}
+            </span>
+          ) : null
+        })}
 
         {current.type === 'knowledge' && (
           <KnowledgeCard

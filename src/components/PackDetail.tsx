@@ -8,9 +8,10 @@ interface Props {
   pack: CardPack
   onStart: (mode: StudyMode, tagId: string | undefined, limit: QuestionLimit) => void
   onBack: () => void
+  onOpenStats: () => void
 }
 
-export default function PackDetail({ pack, onStart, onBack }: Props) {
+export default function PackDetail({ pack, onStart, onBack, onOpenStats }: Props) {
   const now = useMemo(() => new Date(), [])
   const states = storage.getAllCardStates()
   const dueCounts = getDueCounts(states, now)
@@ -35,10 +36,16 @@ export default function PackDetail({ pack, onStart, onBack }: Props) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div>
+        <div className="flex-1">
           <h1 className="text-lg font-bold text-gray-800">{pack.name}</h1>
           <p className="text-xs text-gray-400">{pack.tags.length} 个标签 · {storage.getCards(pack.id).length} 张卡片</p>
         </div>
+        <button onClick={onOpenStats} className="text-gray-400 active:text-gray-600 p-1" title="学习统计">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </button>
       </header>
 
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-4">

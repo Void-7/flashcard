@@ -10,6 +10,6 @@ export default defineConfig({
     entry: { index: './src/index.tsx' },
   },
   output: {
-    assetPrefix: './',
+    assetPrefix: process.env.ASSET_PREFIX || './',
   },
 })

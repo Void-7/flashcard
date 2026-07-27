@@ -8,6 +8,7 @@ import { createTheoryPack, getTheoryCards } from './data/theoryQuestions'
 import PackList from './components/PackList'
 import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
+import StatsPage from './components/StatsPage'
 
 function seedPack(pack: CardPack, cards: import('./types').CardItem[], force: boolean = false) {
   storage.savePack(pack)
@@ -87,7 +88,20 @@ export default function App() {
     setPacks(storage.getPacks())
   }
 
+  function handleOpenStats() {
+    setStudyConfig(null)
+    setView('stats')
+  }
+
+  function handleStatsBack() {
+    setView('pack-detail')
+  }
+
   const currentPack = currentPackId ? packs.find((p) => p.id === currentPackId) : null
+
+  if (view === 'stats') {
+    return <StatsPage onBack={handleStatsBack} />
+  }
 
   if (view === 'study' && studyConfig && currentPack) {
     return (
@@ -107,6 +121,7 @@ export default function App() {
         pack={currentPack}
         onStart={handleStart}
         onBack={handleBack}
+        onOpenStats={handleOpenStats}
       />
     )
   }
