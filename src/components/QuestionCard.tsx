@@ -1,7 +1,16 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import type { QuestionContent } from '../types'
 import RatingButtons from './RatingButtons'
 import { Rating } from 'ts-fsrs'
+
+function shuffleIndices(n: number): number[] {
+  const a = Array.from({ length: n }, (_, i) => i)
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
 
 interface Props {
   content: QuestionContent
@@ -14,15 +23,30 @@ export default function QuestionCard({ content, onRate }: Props) {
   const [rated, setRated] = useState(false)
 
   const isMultiple = content.type === 'multiple'
-  const answer = Array.isArray(content.answer) ? content.answer : [content.answer]
+  const origAnswer = useMemo(
+    () => (Array.isArray(content.answer) ? content.answer : [content.answer]),
+    [content.answer],
+  )
 
-  function toggleOption(idx: number) {
+  const shuffleMap = useMemo(() => shuffleIndices(content.options.length), [content.options, content.question])
+  const shuffledOptions = useMemo(
+    () => shuffleMap.map((i) => content.options[i]),
+    [shuffleMap, content.options],
+  )
+  const shuffledAnswer = useMemo(
+    () => origAnswer.map((origIdx) => shuffleMap.indexOf(origIdx)),
+    [origAnswer, shuffleMap],
+  )
+
+  function toggleOption(shuffledIdx: number) {
     if (submitted) return
     setSelected((prev) => {
       if (isMultiple) {
-        return prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx]
+        return prev.includes(shuffledIdx)
+          ? prev.filter((i) => i !== shuffledIdx)
+          : [...prev, shuffledIdx]
       }
-      return [idx]
+      return [shuffledIdx]
     })
   }
 
@@ -47,8 +71,8 @@ export default function QuestionCard({ content, onRate }: Props) {
   }
 
   const isCorrect = submitted &&
-    selected.length === answer.length &&
-    selected.every((s) => answer.includes(s))
+    selected.length === shuffledAnswer.length &&
+    selected.every((s) => shuffledAnswer.includes(s))
 
   return (
     <div className="flex flex-col items-center justify-center min-h-0 flex-1 w-full px-4">
@@ -63,9 +87,9 @@ export default function QuestionCard({ content, onRate }: Props) {
           <h2 className="text-lg font-semibold text-gray-800 text-center mb-4">{content.question}</h2>
 
           <div className="w-full space-y-2">
-            {content.options.map((opt, idx) => {
-              const isSelected = selected.includes(idx)
-              const isAnswer = answer.includes(idx)
+            {shuffledOptions.map((opt, si) => {
+              const isSelected = selected.includes(si)
+              const isAnswer = shuffledAnswer.includes(si)
               let cls = 'w-full text-left p-3 rounded-xl border text-sm transition-colors '
 
               if (submitted) {
@@ -80,8 +104,8 @@ export default function QuestionCard({ content, onRate }: Props) {
               }
 
               return (
-                <button key={idx} onClick={() => toggleOption(idx)} className={cls}>
-                  <span className="font-mono text-xs mr-2 opacity-60">{String.fromCharCode(65 + idx)}.</span>
+                <button key={si} onClick={() => toggleOption(si)} className={cls}>
+                  <span className="font-mono text-xs mr-2 opacity-60">{String.fromCharCode(65 + si)}.</span>
                   {opt}
                 </button>
               )
