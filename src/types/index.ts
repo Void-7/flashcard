@@ -86,3 +86,6 @@ export interface StudyConfig {
   mode: StudyMode
   tagId?: string
 }
+
+export const QUESTION_LIMITS = [20, 40, 50, 100] as const
+export type QuestionLimit = typeof QUESTION_LIMITS[number]

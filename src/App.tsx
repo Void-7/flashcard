@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import type { AppView, CardPack, StudyMode } from './types'
+import type { AppView, CardPack, StudyMode, QuestionLimit } from './types'
 import { storage } from './utils/storage'
 import { initFsrsCard } from './utils/scheduler'
 import { createAITrainerPack, getAITrainerCards } from './data/knowledge'
@@ -43,6 +43,7 @@ export default function App() {
   const [studyConfig, setStudyConfig] = useState<{
     mode: StudyMode
     tagId?: string
+    limit: QuestionLimit
   } | null>(null)
   const [packs, setPacks] = useState<CardPack[]>([])
   const [currentPackId, setCurrentPackId] = useState<string | null>(null)
@@ -69,8 +70,8 @@ export default function App() {
     setView('pack-detail')
   }
 
-  function handleStart(mode: StudyMode, tagId?: string) {
-    setStudyConfig({ mode, tagId })
+  function handleStart(mode: StudyMode, tagId: string | undefined, limit: QuestionLimit) {
+    setStudyConfig({ mode, tagId, limit })
     setView('study')
   }
 
@@ -94,6 +95,7 @@ export default function App() {
         pack={currentPack}
         mode={studyConfig.mode}
         tagId={studyConfig.tagId}
+        limit={studyConfig.limit}
         onFinish={handleFinish}
       />
     )

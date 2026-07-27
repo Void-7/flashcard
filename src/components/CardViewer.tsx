@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback } from 'react'
 import { Rating } from 'ts-fsrs'
-import type { CardItem, CardPack, StudyMode, KnowledgeContent, QuestionContent } from '../types'
+import type { CardItem, CardPack, StudyMode, QuestionLimit, KnowledgeContent, QuestionContent } from '../types'
 import { storage } from '../utils/storage'
 import { applyRating, getDueCards, countReviewsToday, initFsrsCard } from '../utils/scheduler'
 import KnowledgeCard from './KnowledgeCard'
@@ -11,6 +11,7 @@ interface Props {
   pack: CardPack
   mode: StudyMode
   tagId?: string
+  limit: QuestionLimit
   onFinish: () => void
 }
 
@@ -27,9 +28,7 @@ function pickRandom<T>(arr: T[], n: number): T[] {
   return shuffle(arr).slice(0, n)
 }
 
-const CARDS_PER_TAG = 5
-
-export default function CardViewer({ pack, mode, tagId, onFinish }: Props) {
+export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props) {
   const now = useMemo(() => new Date(), [])
 
   const sessionCards = useMemo(() => {
@@ -37,12 +36,13 @@ export default function CardViewer({ pack, mode, tagId, onFinish }: Props) {
     const states = storage.getAllCardStates()
 
     if (mode === 'tag-focused' && tagId) {
-      return shuffle(allCards.filter((c) => c.tagIds.includes(tagId)))
+      return shuffle(allCards.filter((c) => c.tagIds.includes(tagId))).slice(0, limit)
     }
 
     if (mode === 'random-tag') {
       const selected: CardItem[] = []
       for (const tag of pack.tags) {
+        if (selected.length >= limit) break
         const tagCards = shuffle(allCards.filter((c) => c.tagIds.includes(tag.id)))
         const dueIds = new Set(
           getDueCards(
@@ -54,18 +54,17 @@ export default function CardViewer({ pack, mode, tagId, onFinish }: Props) {
         )
         const dueCards = tagCards.filter((c) => dueIds.has(c.id))
         const newCards = tagCards.filter((c) => !dueIds.has(c.id))
-
         const pick: CardItem[] = []
-        pick.push(...pickRandom(dueCards, Math.min(CARDS_PER_TAG, dueCards.length)))
-        const remaining = CARDS_PER_TAG - pick.length
-        if (remaining > 0) pick.push(...pickRandom(newCards, remaining))
+        pick.push(...pickRandom(dueCards, Math.min(limit, dueCards.length)))
+        const remain = Math.min(limit, limit - selected.length - pick.length)
+        if (remain > 0) pick.push(...pickRandom(newCards, remain))
         selected.push(...pick)
       }
-      return shuffle(selected)
+      return shuffle(selected).slice(0, limit)
     }
 
-    return allCards
-  }, [pack, mode, tagId, now])
+    return allCards.slice(0, limit)
+  }, [pack, mode, tagId, limit, now])
 
   const [ratedIds, setRatedIds] = useState<Set<string>>(new Set())
 

@@ -1,11 +1,12 @@
-import { useMemo } from 'react'
-import type { CardPack, StudyMode } from '../types'
+import { useState, useMemo } from 'react'
+import type { CardPack, StudyMode, QuestionLimit } from '../types'
 import { getDueCounts, getTodayStats } from '../utils/scheduler'
 import { storage } from '../utils/storage'
+import QuestionCountDialog from './QuestionCountDialog'
 
 interface Props {
   pack: CardPack
-  onStart: (mode: StudyMode, tagId?: string) => void
+  onStart: (mode: StudyMode, tagId: string | undefined, limit: QuestionLimit) => void
   onBack: () => void
 }
 
@@ -14,6 +15,17 @@ export default function PackDetail({ pack, onStart, onBack }: Props) {
   const states = storage.getAllCardStates()
   const dueCounts = getDueCounts(states, now)
   const stats = getTodayStats(now)
+  const [pendingStart, setPendingStart] = useState<{ mode: StudyMode; tagId?: string } | null>(null)
+
+  function handleModeClick(mode: StudyMode, tagId?: string) {
+    setPendingStart({ mode, tagId })
+  }
+
+  function handleConfirm(count: QuestionLimit) {
+    if (!pendingStart) return
+    onStart(pendingStart.mode, pendingStart.tagId, count)
+    setPendingStart(null)
+  }
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
@@ -65,7 +77,7 @@ export default function PackDetail({ pack, onStart, onBack }: Props) {
         <h2 className="text-sm font-semibold text-gray-700 mb-3">学习模式</h2>
 
         <button
-          onClick={() => onStart('random-tag')}
+          onClick={() => handleModeClick('random-tag')}
           className="w-full text-left p-4 rounded-xl border border-gray-200 mb-3 active:bg-gray-50 transition-colors"
         >
           <div className="font-medium text-gray-800 text-sm">随机抽取</div>
@@ -82,7 +94,7 @@ export default function PackDetail({ pack, onStart, onBack }: Props) {
             return (
               <button
                 key={tag.id}
-                onClick={() => onStart('tag-focused', tag.id)}
+                onClick={() => handleModeClick('tag-focused', tag.id)}
                 className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-gray-200 text-sm active:bg-gray-50 transition-colors"
               >
                 <span className="text-gray-700">{tag.name}</span>
@@ -94,6 +106,13 @@ export default function PackDetail({ pack, onStart, onBack }: Props) {
           })}
         </div>
       </div>
+
+      {pendingStart && (
+        <QuestionCountDialog
+          onConfirm={handleConfirm}
+          onCancel={() => setPendingStart(null)}
+        />
+      )}
     </div>
   )
 }
