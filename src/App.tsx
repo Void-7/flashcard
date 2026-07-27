@@ -1,48 +1,94 @@
-import { useState, useEffect, useCallback } from 'react'
-import type { PersistentCard } from './utils/scheduler'
-import { loadState, saveState } from './utils/storage'
-import DeckList from './components/DeckList'
+import { useState, useEffect } from 'react'
+import type { AppView, CardPack, StudyMode } from './types'
+import { storage } from './utils/storage'
+import { createAITrainerPack, getAITrainerCards } from './data/knowledge'
+import PackList from './components/PackList'
+import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
-import type { AppView } from './types'
+
+function seedDataIfEmpty() {
+  const existing = storage.getPacks()
+  if (existing.length > 0) return
+  const pack = createAITrainerPack()
+  const cards = getAITrainerCards()
+  storage.savePack(pack)
+  storage.setCards(pack.id, cards)
+  const states = storage.getAllCardStates()
+  if (states.length === 0) {
+    storage.saveAllCardStates(cards.map((c) => ({ metaId: c.id, fsrsCard: initFsrsCard() })))
+  }
+}
 
 export default function App() {
-  const [persistentCards, setPersistentCards] = useState<PersistentCard[]>(() => loadState())
-  const [view, setView] = useState<AppView>('deck-list')
-  const [currentDeckId, setCurrentDeckId] = useState<string | null>(null)
+  const [view, setView] = useState<AppView>('pack-list')
+  const [studyConfig, setStudyConfig] = useState<{
+    mode: StudyMode
+    tagId?: string
+  } | null>(null)
+  const [packs, setPacks] = useState<CardPack[]>([])
 
   useEffect(() => {
-    saveState(persistentCards)
-  }, [persistentCards])
-
-  const handleUpdateCards = useCallback((cards: PersistentCard[]) => {
-    setPersistentCards(cards)
+    seedDataIfEmpty()
+    setPacks(storage.getPacks())
   }, [])
 
-  const handleSelectDeck = useCallback((deckId: string) => {
-    setCurrentDeckId(deckId)
+  function handleSelectPack(packId: string) {
+    setStudyConfig(null)
+    setView('pack-detail')
+  }
+
+  function handleStart(mode: StudyMode, tagId?: string) {
+    setStudyConfig({ mode, tagId })
     setView('study')
-  }, [])
+  }
 
-  const handleBack = useCallback(() => {
-    setView('deck-list')
-    setCurrentDeckId(null)
-  }, [])
+  function handleFinish() {
+    setStudyConfig(null)
+    setView('pack-detail')
+    setPacks(storage.getPacks())
+  }
 
-  if (view === 'study' && currentDeckId) {
+  function handleBack() {
+    setStudyConfig(null)
+    setView('pack-list')
+    setPacks(storage.getPacks())
+  }
+
+  const currentPack = packs.length > 0 ? packs[0] : null
+
+  if (view === 'study' && studyConfig && currentPack) {
     return (
       <CardViewer
-        deckId={currentDeckId}
-        persistentCards={persistentCards}
-        onUpdateCards={handleUpdateCards}
+        pack={currentPack}
+        mode={studyConfig.mode}
+        tagId={studyConfig.tagId}
+        onFinish={handleFinish}
+      />
+    )
+  }
+
+  if (view === 'pack-detail' && currentPack) {
+    return (
+      <PackDetail
+        pack={currentPack}
+        onStart={handleStart}
         onBack={handleBack}
       />
     )
   }
 
+  if (currentPack) {
+    return (
+      <PackList
+        pack={currentPack}
+        onSelect={handleSelectPack}
+      />
+    )
+  }
+
   return (
-    <DeckList
-      persistentCards={persistentCards}
-      onSelectDeck={handleSelectDeck}
-    />
+    <div class="flex items-center justify-center min-h-dvh">
+      <p class="text-gray-400">加载中...</p>
+    </div>
   )
 }

@@ -1,69 +1,114 @@
-import type { PersistentCard } from './scheduler'
-import type { CardMeta, Deck } from '../types'
-import { allKnowledgeCards, allQuestionCards, allDecks } from '../data/knowledge'
-import { initFsrsCard, applyRating } from './scheduler'
-import { Rating } from 'ts-fsrs'
+import type { CardItem, CardPack, IStorage, PersistentCard, ReviewLog } from '../types'
 
-const STORAGE_KEY = 'flashcard_state'
+const PACKS_KEY = 'fc_packs'
+const CARDS_KEY = (pid: string) => `fc_cards_${pid}`
+const STATES_KEY = 'fc_states'
+const LOGS_KEY = 'fc_logs'
 
-interface PersistedState {
-  cards: PersistentCard[]
-}
-
-function createInitialCards(): PersistentCard[] {
-  const allCards: CardMeta[] = [...allKnowledgeCards, ...allQuestionCards]
-  return allCards.map((meta) => ({
-    metaId: meta.id,
-    fsrsCard: initFsrsCard(),
-  }))
-}
-
-export function loadState(): PersistentCard[] {
+function json<T>(key: string, fallback: T): T {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) {
-      const parsed: PersistedState = JSON.parse(raw)
-      if (Array.isArray(parsed.cards)) {
-        return parsed.cards.map((c) => ({
-          ...c,
-          fsrsCard: {
-            ...c.fsrsCard,
-            due: new Date(c.fsrsCard.due),
-            last_review: c.fsrsCard.last_review ? new Date(c.fsrsCard.last_review) : null,
-          },
-        }))
-      }
+    const raw = localStorage.getItem(key)
+    return raw ? JSON.parse(raw) : fallback
+  } catch {
+    return fallback
+  }
+}
+
+function reviveCardState(c: PersistentCard): PersistentCard {
+  return {
+    ...c,
+    fsrsCard: {
+      ...c.fsrsCard,
+      due: new Date(c.fsrsCard.due),
+      last_review: c.fsrsCard.last_review ? new Date(c.fsrsCard.last_review) : null,
+    },
+  }
+}
+
+export const storage: IStorage = {
+  getPacks(): CardPack[] {
+    return json<CardPack[]>(PACKS_KEY, [])
+  },
+
+  getPack(id: string): CardPack | undefined {
+    return this.getPacks().find((p) => p.id === id)
+  },
+
+  savePack(pack: CardPack): void {
+    const packs = this.getPacks()
+    const idx = packs.findIndex((p) => p.id === pack.id)
+    if (idx >= 0) {
+      packs[idx] = { ...pack, updatedAt: Date.now() }
+    } else {
+      packs.push(pack)
     }
-  } catch { /* ignore corrupt data */ }
-  return createInitialCards()
-}
+    localStorage.setItem(PACKS_KEY, JSON.stringify(packs))
+  },
 
-export function saveState(cards: PersistentCard[]): void {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ cards }))
-}
+  deletePack(id: string): void {
+    const packs = this.getPacks().filter((p) => p.id !== id)
+    localStorage.setItem(PACKS_KEY, JSON.stringify(packs))
+    localStorage.removeItem(CARDS_KEY(id))
+  },
 
-export function getMetaByCardId(cardId: string): CardMeta | undefined {
-  return [...allKnowledgeCards, ...allQuestionCards].find((m) => m.id === cardId)
-}
+  getCards(packId: string): CardItem[] {
+    return json<CardItem[]>(CARDS_KEY(packId), [])
+  },
 
-export function getDeckByCardId(cardId: string): Deck | undefined {
-  const meta = getMetaByCardId(cardId)
-  if (!meta) return undefined
-  return allDecks.find((d) => d.id === meta.deckId)
-}
+  getCard(id: string): CardItem | undefined {
+    const cards = this.getAllCardStates()
+    const fromStates = cards.find((c) => c.metaId === id)
+    if (fromStates) {
+      return this.getCard(fromStates.metaId)
+    }
+    return undefined
+  },
 
-export function getMetaById(id: string): CardMeta | undefined {
-  return [...allKnowledgeCards, ...allQuestionCards].find((m) => m.id === id)
-}
+  setCards(packId: string, cards: CardItem[]): void {
+    localStorage.setItem(CARDS_KEY(packId), JSON.stringify(cards))
+  },
 
-export function isQuestionCard(meta: CardMeta): meta is import('../types').QuestionMeta {
-  return 'question' in meta
-}
+  getCardState(id: string): PersistentCard | undefined {
+    const all = this.getAllCardStates()
+    const found = all.find((c) => c.metaId === id)
+    return found ? reviveCardState(found) : undefined
+  },
 
-export function isKnowledgeCard(meta: CardMeta): meta is import('../types').KnowledgeMeta {
-  return 'front' in meta
-}
+  getAllCardStates(): PersistentCard[] {
+    return json<PersistentCard[]>(STATES_KEY, []).map(reviveCardState)
+  },
 
-export function resetAllProgress(): void {
-  localStorage.removeItem(STORAGE_KEY)
+  saveCardState(card: PersistentCard): void {
+    const all = this.getAllCardStates()
+    const idx = all.findIndex((c) => c.metaId === card.metaId)
+    if (idx >= 0) {
+      all[idx] = card
+    } else {
+      all.push(card)
+    }
+    localStorage.setItem(STATES_KEY, JSON.stringify(all))
+  },
+
+  saveAllCardStates(cards: PersistentCard[]): void {
+    localStorage.setItem(STATES_KEY, JSON.stringify(cards))
+  },
+
+  getReviewLogs(cardId: string): ReviewLog[] {
+    const all = this.getAllReviewLogs()
+    return all.filter((l) => l.cardId === cardId)
+  },
+
+  getAllReviewLogs(): ReviewLog[] {
+    return json<ReviewLog[]>(LOGS_KEY, [])
+  },
+
+  addReviewLog(log: ReviewLog): void {
+    const all = this.getAllReviewLogs()
+    all.push(log)
+    localStorage.setItem(LOGS_KEY, JSON.stringify(all))
+  },
+
+  clearReviewLogs(): void {
+    localStorage.setItem(LOGS_KEY, JSON.stringify([]))
+  },
 }
