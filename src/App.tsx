@@ -55,7 +55,7 @@ export default function App() {
         seedPack(pack, cards)
       } else {
         const oldCards = storage.getCards(pack.id)
-        if (oldCards.length !== cards.length) {
+        if (oldCards.length !== cards.length || cards.length > 0 && cards[0].id !== oldCards[0]?.id) {
           seedPack(pack, cards, true)
         }
       }

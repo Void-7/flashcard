@@ -41,7 +41,7 @@ const allCards: CardItem[] = []
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是调整职业个人、职业主体和社会成员之间关系的行为准则和规范。',
@@ -53,7 +53,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '职业道德是职业守则的核心内容之一，不属于职业道德强调的关系是( )。',
@@ -65,7 +65,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '从业人员要强化岗位职业责任必须要做到( )。',
@@ -77,7 +77,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '爱岗敬业是企业对从业人员的( )。',
@@ -89,7 +89,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Web与浏览器.id, tags.操作系统与工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在浏览器中，要打开一个新的标签页，应该使用快捷键( )。',
@@ -101,7 +101,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Word 中进行图文混排时，调整图片大小的方法( )。',
@@ -113,7 +113,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '知识产权法的基本原则包括保护创作成果、鼓励创新和技术进步以及( )。',
@@ -125,7 +125,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据采集流程中，使用( )可以帮助我们实现数据的持久化与高效检索。',
@@ -137,7 +137,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '离线审核平台通常用于( )场景。',
@@ -149,7 +149,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为人工智能训练师，( )工具最常用于业务流程管理与优化。',
@@ -161,7 +161,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在评估数据源的质量时，( )指标不是关键因素。',
@@ -173,7 +173,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保抓取的数据质量，( )方法是无效的。',
@@ -185,7 +185,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '实时数据处理技术的主要原理是通过( )来对数据进行快速处理和分析。',
@@ -197,7 +197,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是特征选择的主要方法。',
@@ -209,7 +209,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据校验和异常数据检测的方法中，( )方法不可以用于检测数据中的异常值。',
@@ -221,7 +221,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在推荐系统中，( )方法是基于用户过去的购买或评分历史来预测他们可能喜欢的项目。',
@@ -233,7 +233,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '自动数据处理功能模块在( )环节可以提高数据处理速度。',
@@ -245,7 +245,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )方法常用于解决离散优化问题。',
@@ -257,7 +257,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '智能控制功能模块的原理主要包括( )。',
@@ -269,7 +269,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '生物特征识别功能模块的主要应用场景包括( )。',
@@ -281,7 +281,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '计算智能的核心技术是( )。',
@@ -293,7 +293,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据挖掘方法中，( )技术不是分类算法。',
@@ -305,7 +305,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在了解业务流程现状时，( )是非常重要的信息来源。',
@@ -317,7 +317,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保简单业务流程优化的效果，企业应该采取( )方法来评估流程改进的成果。',
@@ -329,7 +329,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行复杂业务系统的改进时，首先应该进行的是( )。',
@@ -341,7 +341,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '综合业务流程优化方法的目标是( )。',
@@ -353,7 +353,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '产生式系统通常用于( )领域的知识表示。',
@@ -365,7 +365,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '知识图谱中的实体和关系的表示方法通常是( )。',
@@ -377,7 +377,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在业务数据分析方法中，( )是一种结构化的数据分析方法，用于深入挖掘数据背后的原因和影响。',
@@ -389,7 +389,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '机器学习中的监督学习是( )。',
@@ -401,7 +401,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在智能训练中，特征提取的主要方法之一是( )。',
@@ -413,7 +413,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在模型训练时，( )策略可以帮助模型更快地收敛到最优解。',
@@ -425,7 +425,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在特征选择方法中，过滤法通常基于( )准则来选择特征。',
@@ -437,7 +437,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据分片中，( )是用来决定如何将数据分割到各个分片的。',
@@ -449,7 +449,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在模型评估中，召回率 Recall 的计算方法是：( )。',
@@ -461,7 +461,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '如果需要快速原型设计和实验，( )机器学习库更适合。',
@@ -473,7 +473,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在确定数据收集方法时，应该考虑数据的类型和来源，( )方法适用于收集结构化数据。',
@@ -485,7 +485,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )工具库主要用于数据的加载和预处理。',
@@ -497,7 +497,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在机器学习中，交叉验证的主要目的是( )。',
@@ -509,7 +509,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在模型训练自动化工具中，( )是指通过自动化的方式对模型进行迭代优化，以提高模型的性能。',
@@ -521,7 +521,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在系统监控中，( )工具主要用于实时收集和分析日志数据。',
@@ -533,7 +533,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.深度学习与神经网络.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '生成对抗网络中的生成器通常使用( )类型的神经网络结构。',
@@ -545,7 +545,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是模型部署工具的使用方法。',
@@ -557,7 +557,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '箱线图法在异常值检测中的作用是( )。',
@@ -569,7 +569,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Z-score 方法是一种基于( )的异常值检测方法。',
@@ -581,7 +581,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '位图法在数据去重中的应用主要是通过( )。',
@@ -593,7 +593,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据白化处理的主要目的是( )。',
@@ -605,7 +605,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行特征工程时，通常需要对数据进行( )，以便更好地进行模型训练。',
@@ -617,7 +617,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在选择数据标注工具时，应该权衡( )。',
@@ -629,7 +629,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据集划分时，如果目标是提高模型的准确性，应采用( )划分方法。',
@@ -641,7 +641,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '模型训练的目标是( )。',
@@ -653,7 +653,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行大规模分布式训练时，( )框架提供了较为成熟的分布式训练支持。',
@@ -665,7 +665,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法验证过程中，通常采用的形式化方法包括模型检验和( )。',
@@ -677,7 +677,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在超参数调优过程中，通常使用( )方法来评估模型性能。',
@@ -689,7 +689,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是模型训练动态监控工具的典型功能。',
@@ -701,7 +701,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据处理过程中，( )最适合用于大规模数据的分布式处理。',
@@ -713,7 +713,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能测试工具的主要目的是( )。',
@@ -725,7 +725,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在实时系统中，除了评估模型的预测准确性之外，( )指标对于确保系统的响应速度至关重要。',
@@ -737,7 +737,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法鲁棒性测试中，通常采用的方法包括( )。',
@@ -749,7 +749,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行数据多样性与公平性测试时，( )原则是最重要的。',
@@ -761,7 +761,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'K 折交叉验证中，K 的取值通常为( )。',
@@ -773,7 +773,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '敏捷开发方法强调的是( )，以便快速响应变化并持续改进软件质量。',
@@ -785,7 +785,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '关于训练集、验证集和测试集的大小比例，( )属于常见合理的范围。',
@@ -797,7 +797,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在使用基于统计的特征选择时，如果特征之间存在高度共线性，最有可能发生的情况是( )。',
@@ -809,7 +809,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能训练师进行基于模型的特征拆解及选择的初衷是( )。',
@@ -821,7 +821,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '对于非平稳时间序列数据，通过减去先前观察值来消除趋势和季节性的过程叫做( )。',
@@ -833,7 +833,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在网络分析中，( )描述了网络中节点之间的直接连接关系。',
@@ -845,7 +845,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在社会网络分析中，中心性指标用于衡量节点在网络中的重要性。( )不是正确的中心性指标。',
@@ -857,7 +857,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在图像处理中，多维度数据分解技术如 PCA 主要用于( )。',
@@ -869,7 +869,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '特征工程中的特征构造方法不包括( )。',
@@ -881,7 +881,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在优化 AI 模型的响应时间时，( )方法可以直接减少模型推理时间。',
@@ -893,7 +893,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行特征选择时，( )方法是通过计算特征与目标变量之间的相关性来进行筛选的。',
@@ -905,7 +905,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '应用机器学习算法时，( )策略可能导致模型过拟合。',
@@ -917,7 +917,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'DBSCAN 算法是一种基于密度的聚类方法，它能够发现任意形状的簇，并且对噪声点具有较好的鲁棒性。DBSCAN 算法中的两个重要参数是邻域半径ε和最小点数 MinPts，其中ε表示( )。',
@@ -929,7 +929,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '关联规则学习中的置信度是指( )。',
@@ -941,7 +941,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在回归分析中，我们通常使用( )方法来确定模型的参数。',
@@ -953,7 +953,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '决策树分析是一种( )方法',
@@ -965,7 +965,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id, tags.深度学习与神经网络.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '神经网络中的激活函数的作用是( )。',
@@ -977,7 +977,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '贝叶斯网络中的链式法则用于计算( )。',
@@ -989,7 +989,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '随机森林算法是一种集成学习方法，它通过( )方式来生成多个决策树。',
@@ -1001,7 +1001,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.深度学习与神经网络.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '循环神经网络 RNN 的核心思想是( )。',
@@ -1013,7 +1013,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '自然语言处理中的文本分类任务通常使用( )算法。',
@@ -1025,7 +1025,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '时间序列分析中，( )方法用于移除趋势和季节性效应。',
@@ -1037,7 +1037,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行维度约简时，通常使用( )方法来评估保留的特征的重要性。',
@@ -1049,7 +1049,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在异常值检测中，( )方法通常用于基于数据分布的异常值识别。',
@@ -1061,7 +1061,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '产品功能规划应该具备( )性质。',
@@ -1073,7 +1073,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在模型训练完成后，通常使用( )来选择最佳的模型参数。',
@@ -1085,7 +1085,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在分布式系统中，( )实现负载均衡以提高系统的性能。',
@@ -1097,7 +1097,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '网络拓扑结构对故障恢复策略性设计的影响主要体现在( )方面。',
@@ -1109,7 +1109,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在产品维护与升级的制定过程中，( )步骤是确保产品质量的重要措施。',
@@ -1121,7 +1121,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能训练师在提升 AI 模型性能时，与人机交互的( )方面关系最为紧密。',
@@ -1133,7 +1133,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人机交互中的控制器负责( )功能。',
@@ -1145,7 +1145,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在项目管理中，( )是确保项目顺利进行的关键环节之一。',
@@ -1157,7 +1157,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '虚拟现实 VR 交互设计中，为了提高用户的操作效率，应该采用( )输入设备。',
@@ -1169,7 +1169,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计多模态交互系统时，需要考虑用户的上下文环境的原因是( )。',
@@ -1181,7 +1181,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计用户中心时，应该遵循( )原则来提高用户体验。',
@@ -1193,7 +1193,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '设计的可用性标准不包括( )。',
@@ -1205,7 +1205,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '流式布局适用于( )场景。',
@@ -1217,7 +1217,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Adobe XD 的快速原型制作主要用于( )。',
@@ -1229,7 +1229,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Marvel 的设计评审功能用于( )。',
@@ -1241,7 +1241,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Marvel 的响应式设计预览用于( )。',
@@ -1253,7 +1253,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了使培训讲义更具吸引力，可以采用( )的排版方式。',
@@ -1265,7 +1265,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是通过让员工参与实际工作任务来提高他们的技能和知识的方法。',
@@ -1277,7 +1277,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '案例分析法( )。',
@@ -1289,7 +1289,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '企业常用的培训方法包括讲授法、讨论法、( )和案例分析法。',
@@ -1301,7 +1301,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '职业道德的概念有广义和狭义之分。狭义的职业道德是指在( )活动中应遵循的职业行为准则和规范。',
@@ -1313,7 +1313,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '职业道德真正形成于( )。',
@@ -1325,7 +1325,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '古人所谓的“鞠躬尽瘁，死而后已”。揭示了职业活动内在的道德准则中的( )准则。',
@@ -1337,7 +1337,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '从道德和社会责任角度考虑，人工智能训练师在处理用户数据时，应确保数据的( )。',
@@ -1349,7 +1349,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人工智能的职业道德中，最能体现其对隐私保护的重视是( )。',
@@ -1361,7 +1361,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能训练师需要具备的素质包括( )。',
@@ -1373,7 +1373,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在职业守则的制定过程中，( )的步骤旨在确保守则的公平性和合理性。',
@@ -1385,7 +1385,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保职业守则的有效执行，组织应当采取( )机制来确保其落实。',
@@ -1397,7 +1397,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在职业守则中，诚实守信主要体现在( )行为上。',
@@ -1409,7 +1409,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.职业道德.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '爱岗敬业的具体表现不包括( )。',
@@ -1421,7 +1421,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在保护用户隐私方面，人工智能训练师应采取( )措施。',
@@ -1433,7 +1433,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '五笔字型汉字输入法的编码属于( )。',
@@ -1445,7 +1445,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.操作系统与工具.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '使用 Windows 系统的维护利器可以( )系统性能。',
@@ -1457,7 +1457,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.操作系统与工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '当 Windows 系统无法连接到网络时，首先应该尝试( )，快速修复方法。',
@@ -1469,7 +1469,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.操作系统与工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '要打开 Windows 小工具，用户需要( )。',
@@ -1481,7 +1481,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Web与浏览器.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '使用( )可以帮助我们调试网页代码，查看元素结构以及分析网络请求等。',
@@ -1493,7 +1493,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 中，使用( )键可以快速将光标移动到当前列最底下的单元格。',
@@ -1505,7 +1505,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id, tags.操作系统与工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了提高 Word2019 文档的编辑效率，可以使用( )快捷键来快速插入当前日期。',
@@ -1517,7 +1517,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Word 中，通过( )，来快速应用一组格式选项。',
@@ -1529,7 +1529,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 中，使用( )函数可以将一个日期转换为文本格式。',
@@ -1541,7 +1541,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 工作表单元格中输入公式时，F$2 的单元格引用方式称为( )。',
@@ -1553,7 +1553,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 中，( )图表类型最适合用于展示时间序列的数据变化。',
@@ -1565,7 +1565,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 中，( )不可以快速切换不同的工作簿。',
@@ -1577,7 +1577,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Microsoft Excel 中，宏的主要作用是( )。',
@@ -1589,7 +1589,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不会导致劳动合同无效。',
@@ -1601,7 +1601,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是劳动合同必备的核心条款。',
@@ -1613,7 +1613,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '用人单位不得解除劳动合同的情形是( )。',
@@ -1625,7 +1625,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '网络运营者应当履行的安全保障义务包括( )。',
@@ -1637,7 +1637,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '网络接入的规范要求不包括( )。',
@@ -1649,7 +1649,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是关键信息基础设施的特殊保护中的一方面。',
@@ -1661,7 +1661,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不能作为专利申请权的主体。',
@@ -1673,7 +1673,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是专利授权的实质性条件。',
@@ -1685,7 +1685,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.数据清洗与预处理.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不属于专利申请流程的标准化步骤。',
@@ -1697,7 +1697,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是遵纪守法的社会价值体现。',
@@ -1709,7 +1709,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '据劳动保护的法律规定，人工智能训练师在工作中享有( )的权益。',
@@ -1721,7 +1721,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '根据著作权法的规定，( )受著作权法的保护。',
@@ -1733,7 +1733,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '根据我国《专利法》的规定，申请专利的发明创造在申请日以前六个月内，出现( )的情况，会丧失新颖性。',
@@ -1745,7 +1745,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '有可能无限期拥有的知识产权是( )。',
@@ -1757,7 +1757,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行数据采集时，( )工具可以处理非结构化数据。',
@@ -1769,7 +1769,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了提高数据抓取效率，可以使用( )技术。',
@@ -1781,7 +1781,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据治理工具在人工智能培训中的作用，描述正确的是( )。',
@@ -1793,7 +1793,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'ETL 工具的使用方法通常包括这些步骤：1. 设计 ETL 过程；2. 配置 ETL 工具；3. 执行 ETL 过程；4. 监控和维护 ETL 过程。其中，( )是 ETL 工具使用方法的第一个步骤。',
@@ -1805,7 +1805,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )更适合处理大量非结构化数据。',
@@ -1817,7 +1817,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '不属于云服务主要特点的是( )。',
@@ -1829,7 +1829,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行 CSV 到 XML 数据格式转换时，可以使用( )工具或语言的库效率最高。',
@@ -1841,7 +1841,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '内存计算平台的设计初衷是为了解决( )。',
@@ -1853,7 +1853,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据可视化工具的主要作用是( )。',
@@ -1865,7 +1865,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )可能被人工智能训练师用于特征工程，以辅助数据的探索性分析。',
@@ -1877,7 +1877,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '企业使用数据质量监控工具的主要目的是( )。',
@@ -1889,7 +1889,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.操作系统与工具.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Power BI 支持( )操作系统。',
@@ -1901,7 +1901,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行网络数据采集时，我们应该优先选择( )方法来确保数据的全面性。',
@@ -1913,7 +1913,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '对于小型网站的数据抓取任务，( )技术可能更适合。',
@@ -1925,7 +1925,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是常见的数据库管理系统。',
@@ -1937,7 +1937,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据清洗与预处理流程中，( )是第一步。',
@@ -1949,7 +1949,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id, tags.数据采集.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了提高数据质量，数据转换过程中常用的方法不包括( )。',
@@ -1961,7 +1961,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了保护用户隐私，业务数据相关流程中应该采用( )技术来对数据进行脱敏处理。',
@@ -1973,7 +1973,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '容器化技术在业务数据处理流程中的优势不包括( )。',
@@ -1985,7 +1985,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据采集.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是一种通过邀请领域专家对数据进行评价来评估数据质量的方法。',
@@ -1997,7 +1997,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计高效业务流程时，( )措施最有助于减少不必要的延误。',
@@ -2009,7 +2009,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '合规性检查的目的是确保组织的数据处理活动符合( )的要求。',
@@ -2021,7 +2021,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )业务场景的数据产生特点是低频度、数据量小。',
@@ -2033,7 +2033,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人工智能业务的分类中，( )不是人工智能训练师常见的工作内容。',
@@ -2045,7 +2045,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能业务的功能之一是通过( )为用户提供个性化的服务体验。',
@@ -2057,7 +2057,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在智能搜索功能模块中，( )技术可以用来构建和维护一个庞大的实体关系网络。',
@@ -2069,7 +2069,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '智能交互功能模块的优势在于( )。',
@@ -2081,7 +2081,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '自然语言处理中的( )任务通常涉及对文本进行分析，以确定其是积极的、消极的还是中性的。',
@@ -2093,7 +2093,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '计算机视觉通过模拟人类视觉系统来处理和分析图像，( )不是其主要功能。',
@@ -2105,7 +2105,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在知识发现的流程中，( )不是由人工智能训练师执行的。',
@@ -2117,7 +2117,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '业务模块构建方法强调的是( )。',
@@ -2129,7 +2129,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在业务流程优化过程中，( )策略可以提高企业的响应速度。',
@@ -2141,7 +2141,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保数据收集的准确性，通常需要对数据进行( )。',
@@ -2153,7 +2153,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '业务流程的展现形式与技术通常使用( )来绘制。',
@@ -2165,7 +2165,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在评价业务流程优化效果时，( )是一个重要的指标。',
@@ -2177,7 +2177,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在综合业务流程分析中，常用的工具不包括( )。',
@@ -2189,7 +2189,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据处理工具的主要功能是( )。',
@@ -2201,7 +2201,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在业务数据分析方法中，( )步骤涉及到对数据进行深入的探讨和理解。',
@@ -2213,7 +2213,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.深度学习与神经网络.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '卷积神经网络 CNN 的核心组件包括卷积层、池化层和全连接层，其中( )层用于提取图像特征。',
@@ -2225,7 +2225,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.深度学习与神经网络.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据增强方法中，( )是一种常见的图像变换技术，它可以改变图像的大小和形状。',
@@ -2237,7 +2237,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '自动标注方法是指利用( )技术对数据进行自动标注。',
@@ -2249,7 +2249,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在评估分类模型的准确性时，通常使用( )指标。',
@@ -2261,7 +2261,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'NumPy 库在数据处理中的优势在于其高效的( )。',
@@ -2273,7 +2273,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在自动化标注中，为了提高标注的准确性，系统可能会利用( )机制来不断优化其标注能力。',
@@ -2285,7 +2285,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.深度学习与神经网络.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在深度学习中，用来防止过拟合的方法是( )。',
@@ -2297,7 +2297,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在智能训练数据处理中，人工智能训练师使用 Python 或 R 的主要原因是( )。',
@@ -2309,7 +2309,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据探索分析的结果通常用于支持( )决策。',
@@ -2321,7 +2321,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行数据探索分析时，( )可以帮助我们更好地理解数据的结构和特点。',
@@ -2333,7 +2333,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在缺失数据处理中，( )方法适用于存在大量相似观测值的情况。',
@@ -2345,7 +2345,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '对于分类数据，( )方法可以用来处理缺失值。',
@@ -2357,7 +2357,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在噪声数据处理中，( )主要用于消除信号中的平稳随机噪声。',
@@ -2369,7 +2369,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据归一化处理的定义是( )。',
@@ -2381,7 +2381,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据标注技术的目的是( )。',
@@ -2393,7 +2393,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保模型具有较好的泛化能力，通常建议将数据集划分为( )的比例。',
@@ -2405,7 +2405,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '自动化标注能够显著降低( )成本。',
@@ -2417,7 +2417,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '分布式数据处理的优势之一是能够利用多个计算节点的计算能力，从而实现任务的快速响应和高效处理。这种优势主要得益于( )。',
@@ -2429,7 +2429,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了确保数据可追溯性，组织应该建立一套完整的数据管理流程，包括数据的( )、存储、传输和销毁等环节。',
@@ -2441,7 +2441,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据管理中，数据可追溯性的主要目的是( )。',
@@ -2453,7 +2453,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Office办公.id, tags.数据清洗与预处理.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Excel 中进行数据清洗时，( )操作是用于识别重复数据的最佳实践。',
@@ -2465,7 +2465,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是一种常用的图像读取方法，可以从文件中提取像素数据。',
@@ -2477,7 +2477,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在文本类数据标注过程步骤中，( )是不需要的。',
@@ -2489,7 +2489,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在处理视觉类数据时，人工智能训练师制定规范的目的是( )。',
@@ -2501,7 +2501,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法训练过程中，选择合适的模型对于提高模型性能至关重要。( )步骤不属于模型选择过程。',
@@ -2513,7 +2513,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据清洗与预处理.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行文本数据预处理时，( )步骤通常用于将文本转换为数值型数据。',
@@ -2525,7 +2525,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '降维的主要目的是减少数据的复杂性，同时保留数据中的重要信息。( )降维方法是通过将高维数据映射到低维空间来实现的。',
@@ -2537,7 +2537,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '当需要对图像中的多个对象进行精确边界框绘制时，通常会使用的标注工具是( )。',
@@ -2549,7 +2549,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '线性规划是一种用于求解( )问题的优化算法。',
@@ -2561,7 +2561,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了高效地训练大规模数据集，( )软件组件最为关键。',
@@ -2573,7 +2573,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.Web与浏览器.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行人工智能模型调试时，( )可推荐用来解决模型性能不佳的问题',
@@ -2585,7 +2585,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在评估一个机器学习算法的性能时，( )指标不是常用的评价指标。',
@@ -2597,7 +2597,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '关于模型部署，描述正确的是( )。',
@@ -2609,7 +2609,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在模型部署过程中，为了实现自动化的模型更新和版本管理，通常会使用( )工具。',
@@ -2621,7 +2621,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id, tags.模型训练.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在选择云平台进行人工智能模型训练和部署时，( )不是云平台提供的优势或服务。',
@@ -2633,7 +2633,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '容器化技术的核心优势是( )。',
@@ -2645,7 +2645,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '容器化技术与虚拟机技术的主要区别在于( )。',
@@ -2657,7 +2657,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能训练师在利用高性能计算资源时，主要关注( )方面。',
@@ -2669,7 +2669,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.操作系统与工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '性能监控工具可以帮助我们( )系统性能瓶颈。',
@@ -2681,7 +2681,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在测试用例设计中，( )侧重于识别和测试软件中的边界条件。',
@@ -2693,7 +2693,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能测试的主要目的是( )。',
@@ -2705,7 +2705,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在使用测试框架进行测试时，( )操作是不推荐的。',
@@ -2717,7 +2717,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '对于回归测试，通常采用( )测试方法来确保修改没有引入新的错误。',
@@ -2729,7 +2729,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型训练.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法准确度测试中，为了避免过拟合现象，通常会将数据集划分为训练集和( )。',
@@ -2741,7 +2741,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行算法安全性测试时，需要考虑的方面包括( )。',
@@ -2753,7 +2753,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法可解释性与透明度测试中，( )的测试方法主要关注算法的内部逻辑和结构。',
@@ -2765,7 +2765,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法部署效果测试的流程中，( )步骤是在算法部署之前进行的。',
@@ -2777,7 +2777,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人工智能系统测试中，用户反馈集成的主要目的是( )。',
@@ -2789,7 +2789,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法测试中，若想评估模型预测值与实际值之间的关系强度，应使用的统计量是( )。',
@@ -2801,7 +2801,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在撰写算法测试报告时，( )不是必须的。',
@@ -2813,7 +2813,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '当程序运行时出现异常，我们可以使用( )来查看异常的详细信息。',
@@ -2825,7 +2825,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在使用模型可视化工具时，关键应用是( )。',
@@ -2837,7 +2837,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '日志分析中，使用正则表达式的主要目的是( )。',
@@ -2849,7 +2849,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在算法测试实验管理中，( )工具可以帮助自动化测试过程。',
@@ -2861,7 +2861,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '合规性测试的标准不包括( )。',
@@ -2873,7 +2873,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在实施性能优化策略时，应该遵循( )原则。',
@@ -2885,7 +2885,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '企业平衡经济效益和伦理考量的方法( )。',
@@ -2897,7 +2897,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据拆解的主要目的是( )。',
@@ -2909,7 +2909,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能算法训练师在数据拆解模型的原理中，不正确的说法是( )。',
@@ -2921,7 +2921,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '主成分分析 PCA 在数据拆解中主要用于( )。',
@@ -2933,7 +2933,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在文本数据拆解过程中，分词的主要目的是( )。',
@@ -2945,7 +2945,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.算法.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '时间序列分析在天气预报中主要用于( )目的。',
@@ -2957,7 +2957,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '不属于多维度数据分解的主要目的是( )。',
@@ -2969,7 +2969,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.自然语言处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在自然语言处理中，( )方法可以用于文本预处理。',
@@ -2981,7 +2981,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.计算机视觉.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '安全性分析的原理是通过对系统进行( )，以识别潜在的安全威胁和脆弱性，从而采取相应的安全措施来降低风险。',
@@ -2993,7 +2993,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在资源分配中，( )策略可以根据用户的实际需求来分配资源。',
@@ -3005,7 +3005,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据分析的标准流程中，( )步骤是紧接着收集数据之后进行的。',
@@ -3017,7 +3017,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '不是评估统计模型拟合优度的指标是( )。',
@@ -3029,7 +3029,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.机器学习.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在强化学习中，( )是指智能体在执行某个动作后获得的反馈信号。',
@@ -3041,7 +3041,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据处理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据融合过程中，人工智能训练师通常确保数据的一致性和可靠性的方法有( )。',
@@ -3053,7 +3053,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '智能解决方案设计的核心目标是( )。',
@@ -3065,7 +3065,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.业务与流程.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在用户需求分析中，( )确保数据的准确性。',
@@ -3077,7 +3077,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )原则最符合人工智能技术选型时对数据层的关注。',
@@ -3089,7 +3089,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在系统集成设计中，( )确保系统的可扩展性。',
@@ -3101,7 +3101,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '用户界面设计 UI 中的反馈机制是指当用户与界面进行交互时，系统应该提供( )以确认操作是否成功。',
@@ -3113,7 +3113,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在用户体验设计中，( )原则强调产品应满足用户需求并有效解决他们的问题。',
@@ -3125,7 +3125,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '人工智能训练师通过( )数据策略实现产品差异化。',
@@ -3137,7 +3137,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计一个安全系统时，( )措施可以提高系统的安全性。',
@@ -3149,7 +3149,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了实现跨云服务的集成，通常需要使用( )技术。',
@@ -3161,7 +3161,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.云平台与架构.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '可扩展性设计的主要目标是( )。',
@@ -3173,7 +3173,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '代码审计与优化对于软件开发过程的重要性不包括( )。',
@@ -3185,7 +3185,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.法律与知识产权.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '根据数据保护与隐私的法规要求，企业在发生数据泄露事件时必须立即采取( )措施。',
@@ -3197,7 +3197,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 AI 产品的迭代过程中，用户反馈的主要作用是( )。',
@@ -3209,7 +3209,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人机交互系统中，( )负责将计算机处理后的结果呈现给用户。',
@@ -3221,7 +3221,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计人机交互界面时，( )是非常重要的，因为它可以帮助用户快速理解如何使用产品。',
@@ -3233,7 +3233,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计输出设备时，应该确保其( )。',
@@ -3245,7 +3245,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在产品设计中，为了确保可访问性，( )原则是必须遵循的。',
@@ -3257,7 +3257,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )触控技术可以实现多点触控，提高用户体验。',
@@ -3269,7 +3269,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是语音交互设计中，人工智能训练师需要特别关注的事项。',
@@ -3281,7 +3281,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '最能体现 AR 技术的实时交互特性的功能是( )。',
@@ -3293,7 +3293,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人工智能训练过程中，人工智能训练师( )有效利用用户研究的方法来提升模型性能。',
@@ -3305,7 +3305,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )是原型设计与测试过程中，人工智能训练师用于指导模型调整的关键信息来源。',
@@ -3317,7 +3317,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.模型评估.id, tags.测试.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在用户测试与评估的过程中，( )阶段是用来确定测试目标和范围。',
@@ -3329,7 +3329,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '情感设计的核心目标是提高用户的( )满意度。',
@@ -3341,7 +3341,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在设计智能语音助手时，( )助于提高用户满意度。',
@@ -3353,7 +3353,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '( )不是人机交互系统的常见性能评价指标。',
@@ -3365,7 +3365,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在常见的交互设计模板中，( )是专门为提高网站可用性和导航效率设计的。',
@@ -3377,7 +3377,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '设计过程中收集用户反馈的方法不包括( )。',
@@ -3389,7 +3389,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.项目管理.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '任务分解后，每个( )都应该有明确的负责人。',
@@ -3401,7 +3401,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了提高用户体验，开发者应该关注( )。',
@@ -3413,7 +3413,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Adobe XD 的视觉设计工具用于( )。',
@@ -3425,7 +3425,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Axure RP 的条件逻辑设置用于( )。',
@@ -3437,7 +3437,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Axure RP 的复杂交互模拟用于( )。',
@@ -3449,7 +3449,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Balsamiq Mockups 的低保真设计用于( )。',
@@ -3461,7 +3461,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Figma 的设计系统支持用于( )。',
@@ -3473,7 +3473,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Marvel 的简单交互设计用于( )。',
@@ -3485,7 +3485,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在 Sketch 的插件生态系统中，( )插件可以帮助设计师快速创建和管理调色板，保持设计色彩一致性。',
@@ -3497,7 +3497,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.设计工具.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: 'Sketch 的矢量图形编辑用于( )。',
@@ -3509,7 +3509,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '为了使培训讲义更具吸引力，编写时应注重( )的选取和使用。',
@@ -3521,7 +3521,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在编写培训讲义的过程中，( )是至关重要的环节。',
@@ -3533,7 +3533,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.培训与教学.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '研讨会法的主要优点是( )。',
@@ -3545,7 +3545,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在进行数据处理时，( )步骤应该首先进行。',
@@ -3557,7 +3557,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据处理过程中，( )步骤不会导致数据丢失或错误。',
@@ -3569,7 +3569,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在数据处理阶段，( )的方法可以帮助提高数据处理效率。',
@@ -3581,7 +3581,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '当面临数据标注不一致的问题时，应该采取的措施是( )。',
@@ -3593,7 +3593,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在人工智能训练过程中，数据标注的重要性主要体现在( )。',
@@ -3605,7 +3605,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '当面临大量复杂的数据需要标注时，( )助于提高标注效率。',
@@ -3617,7 +3617,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '数据标注项目中，( )最可能导致标注结果的不一致性。',
@@ -3629,7 +3629,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.单选题.id, tags.数据标注.id],
-  type: 'single',
+  type: 'question',
   content: {
     type: 'single',
     question: '在解决人工智能训练中的数据标注问题时，( )不是有效的方法。',
@@ -3641,7 +3641,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '职业守则仅仅是一种软约束，不具备法律效力。',
@@ -3654,7 +3654,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.操作系统与工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '如果鼠标和键盘都无法使用，可以通过按 F8 键进入 Windows 的高级启动选项进行修复。',
@@ -3667,7 +3667,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.操作系统与工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Windows 10 中小工具中的时钟可以锁定前端显示。',
@@ -3680,7 +3680,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '劳动者在试用期内可以随时解除劳动合同。',
@@ -3693,7 +3693,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据治理工具主要用于优化人工智能算法训练过程中的数据输入，以确保训练数据集的质量和一致性。',
@@ -3706,7 +3706,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据质量监控工具的主要意义在于减少数据集的大小，以便更快地处理数据。',
@@ -3719,7 +3719,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据清洗与预处理流程的第一步是对数据进行缺失值处理。',
@@ -3732,7 +3732,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '特征提取的主要方法包括主成分分析和线性判别分析。',
@@ -3745,7 +3745,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '智能控制功能模块的原理是通过模拟人类大脑的思维方式来实现对设备的自动控制。',
@@ -3758,7 +3758,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '简化业务流程就是减少流程中的环节和步骤。',
@@ -3771,7 +3771,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务流程优化中的监测和评估阶段的目的是确定优化目标。',
@@ -3784,7 +3784,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.模型评估.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在计算模型评估指标时，我们需要使用训练集和测试集的数据来计算准确率。',
@@ -3797,7 +3797,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'NumPy 库中的数组对象可以存储不同类型的数据，包括整数、浮点数、字符串等。',
@@ -3810,7 +3810,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '线性回归是一种用于解决分类问题的方法。',
@@ -3823,7 +3823,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.深度学习与神经网络.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '生成对抗网络中的生成器和判别器是同步训练的。',
@@ -3836,7 +3836,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据探索分析是指对数据进行收集、整理、清洗和转换的过程。',
@@ -3849,7 +3849,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据去重技术主要是通过哈希表来实现的。',
@@ -3862,7 +3862,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据归一化处理的目的是为了改变数据的类型，使其能够适配不同的机器学习算法。',
@@ -3875,7 +3875,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据标注技术主要依赖于人工进行标注，因此成本较高。',
@@ -3888,7 +3888,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法测试的评价指标主要包括时间复杂度和空间复杂度。',
@@ -3901,7 +3901,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id, tags.操作系统与工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '容器化技术与虚拟机技术相比，容器化技术提供了更彻底的操作系统级隔离，因为每个容器都运行在自己的操作系统内核上。',
@@ -3914,7 +3914,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能项目中，选择数据处理框架时，框架的易用性和灵活性比其性能和扩展性更加重要。',
@@ -3927,7 +3927,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在高性能计算 HPC 环境中，为了最大化资源利用率，应该始终将所有计算节点配置为相同的任务类型，以保持操作的一致性。',
@@ -3940,7 +3940,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在进行算法测试实验管理时，使用统一的测试管理平台可以提高测试效率，但无法帮助追踪和管理测试过程中的复杂依赖关系。',
@@ -3953,7 +3953,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在文本数据处理中，分词是所有语言的必要步骤。',
@@ -3966,7 +3966,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '多维度数据分解不能有效地提高图像处理的效率和准确性。',
@@ -3979,7 +3979,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在自然语言处理中，特征工程主要用于文本数据的降维处理。',
@@ -3992,7 +3992,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用交叉验证方法可以避免过拟合问题，因此在选择统计模型时应该优先考虑这种方法。',
@@ -4005,7 +4005,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '聚类分析是一种无监督学习方法，主要用于发现数据集中的模式和结构。',
@@ -4018,7 +4018,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '集成学习方法的效果合成是指将多个模型的预测结果进行加权平均，以提高模型的性能。',
@@ -4031,7 +4031,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.深度学习与神经网络.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '深度学习中的卷积神经网络 CNN 主要用于处理序列数据。',
@@ -4044,7 +4044,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '异常值检测与处理是一种用于识别数据集中异常点的方法。',
@@ -4057,7 +4057,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能技术选型的原则包括选择最新的技术，以保持竞争优势。',
@@ -4070,7 +4070,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在云服务集成中，关键策略之一是选择合适的云服务提供商以满足业务需求。',
@@ -4083,7 +4083,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '性能优化技术的原理是通过减少程序中的冗余代码来提高程序的运行速度。',
@@ -4096,7 +4096,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.项目管理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '产品维护与升级制定的关键是定期发布新版本以保持用户的兴趣。',
@@ -4109,7 +4109,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人机交互三要素包括输入设备、输出设备和控制器。',
@@ -4122,7 +4122,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '增强现实 AR 交互主要依赖虚拟现实头戴设备。',
@@ -4135,7 +4135,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型评估.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户测试与评估的系统方法是一种定性的研究方法。',
@@ -4148,7 +4148,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Adobe XD 进行原型制作时，用户可以直接导出最终的设计文件。',
@@ -4161,7 +4161,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在使用 Marvel 的设计评审功能时，用户可以上传自己的设计文件，但是不能邀请其他团队成员进行评论。',
@@ -4174,7 +4174,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '讲授法是一种单向沟通的培训方法，因此它不利于受训者主动参与培训。',
@@ -4187,7 +4187,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据采集和处理流程中，数据清洗的主要目的是去除重复数据和提高数据质量。',
@@ -4200,7 +4200,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '道德评价的关键是看其行为是否符合社会道德规范。',
@@ -4213,7 +4213,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师在处理敏感数据时，可以不经用户同意直接使用这些数据进行模型训练。',
@@ -4226,7 +4226,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '随着全球化的发展，职业道德也呈现出单一化的趋势，不同国家和地区的职业道德规范不存在差异。',
@@ -4239,7 +4239,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师在职业道德建设中，无需考虑数据的质量与适用性，只需关注模型的训练效果。',
@@ -4252,7 +4252,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师在开发和训练 AI 模型时，不需要对模型可能产生的歧视性或偏见性结果负责。',
@@ -4265,7 +4265,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师的职业道德不包括对用户隐私的保护。',
@@ -4278,7 +4278,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师的主要任务是设计和开发新的算法。',
@@ -4291,7 +4291,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '职业守则的特点之一是具有普遍性，适用于所有行业。',
@@ -4304,7 +4304,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '职业守则核心内容不包括遵守法律。',
@@ -4317,7 +4317,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师在制定职业守则的过程中，应该充分考虑到人工智能技术的发展趋势和潜在风险。',
@@ -4330,7 +4330,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '职业守则的实施与监督应该完全依靠员工个人的自觉性。',
@@ -4343,7 +4343,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '职业守则中的奉献社会是指从业人员在工作中要T处理个人利益和社会整体利益的关系，把个人利益放在首位。',
@@ -4356,7 +4356,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.职业道德.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '从业人员能否做到爱岗敬业，取决于他是否具有过硬的专业技能。',
@@ -4369,7 +4369,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师在训练过程中，可以根据自己的经验和直觉来调整模型参数，以提高模型性能。',
@@ -4382,7 +4382,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.操作系统与工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '语音输入是 Windows 输入法的一种智能应用。',
@@ -4395,7 +4395,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.操作系统与工具.id, tags.项目管理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Windows 系统的维护利器是一款可以帮助用户优化系统性能、清理垃圾文件和修复系统问题的软件。',
@@ -4408,7 +4408,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Web与浏览器.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在浏览器中，可以通过点击地址栏输入网址来访问网页。',
@@ -4421,7 +4421,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Web与浏览器.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '浏览器的高级探索功能可以帮助用户更好地了解和管理浏览器的设置和功能。',
@@ -4434,7 +4434,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Ctrl + C 可以复制选中的文本或对象。',
@@ -4447,7 +4447,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Word 进行高效办公时，可以同时打开多个文档进行编辑。',
@@ -4460,7 +4460,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Word 样式库中的样式可以快速应用到文档中的多个段落或文本框中。',
@@ -4473,7 +4473,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在 Word 中进行图文混排时，图片和文本框的位置是可以随意调整的。',
@@ -4486,7 +4486,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在 Excel 中，可以使用公式计算单元格中的数据。',
@@ -4499,7 +4499,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在 Excel 中，使用 MAX 函数可以找到一列数据中的最大值。',
@@ -4512,7 +4512,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Excel 图表的数据可视化功能只能用于静态展示数据，无法进行动态交互。',
@@ -4525,7 +4525,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '工作簿的扩展名是.xls。',
@@ -4538,7 +4538,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '通过利用 Excel 宏，我们可以将繁琐的重复性任务自动化，使我们的工作变得高效和轻松。',
@@ -4551,7 +4551,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用人单位与劳动者订立的劳动合同中，约定了试用期满后自动转正的条款，这样的约定是合法的。',
@@ -4564,7 +4564,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '劳动合同中必须包含劳动合同期限。',
@@ -4577,7 +4577,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '网络运营者应当采取技术措施和其他必要措施，确保其收集的个人信息安全，防止信息泄露、损毁、丢失。',
@@ -4590,7 +4590,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '网络接入的规范要求中，用户必须使用实名制进行注册。',
@@ -4603,7 +4603,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型评估.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '关键信息基础设施的运营者应当自行或者委托网络安全服务机构对其网络的安全性和可能存在的风险每年至少进行一次检测评估。',
@@ -4616,7 +4616,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '只有发明人和设计人才能成为专利申请权主体。',
@@ -4629,7 +4629,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '如果一项发明创造具有新颖性、创造性和实用性，那么它一定可以获得专利授权。',
@@ -4642,7 +4642,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在专利申请流程中，申请人需要提交详细的专利说明书、权利要求书和摘要等文件。',
@@ -4655,7 +4655,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '遵纪守法是社会成员的基本义务，因此每个人都应该自觉遵守法律法规。',
@@ -4668,7 +4668,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '根据我国相关法律法规，人工智能训练师在工作过程中应当享有与其他职业相同的劳动保护权益，包括工作安全、健康保障和合理的工作时间安排等。',
@@ -4681,7 +4681,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能训练师的工作中，使用、复制或分发数据、算法或模型时，必须遵守知识产权法的基本原则，包括尊重知识产权的专有性、保护创作者权益和禁止未经授权的使用。',
@@ -4694,7 +4694,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '著作权法只保护原创性的作品。',
@@ -4707,7 +4707,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '专利权的主体只能是发明人或设计人。',
@@ -4720,7 +4720,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.法律与知识产权.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '知识产权的保护措施只针对原创性作品。',
@@ -4733,7 +4733,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据采集的常用工具包括 Python、Excel 和 SQL Server。',
@@ -4746,7 +4746,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Python 编写网络爬虫时，可以安装 requests 库，来完成任务。',
@@ -4759,7 +4759,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据采集流程中，工具应用的意义仅限于提高数据收集的速度。',
@@ -4772,7 +4772,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'ETL 工具的基本原理包括数据抽取、数据转换和数据加载三个步骤。',
@@ -4785,7 +4785,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据存储和管理相关工具通常具有自动备份和恢复功能。',
@@ -4798,7 +4798,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '云服务是一种基于互联网的计算方式，通过这种方式，共享软硬件资源和信息可以按需求提供给计算机各种终端和其他设备。',
@@ -4811,7 +4811,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Excel 可以将 CSV 文件转换为 JSON 格式。',
@@ -4824,7 +4824,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '所有的大数据处理平台都专门用于处理结构化数据，并且不能处理非结构化数据。',
@@ -4837,7 +4837,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.自然语言处理.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '所有的常用数据处理工具都只能处理数值型数据，无法处理文本或图像数据。',
@@ -4850,7 +4850,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在特征工程中，所有工具都自动选择最佳的特征集，无需人工干预或领域知识。',
@@ -4863,7 +4863,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据审核平台是一种专门用于审核和处理数据的软件工具。',
@@ -4876,7 +4876,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Power BI 是微软推出的一款商业智能工具，主要用于数据分析和报告制作。',
@@ -4889,7 +4889,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务流程管理与优化工具只能用于制造业企业。',
@@ -4902,7 +4902,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据采集策略应该避免使用自动化工具，以确保数据的原始性。',
@@ -4915,7 +4915,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据源选择只要基于数据的准确性，不需要可靠性。',
@@ -4928,7 +4928,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Web与浏览器.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据抓取技术中，正则表达式是一种非常强大的工具，可以用于匹配和提取网页中的特定信息。',
@@ -4941,7 +4941,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据抓取策略的优化方法包括使用更快的抓取工具。',
@@ -4954,7 +4954,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '关系型数据库通常用于存储结构化数据，而非关系型数据库则更适合存储半结构化或非结构化数据。',
@@ -4967,7 +4967,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据清洗的主要目的确实是解决数据中的重复值、缺失值和异常值问题。',
@@ -4980,7 +4980,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '加密技术可以保证数据的机密性，但无法防止数据泄露。',
@@ -4993,7 +4993,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '实时数据处理技术可以处理大量数据并实时产生结果。',
@@ -5006,7 +5006,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '容器化技术可以完全替代传统的虚拟化技术来管理业务数据处理流程。',
@@ -5019,7 +5019,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据采集.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据质量评估通常是通过对数据进行抽样检查来进行的。',
@@ -5032,7 +5032,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据校验和异常数据检测的方法都是为了确保数据的准确性和完整性。',
@@ -5045,7 +5045,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '高效业务流程的设计方法应该包括对现有流程的详细分析。',
@@ -5058,7 +5058,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '合规性检查通常只关注数据的安全性，而不涉及数据的完整性和可用性。',
@@ -5071,7 +5071,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务数据产生的场合包括企业内部和外部的各种业务流程。',
@@ -5084,7 +5084,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能业务可以根据应用场景分为智能客服、智能家居、自动驾驶和智能医疗等类别。',
@@ -5097,7 +5097,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '综合人工智能系统中的智能控制模块不能用于实现设备控制。',
@@ -5110,7 +5110,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '推荐系统的功能模块包括用户画像、物品画像和推荐算法三个部分。',
@@ -5123,7 +5123,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '智能搜索业务不能通过自然语言处理技术来解析和理解搜索查询。',
@@ -5136,7 +5136,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '智能交互功能模块具有自然语言处理能力，可以理解用户的语音指令和文本输入。',
@@ -5149,7 +5149,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '自动数据处理能够通过人工智能模型和算力，挖掘出稳定且准确的分析结果。',
@@ -5162,7 +5162,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '最优化决策支持利用人工智能计算来实现系统的最优性能，以及得出达到最优业务指标的分配或决策。',
@@ -5175,7 +5175,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '自然语言处理技术可以自动分析和理解人类语言，从而实现人机交互。',
@@ -5188,7 +5188,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '生物特征识别是一种身份验证技术，因此可以不经许可获取用户生物特征。',
@@ -5201,7 +5201,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '计算机视觉的功能包括图像处理、目标检测和识别等。',
@@ -5214,7 +5214,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '图像识别是智能计算在人工智能领域的主要应用之一。',
@@ -5227,7 +5227,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据挖掘和知识发现的流程中，数据清洗和预处理步骤是可选的。',
@@ -5240,7 +5240,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据挖掘和知识发现的方法包括监督学习、无监督学习和强化学习。',
@@ -5253,7 +5253,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.云平台与架构.id, tags.项目管理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务模块构建方法的原则包括可扩展性、可重用性和可维护性。',
@@ -5266,7 +5266,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务流程优化方法主要包括流程再造、流程改进和流程分析三种。',
@@ -5279,7 +5279,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务数据的收集方法只有通过问卷调查一种方式。',
@@ -5292,7 +5292,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '单据流是企业业务流程的核心流程之一。',
@@ -5305,7 +5305,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '简单业务流程分析流程的第一步是对现有流程进行详细的记录和描述。',
@@ -5318,7 +5318,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在复杂综合业务流程分析中，控制图和帕累托图是常用的分析工具。',
@@ -5331,7 +5331,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '技术更新是复杂业务系统改进措施的唯一方法。',
@@ -5344,7 +5344,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '综合业务流程优化方法的原则包括以客户为中心、以流程为导向和持续改进。',
@@ -5357,7 +5357,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '知识表示方法只有符号主义和连接主义两种。',
@@ -5370,7 +5370,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '知识图谱表示法是一种基于图的数据结构，用于表示实体之间的关系。',
@@ -5383,7 +5383,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据分析工具的种类比较多，一款好的数据分析工具，可以帮助我们提高学习工作的效率。',
@@ -5396,7 +5396,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '预测性分析是一种常见的业务数据分析，主要用于预测未来的趋势。',
@@ -5409,7 +5409,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '业务数据可以直接进行使用，不需要进行规范化。',
@@ -5422,7 +5422,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.机器学习.id, tags.模型评估.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '机器学习的基础流程包括特征工程、模型选择和评估。',
@@ -5435,7 +5435,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.深度学习与神经网络.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '卷积神经网络主要用于处理图像数据，其基本结构包括输入层、卷积层、池化层和全连接层。',
@@ -5448,7 +5448,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在智能训练中，特征提取的主要方法是手工设计特征。',
@@ -5461,7 +5461,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '学习率是影响模型训练效果的关键因素之一，较大的学习率会导致模型收敛速度加快，但可能会导致模型无法收敛。',
@@ -5474,7 +5474,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据预处理的主要目标之一是提高模型的预测性能。',
@@ -5487,7 +5487,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.深度学习与神经网络.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在图像数据集中添加随机噪声被视为一种数据增强方法。',
@@ -5500,7 +5500,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据分片是将一个大型数据库或数据仓库分割成更小、更易管理的部分的过程。',
@@ -5513,7 +5513,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据标注过程中，主动学习可以用来选择最有价值的未标注数据进行人工标注。',
@@ -5526,7 +5526,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '模型评估指标的选择应该基于问题的具体需求和目标。',
@@ -5539,7 +5539,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id, tags.深度学习与神经网络.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'TensorFlow 和 PyTorch 都是开源的机器学习库，它们都可以用于深度学习任务。',
@@ -5552,7 +5552,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在设计数据收集任务时，应该尽量避免引入偏差，以确保数据的代表性和质量。',
@@ -5565,7 +5565,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '所有的自动化标注工具都能保证 100%的准确性，无需人工审核或后处理。',
@@ -5578,7 +5578,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据预处理通常包括转换原始数据为一种更适合机器学习模型处理的格式。',
@@ -5591,7 +5591,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '模型训练和验证工具的原理是通过不断调整模型的参数来最小化损失函数，从而提高模型的预测准确性。',
@@ -5604,7 +5604,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '所有的自动化模型训练工具都使用相同的超参数优化策略。',
@@ -5617,7 +5617,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '日志分析工具仅用于记录系统的F信息。',
@@ -5630,7 +5630,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能训练师使用 Python 或 R 进行智能训练数据处理时，主要依赖于这些编程语言提供的数据处理和机器学习库，以及其支持的数据可视化和预处理方法。',
@@ -5643,7 +5643,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '模型部署工具的原理是将训练好的模型转换为可执行程序，以便在实际应用中使用。',
@@ -5656,7 +5656,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据探索分析旨在通过初步的图表、图形和统计方法来了解和发现数据的基本特征和结构。',
@@ -5669,7 +5669,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '缺失值处理方法中的删除法是指直接删除含有缺失值的记录。',
@@ -5682,7 +5682,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '当数据集中存在缺失值时，我们应该直接删除这些数据点。',
@@ -5695,7 +5695,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在 Python 中，使用箱型图法检测异常值时，任何位于箱型图外的点都应被视为异常值并从数据集中删除。',
@@ -5708,7 +5708,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '异常值检测的原理完全基于统计学方法，与数据的业务逻辑无关。',
@@ -5721,7 +5721,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '噪声数据处理技术只能用于消除图像中的噪声。',
@@ -5734,7 +5734,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.数据清洗与预处理.id, tags.机器学习.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据白化处理通常是指一种特殊的归一化技术，它不仅缩放数据使其具有单位方差，还使数据特征之间相互独立，数据白化处理常用于图像处理、语音信号处理和机器学习领域。',
@@ -5747,7 +5747,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '特征工程是指从原始数据中提取、转换和构建有助于提高模型性能的特征的过程。',
@@ -5760,7 +5760,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在选择数据标注工具时，应该首先考虑工具的价格，而不是它支持的标注类型或与现有工作流的集成性。',
@@ -5773,7 +5773,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id, tags.模型训练.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在机器学习项目中，训练集、验证集和测试集的划分并不是一成不变的。',
@@ -5786,7 +5786,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '自动化标注的主要优势在于减少了人为F，但并不包括提高效率和降低成本。',
@@ -5799,7 +5799,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '分布式数据处理是指在多台计算机上并行处理数据的技术。',
@@ -5812,7 +5812,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据可追溯性是指在数据处理和分析过程中，能够追踪数据的来源、流动路径以及数据在各个阶段所经历的处理和转换的能力。',
@@ -5825,7 +5825,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据可追溯性确保了数据的完整性、透明度和责任性，对于数据的质量和可信度至关重要。',
@@ -5838,7 +5838,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '表格类数据的数据清洗和标注的第一步是对数据进行预处理，包括去除重复值、缺失值处理和异常值处理。',
@@ -5851,7 +5851,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在 Python 中，可以使用 Pillow 库读取、保存或显示图像。',
@@ -5864,7 +5864,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据标注.id, tags.数据清洗与预处理.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在进行文本类数据清洗和标注时，规则与流程是固定不变的，适用于所有类型的文本数据。',
@@ -5877,7 +5877,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id, tags.机器学习.id, tags.模型训练.id, tags.自然语言处理.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '对图像或视频数据进行精确的标记和注释，以提供机器学习模型训练所需的信息。标注类型可能包括边界框、多边形、语义分割等。',
@@ -5890,7 +5890,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法训练的基本流程通常包括这些步骤：数据预处理、数据分割、选择模型、模型训练、模型评估和模型优化。',
@@ -5903,7 +5903,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据集划分的原则是将数据集按照一定比例随机划分为训练集、验证集和测试集。',
@@ -5916,7 +5916,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Pandas 库可以方便地加载和处理 CSV、Excel 和 SQL 等格式的数据。',
@@ -5929,7 +5929,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '降维技术可以将高维数据集映射到低维空间，同时保留数据的主要信息。',
@@ -5942,7 +5942,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用数据标注和注释工具时，标注结果需要人工审核以确保准确性。',
@@ -5955,7 +5955,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在模型训练过程中，训练数据集越大，模型训练出的准确率一定会越高。',
@@ -5968,7 +5968,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.模型训练.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '损失函数的选择和优化算法的选取都需要根据具体的模型和任务来决定，它们共同决定了模型训练的效果和最终性能。',
@@ -5981,7 +5981,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '搭建算法训练环境时，只需要考虑计算硬件的性能，而无需考虑软件依赖和版本兼容性。',
@@ -5994,7 +5994,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '机器学习框架的选择与使用主要取决于开发者的个人喜好。',
@@ -6007,7 +6007,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '评估算法的效率，包括时间复杂度和空间复杂度分析，确保算法能够在可接受的时间内完成计算，并且资源消耗在合理范围内。',
@@ -6020,7 +6020,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '超参数调优的策略只有随机搜索。',
@@ -6033,7 +6033,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '动态监控工具通常能够实时显示模型训练过程中的多种指标，包括但不限于损失函数值、准确率、验证集上的表现等。这些指标对于评估模型的训练效果和调整训练策略至关重要。',
@@ -6046,7 +6046,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.Web与浏览器.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在模型调试过程中，可以通过观察训练集和验证集的损失函数值来判断模型是否过拟合或欠拟合。',
@@ -6059,7 +6059,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在将机器学习模型部署到生产环境时，模型部署只需要将训练好的模型文件上传到服务器，无需其他步骤。',
@@ -6072,7 +6072,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'TensorFlow Lite 是一个用于在移动设备上部署机器学习模型的框架。',
@@ -6085,7 +6085,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用云平台可以降低企业的运营成本。',
@@ -6098,7 +6098,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '容器化技术是一种将应用程序及其依赖项打包在一起的方法，以便在不同的环境中轻松部署和运行。',
@@ -6111,7 +6111,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '性能监控工具可以自动发现系统中的瓶颈和问题，无需人工干预。',
@@ -6124,7 +6124,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在设计人工智能系统的测试用例时，确保测试用例的全面性比确保它们的执行效率更重要。',
@@ -6137,7 +6137,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能测试的目的在一定程度上可以识别并解决模型可能存在的偏差，确保 AI 系统的决策过程是公正和无歧视的。',
@@ -6150,7 +6150,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能测试工具的类型只包括黑盒测试。',
@@ -6163,7 +6163,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在选择测试框架时，唯一需要考虑的因素是该框架是否支持自动化测试。',
@@ -6176,7 +6176,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能项目的测试过程中，自动化测试可以完全取代手动测试，因为自动化测试可以覆盖所有的测试场景。',
@@ -6189,7 +6189,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法性能指标的监控可以帮助我们了解算法的实际运行情况，从而优化算法设计。',
@@ -6202,7 +6202,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '交叉验证是一种强大的统计技术，可以用来确保模型评估结果的稳定性和可靠性，特别是在数据量有限的情况下。',
@@ -6215,7 +6215,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法鲁棒性测试只关注算法在面对特定类型的数据异常时的表现。',
@@ -6228,7 +6228,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法安全性测试的结果可以用来指导算法的改进和优化。',
@@ -6241,7 +6241,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '算法可解释性与透明度测试是确保人工智能系统决策过程能够被用户、开发者和监管机构理解和信任的重要方面。',
@@ -6254,7 +6254,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在进行数据多样性与公平性测试时，我们只需要关注数据集中是否存在偏见即可。',
@@ -6267,7 +6267,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'k 折交叉验证是一种评价训练数据的数据集泛化能力的统计方法，通过对数据集进行多次划分，对多次评估的结果取平均，从而消除单次划分时数据划分不平衡造成的不良影响。',
@@ -6280,7 +6280,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '收集和分析算法在生产环境中的性能数据是重要的，这有助于了解算法的实际表现，并进行必要的优化。',
@@ -6293,7 +6293,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户反馈集成可以帮助开发团队更好地理解用户需求，从而提高人工智能系统的满意度。',
@@ -6306,7 +6306,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在进行算法测试结果的统计分析时，我们应该只关注正例的测试结果。',
@@ -6319,7 +6319,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '测试报告是一份重要的文档，它不仅记录了测试结果，还应该详细说明测试的方法、测试环境、测试用例、测试数据和测试过程中遇到的问题及解决方案。',
@@ -6332,7 +6332,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Web与浏览器.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能算法开发过程中，进行调试与问题定位时，在发现问题后立即重写整个算法，而不是逐步定位和修复问题。',
@@ -6345,7 +6345,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.数据清洗与预处理.id, tags.测试.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能算法的开发和测试中，通过可视化，可以更直观地识别数据中的模式、异常值、偏差和噪声，同时也能够更清楚地展示算法性能的变化趋势和潜在问题。',
@@ -6358,7 +6358,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '日志分析工具通常需要具备实时处理能力，以便快速响应潜在的安全威胁。',
@@ -6371,7 +6371,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能项目中，修复与迭代是一个持续的过程，通常不是简单地按部就班解决所有缺陷后再进行测试和迭代。',
@@ -6384,7 +6384,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '合规性测试只需要验证软件产品是否符合行业标准和法律法规，而不需要考虑产品的实际功能和性能。',
@@ -6397,7 +6397,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '利用并行计算和分布式系统可以显著提高算法的运行效率，尤其是对于那些可以分解为多个独立且可以并行处理的任务的算法。',
@@ -6410,7 +6410,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在进行伦理考量时，我们只需要关注自己的利益，而不需要考虑他人的利益。',
@@ -6423,7 +6423,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能算法训练中，数据拆解的基本方法包括随机拆分和分层拆分。',
@@ -6436,7 +6436,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据拆解模型的原理是将原始数据按照一定的规则进行拆分和重组，以便更好地理解和分析数据。',
@@ -6449,7 +6449,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.模型评估.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '训练集、验证集和测试集的作用都是为了评估模型的性能。',
@@ -6462,7 +6462,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '主成分分析是一种基于数据拆解的特征降维方法。',
@@ -6475,7 +6475,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '基于统计的特征拆解及选择是一种常用的机器学习特征处理方法。',
@@ -6488,7 +6488,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在基于模型的特征选择中，递归特征消除 RFE 是一种包装器方法，它通过反复构建模型来选择特征子集。',
@@ -6501,7 +6501,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '时间序列数据分割时，通常不需要保持数据的连续性和时序性，可以直接随机分割。',
@@ -6514,7 +6514,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '时间序列分析是一种预测方法，它可以帮助我们预测未来的天气情况。',
@@ -6527,7 +6527,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在网络分析中，节点和边分别代表网络中的对象和它们之间的关系。',
@@ -6540,7 +6540,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '社会网络分析主要关注个体之间的社会联系，而忽略了网络结构的影响。',
@@ -6553,7 +6553,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '多维度数据分解的原理仅适用于数值型数据。',
@@ -6566,7 +6566,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '特征提取是指从原始数据中提取出对模型预测有帮助的特征。',
@@ -6579,7 +6579,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '响应时间的优化是指在软件设计中减少程序执行所需的时间。',
@@ -6592,7 +6592,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能系统的训练过程中，人工智能训练师不需要关注模型的安全性分析。',
@@ -6605,7 +6605,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '负载均衡是一种资源分配策略，用于确保系统中的各个服务器负载相对均衡。',
@@ -6618,7 +6618,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据预处理技术细节包括数据清洗、数据集成、数据变换和数据规约四个步骤。',
@@ -6631,7 +6631,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据清洗与预处理.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据分析过程中，数据清洗的主要目的是去除重复数据、处理缺失值和异常值。',
@@ -6644,7 +6644,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '机器学习算法可以完全替代人类专家在某些领域的决策过程。',
@@ -6657,7 +6657,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '关联规则学习中的置信度是指包含项集 A 的事务中同时也包含项集 B 的比例。',
@@ -6670,7 +6670,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '线性回归模型是最常用的回归分析方法。',
@@ -6683,7 +6683,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '决策树的每个节点可以有多个父节点。',
@@ -6696,7 +6696,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.Office办公.id, tags.深度学习与神经网络.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '神经网络中的激活函数是用来引入非线性因素的。',
@@ -6709,7 +6709,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在贝叶斯网络中，节点之间的依赖关系是通过概率分布来描述的。',
@@ -6722,7 +6722,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.机器学习.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在强化学习中，奖励信号应该始终与动作结果相关联，以便模型能够学习到T的动作选择。',
@@ -6735,7 +6735,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.自然语言处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在文本分析中，词袋模型将文本表示为单词的集合。',
@@ -6748,7 +6748,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.算法.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '时间序列分析只能处理线性数据。',
@@ -6761,7 +6761,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id, tags.特征工程与数据分析.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '主成分分析 PCA 是一种常用的维度约简技术，其基本思想是通过降低数据维度来减少信息损失。',
@@ -6774,7 +6774,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.数据处理.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据融合技术主要用于将多源异构数据集成为一个统一的数据源。',
@@ -6787,7 +6787,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '智能解决方案设计旨在结合人工智能技术与特定领域需求，提供全面的解决方案。',
@@ -6800,7 +6800,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户需求分析是指识别和理解用户对产品或服务的需求和期望，以便设计出符合其预期的解决方案。',
@@ -6813,7 +6813,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '产品功能规划是对产品功能的全面、系统、科学的规划，它具有全局性、前瞻性和创新性。',
@@ -6826,7 +6826,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.模型训练.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '模型训练与验证的方法只有交叉验证一种。',
@@ -6839,7 +6839,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '系统集成设计的规则主要包括尽量减少模块之间的依赖关系，以提高系统的灵活性。',
@@ -6852,7 +6852,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户界面设计 UI 不需要考虑性能优化。',
@@ -6865,7 +6865,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户体验设计 UX 的原则强调在设计过程中始终关注用户的需求和体验。',
@@ -6878,7 +6878,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '产品差异化设计旨在使产品在竞争激烈的市场中脱颖而出，吸引更多的用户。',
@@ -6891,7 +6891,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在设计软件时，不需要考虑安全性问题。',
@@ -6904,7 +6904,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.云平台与架构.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '可扩展性设计旨在确保系统能够在不断增长的需求下保持高性能。',
@@ -6917,7 +6917,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.操作系统与工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '代码审计主要关注代码的编写规范性，对系统性能影响不大。',
@@ -6930,7 +6930,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '企业在收集、存储和处理用户数据时，不需要告知用户数据的用途和收集方式。',
@@ -6943,7 +6943,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '故障恢复策略的设计不包括备份和恢复机制。',
@@ -6956,7 +6956,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在用户反馈与迭代过程的管理中，应该忽略所有负面反馈。',
@@ -6969,7 +6969,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人机交互是指人与计算机之间的信息交流和操作过程。',
@@ -6982,7 +6982,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人机交互模型描述了人和计算机之间信息传递的过程，通常包括输入、处理、输出和反馈等环节。',
@@ -6995,7 +6995,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在用户界面设计中，应该遵循一致性原则，即相同类型的元素应该有相同的操作和外观。',
@@ -7008,7 +7008,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '输入与输出的系统设计应该考虑用户的操作习惯和心理模型。',
@@ -7021,7 +7021,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '反馈机制在人机交互中不起重要作用。',
@@ -7034,7 +7034,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '适应性设计是指产品或服务能够根据用户的需求和偏好进行自动调整。',
@@ -7047,7 +7047,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '触摸界面交互主要依赖键盘和鼠标。',
@@ -7060,7 +7060,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.计算机视觉.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '语音交互设计不需要考虑语音识别的准确性和响应速度。',
@@ -7073,7 +7073,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '虚拟现实 VR 交互的设计需要考虑用户的生理反应。',
@@ -7086,7 +7086,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '多模态交互设计仅关注不同输入方式的整合，而不考虑输出方式。',
@@ -7099,7 +7099,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户研究的方法论主要包括定性和定量两种方法。',
@@ -7112,7 +7112,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.测试.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '原型设计与测试是人机交互设计过程中的最后一步。',
@@ -7125,7 +7125,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '情感设计主要关注用户的理性需求。',
@@ -7138,7 +7138,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '人工智能在人机交互中主要应用于提高系统的安全性。',
@@ -7151,7 +7151,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '一个高效的人机交互系统应该能够在短时间内响应用户的操作。',
@@ -7164,7 +7164,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户中心的设计原则要求设计师在设计过程中始终站在用户的角度思考问题，因此设计师不需要了解产品的目标市场和竞争对手。',
@@ -7177,7 +7177,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '设计的可用性标准是指在设计过程中需要遵循的一系列原则和规范，以确保产品的易用性和用户体验。',
@@ -7190,7 +7190,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '交互设计模板可以帮助设计师更好地组织和展示他们的想法。',
@@ -7203,7 +7203,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在设计过程中，用户反馈是必不可少的环节，因为它可以帮助设计师更好地了解用户需求。',
@@ -7216,7 +7216,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.项目管理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '工作流程的任务分解有助于明确每个阶段的责任和目标。',
@@ -7229,7 +7229,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '界面设计的布局策略仅关注美观而忽视功能性。',
@@ -7242,7 +7242,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '用户使用情境的分析工具可以帮助设计师更好地理解目标用户的需求和行为。',
@@ -7255,7 +7255,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Adobe XD 只能用于创建移动应用的原型。',
@@ -7268,7 +7268,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Axure RP 是一款用于创建原型和模拟复杂交互的工具。',
@@ -7281,7 +7281,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Axure RP 中的条件逻辑设置可以用来控制页面元素的显示和隐藏。',
@@ -7294,7 +7294,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Balsamiq Mockups 只能用于创建线框图。',
@@ -7307,7 +7307,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Figma 的设计系统支持创建自定义组件库。',
@@ -7320,7 +7320,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Marvel 的简单交互设计强调减少用户的认知负担，提高用户体验。',
@@ -7333,7 +7333,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '使用 Marvel 的响应式设计预览，设计师可以轻松地查看和调整他们的网站布局，以确保其在各种设备上都能正常工作。',
@@ -7346,7 +7346,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Sketch 的插件生态系统为用户提供了广泛的功能扩展选项。',
@@ -7359,7 +7359,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.设计工具.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: 'Sketch 的矢量图形编辑功能非常强大，可以轻松地创建和编辑各种复杂的图形。',
@@ -7372,7 +7372,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '培训讲义编写应该包含大量的理论知识和实例分析。',
@@ -7385,7 +7385,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '培训讲义的编写应该遵循一定的结构，包括引入、主体和总结三个部分。',
@@ -7398,7 +7398,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '编写培训讲义时，不需要考虑学员的学习需求和背景。',
@@ -7411,7 +7411,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在人工智能培训中，使用单一的教学方法可以有效地满足所有学员的学习需求。',
@@ -7424,7 +7424,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '讲授法是一种非常有效的培训方法，因此没有缺点。',
@@ -7437,7 +7437,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.培训与教学.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '培训方法的选择应该完全依赖于培训者的经验和偏好。',
@@ -7450,7 +7450,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据采集和处理流程中，重点分析数据的质量和准确性是非常重要的。',
@@ -7463,7 +7463,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据清洗与预处理.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据采集和处理流程中，数据清洗是一个不必要的步骤。',
@@ -7476,7 +7476,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.人机交互与UI.id, tags.数据处理.id, tags.数据清洗与预处理.id, tags.数据采集.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '指导数据采集和处理问题的解决方法主要包括数据清洗、数据转换和数据可视化。',
@@ -7489,7 +7489,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据标注流程中，标注员需要严格按照标注规则进行操作。',
@@ -7502,7 +7502,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据标注.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据标注流程中的难点仅仅是数据清洗。',
@@ -7515,7 +7515,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据标注.id, tags.数据清洗与预处理.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '数据标注流程中的常见问题点包括数据清洗和预处理。',
@@ -7528,7 +7528,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.判断题.id, tags.业务与流程.id, tags.数据标注.id],
-  type: 'true-false',
+  type: 'question',
   content: {
     type: 'true-false',
     question: '在数据标注过程中，标注人员需要遵循一定的标注规范和流程。',
@@ -7541,7 +7541,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业道德，就是同人们的职业活动紧密联系的符合职业特点所要求( )的的总和。',
@@ -7553,7 +7553,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业道德基本知识中，关于奉献社会的要求，正确的是( )。',
@@ -7565,7 +7565,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在社会主义社会时期，职业道德的发展有特点包括 ( )。',
@@ -7577,7 +7577,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业道德建设的基本原则关注职业活动中的人际关系和社会责任。这些原则鼓励人们在职业活动中保持( )，并不断提升自己的专业知识和技能。',
@@ -7589,7 +7589,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能训练师在进行模型训练时，应遵循的职业道德基本要求包括( )。',
@@ -7601,7 +7601,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能训练过程中，训练师需要遵循的职业道德规范包括( )。',
@@ -7613,7 +7613,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能训练过程中，( )是不被鼓励的。',
@@ -7625,7 +7625,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业守则是指从事某种职业的人们在职业活动中应该遵循的行为规范的总和，它包括( )。',
@@ -7637,7 +7637,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于职业守则，符合其通常具有的特点的描述为( )。',
@@ -7649,7 +7649,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业守则要求我们在工作中，不应该出现( )的情况。',
@@ -7661,7 +7661,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在制定职业守则时，应遵循( )原则。',
@@ -7673,7 +7673,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '为了确保职业守则的有效实施，企业应该采取( )等措施。',
@@ -7685,7 +7685,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '职业守则要求从业人员在工作中做到( )。',
@@ -7697,7 +7697,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.职业道德.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '从业人员要做到爱岗敬业就应( )。',
@@ -7709,7 +7709,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能训练过程中，( )行为是不被允许的。',
@@ -7721,7 +7721,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.操作系统与工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Windows 输入法的( )智能应用可以帮助用户提高输入效率。',
@@ -7733,7 +7733,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.操作系统与工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Windows 系统更新工具可以更新( )。',
@@ -7745,7 +7745,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.操作系统与工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Windows 操作系统中，可能会遇到( )常见故障。',
@@ -7757,7 +7757,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.操作系统与工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用 Windows 小工具的过程中，( )操作可能会导致问题。',
@@ -7769,7 +7769,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Web与浏览器.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '当你想要查找某个特定的网页时，可以使用( )。',
@@ -7781,7 +7781,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Web与浏览器.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用浏览器的高级探索功能时，( )可以帮助你更好地理解网页的工作原理。',
@@ -7793,7 +7793,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.操作系统与工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '正确描述 Office 快捷键作用的是( )。',
@@ -7805,7 +7805,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Word 中，( )可以提高工作效率。',
@@ -7817,7 +7817,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于 Word 样式库的快速应用，( )操作可以加速文档格式设置。',
@@ -7829,7 +7829,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Word 中进行图文混排时，可以提高文档的视觉效果和专业程度的方法有( )。',
@@ -7841,7 +7841,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Excel 中，公式可以用来进行( )操作。',
@@ -7853,7 +7853,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Excel 中，进行数据排序时，可以使用( )方法。',
@@ -7865,7 +7865,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '作为人工智能训练师，在使用 Excel 进行数据可视化时，( )方法可以帮助提高图表的清晰度和专业度。',
@@ -7877,7 +7877,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于 Excel 工作簿的管理，( )操作是正确的。',
@@ -7889,7 +7889,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '作为人工智能训练师，在利用 Excel 宏实现数据处理自动化时，( )操作是可能的。',
@@ -7901,7 +7901,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )情况可能导致劳动合同被认定为无效。',
@@ -7913,7 +7913,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在劳动合同中，通常需要明确规定( )事项以保障雇员权益。',
@@ -7925,7 +7925,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '订立劳动合同应遵循的基本原则是( )。',
@@ -7937,7 +7937,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '根据《中华人民共和国网络安全法》，网络运营者应当履行的安全保障义务包括( )。',
@@ -7949,7 +7949,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在网络接入使用中，人工智能训练师应当( )确保合规性。',
@@ -7961,7 +7961,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关键信息基础设施的运营者还应当履行( )。',
@@ -7973,7 +7973,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了专利申请权主体。',
@@ -7985,7 +7985,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '专利授权的实质性条件通常包括( )要素。',
@@ -7997,7 +7997,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据清洗与预处理.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在专利申请流程的标准化步骤中，( )属于必须进行的步骤。',
@@ -8009,7 +8009,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '遵纪守法的社会价值体现在( )方面。',
@@ -8021,7 +8021,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '签订劳动合同的情形中，可以认定无效或部分无效的有( )。',
@@ -8033,7 +8033,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '根据知识产权法的基本原则，( )行为属于侵权行为。',
@@ -8045,7 +8045,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '属于侵犯著作权人权利的情形是( )。',
@@ -8057,7 +8057,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在讨论人工智能训练师与专利权的主体和客体时，( )是正确的。',
@@ -8069,7 +8069,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在知识产权保护中，专利保护的对象是( )。',
@@ -8081,7 +8081,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '属于 Python 爬虫库的是( )。',
@@ -8093,7 +8093,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据抓取与提取的常用技术包括( )。',
@@ -8105,7 +8105,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据采集流程中，使用工具可以( )。',
@@ -8117,7 +8117,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据治理工具在人工智能领域具有( )关键作用。',
@@ -8129,7 +8129,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'ETL 工具的基本原理包括( )步骤。',
@@ -8141,7 +8141,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用数据存储和管理工具时，( )可以提高工作效率。',
@@ -8153,7 +8153,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )是云服务和工具的优势。',
@@ -8165,7 +8165,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行数据预处理时，( )工具可以帮助实现常见数据格式间的转换。',
@@ -8177,7 +8177,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '大数据处理平台通常可以分为( )类型。',
@@ -8189,7 +8189,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '广泛用于数据清洗和预处理阶段的工具是( )。',
@@ -8201,7 +8201,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '特征工程工具在人工智能应用中通常具有( )特点。',
@@ -8213,7 +8213,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '使用数据质量监控工具可以( )。',
@@ -8225,7 +8225,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据审核平台的主要类型包括( )。',
@@ -8237,7 +8237,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择合适的数据可视化工具时，人工智能训练师应考虑( )因素。',
@@ -8249,7 +8249,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务流程管理与优化工具可以帮助企业实现( )目标。',
@@ -8261,7 +8261,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据采集的策略包括( )。',
@@ -8273,7 +8273,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行数据源选择时，( )可以帮助我们找到合适的数据源。',
@@ -8285,7 +8285,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择数据抓取技术时，需要考虑的因素包括( )。',
@@ -8297,7 +8297,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在执行网络数据抓取任务时，人工智能训练师需要注意( )法律和伦理问题。',
@@ -8309,7 +8309,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计数据存储解决方案时，考虑数据的持久化，( )可以用来实现数据的持久化。',
@@ -8321,7 +8321,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据清洗与预处理流程的主要步骤包括( )。',
@@ -8333,7 +8333,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据集成过程中，( )有助于处理数据冲突和不一致性。',
@@ -8345,7 +8345,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在业务数据相关流程中，为了确保数据安全和用户隐私，( )被广泛应用。',
@@ -8357,7 +8357,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '实时数据处理技术中，( )特性对于处理大规模流式数据至关重要。',
@@ -8369,7 +8369,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在特征选择方法中，( )方法可以用于减少特征的维度。',
@@ -8381,7 +8381,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '容器化技术在业务数据处理流程中的意义包括( )。',
@@ -8393,7 +8393,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id, tags.模型评估.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据质量评估的主要目的是( )。',
@@ -8405,7 +8405,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据校验过程中，为了确保数据的质量，( )步骤是必要的。',
@@ -8417,7 +8417,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计高效业务流程时，( )是至关重要的。',
@@ -8429,7 +8429,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '合规性检查的主要目的是( )。',
@@ -8441,7 +8441,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务数据的特点有( )。',
@@ -8453,7 +8453,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '实施人工智能项目时( )因素被认为是至关重要的成功要素。',
@@ -8465,7 +8465,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )功能属于人工智能的范畴。',
@@ -8477,7 +8477,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.算法.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '推荐系统功能模块的原理包括( )方面。',
@@ -8489,7 +8489,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '实现智能搜索功能模块的关键步骤有( )。',
@@ -8501,7 +8501,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '智能交互功能模块的优势是( )。',
@@ -8513,7 +8513,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '自动数据处理功能模块可以支持( )数据处理方式。',
@@ -8525,7 +8525,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在实现最优化决策功能模块时，( )方法可以被采用。',
@@ -8537,7 +8537,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '智能控制功能模块在( )领域有广泛应用。',
@@ -8549,7 +8549,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '自然语言处理的任务有( )。',
@@ -8561,7 +8561,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.计算机视觉.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '生物特征识别功能模块的特点有( )。',
@@ -8573,7 +8573,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.计算机视觉.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '计算机视觉涉及( )主要任务。',
@@ -8585,7 +8585,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于计算智能的描述，说法正确的是( )。',
@@ -8597,7 +8597,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据挖掘和知识发现的过程中，( )步骤是必不可少的。',
@@ -8609,7 +8609,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据挖掘和知识发现的方法包括( )。',
@@ -8621,7 +8621,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务模块构建方法的原则包括( )。',
@@ -8633,7 +8633,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行业务流程优化时，应该采取( )策略。',
@@ -8645,7 +8645,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在业务数据采集中，需要重点关注( )。',
@@ -8657,7 +8657,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务流程管理 BPM 的核心要素包括( )。',
@@ -8669,7 +8669,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行简单业务流程分析时，常用的方法有( )。',
@@ -8681,7 +8681,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '为了实现业务流程的持续改进，可以采用( )方法。',
@@ -8693,7 +8693,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务流程优化效果的评价指标包括( )。',
@@ -8705,7 +8705,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在综合业务流程分析流程中，( )阶段涉及到对现有流程的详细描述和改进建议。',
@@ -8717,7 +8717,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行复杂业务系统改进时，可以考虑的措施有( )。',
@@ -8729,7 +8729,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '综合业务流程优化方法的原则包括：( )。',
@@ -8741,7 +8741,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '通过知识表示使得机器具备的能力包括( )。',
@@ -8753,7 +8753,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '知识图谱是一种用于表示和组织知识的数据结构，其基本元素包括( )。',
@@ -8765,7 +8765,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '业务数据分析工具通常可以分为( )。',
@@ -8777,7 +8777,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行业务数据分析时，通常采用( )方法来发现数据中的模式和趋势。',
@@ -8789,7 +8789,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行业务数据分析时，( )环节是必不可少的。',
@@ -8801,7 +8801,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于机器学习的基本流程，必要的步骤包括( )。',
@@ -8813,7 +8813,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '生成对抗网络主要组成部分是( )。',
@@ -8825,7 +8825,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在智能训练中，特征提取的主要方法包括( )。',
@@ -8837,7 +8837,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型训练中，可以用来改善模型的性能的策略包括( )。',
@@ -8849,7 +8849,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据预处理的策略有( )。',
@@ -8861,7 +8861,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据增强中，( )方法可以增加数据的多样性。',
@@ -8873,7 +8873,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )方法属于水平分片技术。',
@@ -8885,7 +8885,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )标注工具可以帮助提高数据标注的效率和质量。',
@@ -8897,7 +8897,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型评估.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型评估指标的计算方法中，( )是正确的。',
@@ -8909,7 +8909,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.模型评估.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在评估回归模型时，常用的评估指标有( )。',
@@ -8921,7 +8921,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择机器学习库时，需要考虑( )因素。',
@@ -8933,7 +8933,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Pandas 库在数据处理方面的主要优势是( )。',
@@ -8945,7 +8945,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计数据收集任务的策略时，需要考虑( )些因素。',
@@ -8957,7 +8957,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )原理是自动化标注工具常用的。',
@@ -8969,7 +8969,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'python 工具库中，( )常用于数据加载与预处理。',
@@ -8981,7 +8981,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型优化过程中，( )方法可以帮助提高模型的性能。',
@@ -8993,7 +8993,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型训练过程中，( )技术可以用于防止过拟合。',
@@ -9005,7 +9005,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )原理是和人工智能训练师和模型训练自动化工具的工作中相关的。',
@@ -9017,7 +9017,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在系统监控中，常用于收集和分析服务器性能指标的工具是( )。',
@@ -9029,7 +9029,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在生成对抗网络中，( )方法可以用于提高生成数据的质量。',
@@ -9041,7 +9041,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 R 语言中，对数据集进行标准化的主要目的是( )。',
@@ -9053,7 +9053,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '使用模型部署工具时，通常需要考虑( )因素。',
@@ -9065,7 +9065,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )是探索性数据分析常用的可视化图形方法。',
@@ -9077,7 +9077,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行数据探索分析时，通常会关注( )方面的信息。',
@@ -9089,7 +9089,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 python 中，利用填充缺失数据处理缺失数据的方法主要有( )。',
@@ -9101,7 +9101,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在大规模数据集中，( )策略可以有效处理缺失值，同时尽量减少信息损失。',
@@ -9113,7 +9113,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在异常值检测和处理的过程中，( )步骤是必要的。',
@@ -9125,7 +9125,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '处理异常值的常用方法有( )。',
@@ -9137,7 +9137,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '噪声数据处理的技术主要包括( )。',
@@ -9149,7 +9149,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '影响数据去重的效率和准确性的主要因素有( )。',
@@ -9161,7 +9161,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据归一化的方法有( )。',
@@ -9173,7 +9173,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据白化处理的主要目的是( )',
@@ -9185,7 +9185,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在机器学习和数据分析中，特征工程包括( )。',
@@ -9197,7 +9197,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '使用数据标注工具时，应该注意( )。',
@@ -9209,7 +9209,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )是数据标注的方式',
@@ -9221,7 +9221,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在机器学习中，为了避免模型过拟合，通常需要对数据进行交叉验证。( )正确的描述了交叉验证。',
@@ -9233,7 +9233,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '自动化标注的优势包括( )。',
@@ -9245,7 +9245,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '分布式数据处理的主要优势包括( )。',
@@ -9257,7 +9257,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据可追溯性是指数据从产生到销毁的整个生命周期内，能够追踪和记录数据的来源、修改、传输和使用情况的能力。( )符合数据可追溯性的定义。',
@@ -9269,7 +9269,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据可追溯性的重要性是( )。',
@@ -9281,7 +9281,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Office办公.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Excel 中进行数据清洗时，( )操作是常用的数据预处理步骤。',
@@ -9293,7 +9293,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.计算机视觉.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于图像的读取、保存及显示方法，说法正确的是( )。',
@@ -9305,7 +9305,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据标注.id, tags.数据清洗与预处理.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在文本类数据清洗和标注的过程中，人工智能训练师通常会遵循( )规则与流程。',
@@ -9317,7 +9317,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在制定视觉类数据处理规范时，至关重要的依据有( )。',
@@ -9329,7 +9329,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在算法训练过程中，( )步骤是必不可少的。',
@@ -9341,7 +9341,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在机器学习项目中，( )是数据集划分时应考虑的因素。',
@@ -9353,7 +9353,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )是分布式数据库系统 MyCat 的三大功能。',
@@ -9365,7 +9365,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '特征选择的主要目标是( )。',
@@ -9377,7 +9377,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在深度学习项目中，数据标注可能涉及的任务有( )。',
@@ -9389,7 +9389,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型训练过程中，( )步骤是必不可少的。',
@@ -9401,7 +9401,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.模型评估.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在深度学习中，为了提高模型的泛化能力，通常会使用正则化技术。关于正则化技术的分类和特点的描述，( )描述是正确的。',
@@ -9413,7 +9413,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '算法训练环境搭建的要素包括( )。',
@@ -9425,7 +9425,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )机器学习框架支持深度学习，并且广泛用于工业界和学术界。',
@@ -9437,7 +9437,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确反映了“人工智能训练师”和“算法验证技术”的概念及其作用。',
@@ -9449,7 +9449,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '超参数调优的策略包括( )。',
@@ -9461,7 +9461,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '模型训练动态监控工具常见的功能是( )。',
@@ -9473,7 +9473,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Web与浏览器.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在调试模型时，推荐的做法是( )。',
@@ -9485,7 +9485,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择算法测试的评价指标时，需要考虑( )因素。',
@@ -9497,7 +9497,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )是在模型部署阶段进行的。',
@@ -9509,7 +9509,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )工具提供了模型转换功能，以便于模型部署。',
@@ -9521,7 +9521,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '云平台使用的优势包括( )。',
@@ -9533,7 +9533,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '容器化技术的主要特点包括( )。',
@@ -9545,7 +9545,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了容器化技术与虚拟机技术的区别。',
@@ -9557,7 +9557,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择数据处理框架时，需要考虑( )因素。',
@@ -9569,7 +9569,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '高性能计算资源利用的策略包括( )。',
@@ -9581,7 +9581,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能训练师在使用性能监控工具时可以关注( )。',
@@ -9593,7 +9593,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '一个良好的测试用例通常具备( )的属性。',
@@ -9605,7 +9605,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能测试的主要目包括( )。',
@@ -9617,7 +9617,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能测试方法包括( )。',
@@ -9629,7 +9629,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择测试框架时，需要考虑的主要因素有( )。',
@@ -9641,7 +9641,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于自动化和手动测试方法的比较与选择，描述正确的是( )。',
@@ -9653,7 +9653,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.模型评估.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在监控算法性能时，( )指标是评估分类算法有效性的重要标准。',
@@ -9665,7 +9665,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在算法准确度测试中，通常使用( )来衡量算法的准确性。',
@@ -9677,7 +9677,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师和算法鲁棒性测试的关系。',
@@ -9689,7 +9689,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '算法安全性测试的目的是( )',
@@ -9701,7 +9701,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行算法可解释性与透明度测试时，( )因素是需要考虑的。',
@@ -9713,7 +9713,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行数据多样性测试时，必须遵守的原则是( )。',
@@ -9725,7 +9725,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行交叉验证时，( )步骤是必要的。',
@@ -9737,7 +9737,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在算法部署效果测试中，需要关注的环节有( )。',
@@ -9749,7 +9749,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师在用户反馈集成过程中的职责。',
@@ -9761,7 +9761,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在分析算法测试结果的统计显著性时，( )方法可以用来判断算法间性能差异是否显著。',
@@ -9773,7 +9773,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '为了确保算法测试报告的清晰性和可读性，应该采取的措施有( )。',
@@ -9785,7 +9785,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Web与浏览器.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师在调试与问题定位中使用的方法与技巧。',
@@ -9797,7 +9797,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.Web与浏览器.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'TensorBoard 提供的( )功能有助于模型的监控和调试。',
@@ -9809,7 +9809,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行日志分析时，( )技巧可以帮助提高分析的效率和质量。',
@@ -9821,7 +9821,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '算法测试实验管理中，( )策略可以提高实验效率。',
@@ -9833,7 +9833,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在修复与迭代过程中，( )工具和技术可以帮助团队提高工作效率。',
@@ -9845,7 +9845,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '合规性测试的标准包括( )方面。',
@@ -9857,7 +9857,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行性能优化策略的选择与实施时，需要考虑的因素包括( )。',
@@ -9869,7 +9869,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型评估.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能系统测试阶段应该包括对算法决策过程的伦理评估，确保( )。',
@@ -9881,7 +9881,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )方法属于数据拆解的常用手段。',
@@ -9893,7 +9893,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据拆解对模型性能的影响可能是( )。',
@@ -9905,7 +9905,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '验证集的主要作用是( )。',
@@ -9917,7 +9917,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '属于特征降维的常用方法的是( )。',
@@ -9929,7 +9929,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '基于统计的特征拆解的目的是( )。',
@@ -9941,7 +9941,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型评估.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在特征选择过程中，可以使用( )方法来评估特征的重要性。',
@@ -9953,7 +9953,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.算法.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行时间序列数据的拆解和处理时，通常需要考虑( )因素。',
@@ -9965,7 +9965,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '文本数据的拆解技术主要包括( )方面。',
@@ -9977,7 +9977,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.算法.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '时间序列分析在天气预报中的主要作用是( )。',
@@ -9989,7 +9989,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在网络分析中，节点通常不能用来表示( )。',
@@ -10001,7 +10001,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师和网络分析方法在社会网络研究中的应用。',
@@ -10013,7 +10013,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '多维度数据分解的主要目的是( )。',
@@ -10025,7 +10025,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.计算机视觉.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在图像处理中，多维度数据分解的主要目的是( )。',
@@ -10037,7 +10037,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师与机器学习特征工程分类之间的关系，',
@@ -10049,7 +10049,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id, tags.特征工程与数据分析.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '机器学习特征工程在自然语言处理中的应用主要包括( )。',
@@ -10061,7 +10061,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '针对大规模数据集的机器学习模型，( )可以帮助减少响应时间。',
@@ -10073,7 +10073,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行安全性分析时，需要考虑的因素包括( )。',
@@ -10085,7 +10085,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在分布式系统中，为了实现负载均衡，( )策略可以被采用。',
@@ -10097,7 +10097,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在文本数据预处理中，常见的步骤包括( )。',
@@ -10109,7 +10109,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.特征工程与数据分析.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据分析的标准流程通常包括( )步骤。',
@@ -10121,7 +10121,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择统计模型时，应该被考虑的因素是( )。',
@@ -10133,7 +10133,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在应用机器学习算法时，为了加快模型的训练速度，可以采取以下( )策略。',
@@ -10145,7 +10145,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '聚类分析是一种无监督学习方法，用于将数据集划分为多个组或簇，使得同一组内的数据点尽可能相似，而不同组之间的数据点尽可能不同。( )算法属于聚类分析的常用算法。',
@@ -10157,7 +10157,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师与关联规则学习挖掘过程之间的关系及其内容。',
@@ -10169,7 +10169,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )描述了人工智能训练师在回归分析模型建立过程中的职责。',
@@ -10181,7 +10181,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在决策树分析中，( )确定最优的划分标准。',
@@ -10193,7 +10193,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '神经网络分析中，激活机制的作用是( )。',
@@ -10205,7 +10205,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )正确描述了人工智能训练师在使用贝叶斯网络进行概率推断的职责。',
@@ -10217,7 +10217,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在集成学习中，Boosting 方法通过( )方式提高模型的准确性。',
@@ -10229,7 +10229,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.深度学习与神经网络.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '深度学习中常用的网络结构包括( )。',
@@ -10241,7 +10241,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.机器学习.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '强化学习策略的目标是实现奖励最大化。在选择动作时，通常采用的策略包括( )。',
@@ -10253,7 +10253,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '自然语言处理中的文本分析技术主要包括( )方面。',
@@ -10265,7 +10265,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.算法.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行时间序列分析时，( )步骤是必要的。',
@@ -10277,7 +10277,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在应用维度约简技术进行数据压缩时，( )因素需要考虑。',
@@ -10289,7 +10289,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据清洗与预处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )技术可用于处理检测到的异常值。',
@@ -10301,7 +10301,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能训练师在数据融合技术综合利用中，主要用于提升模型的( )。',
@@ -10313,7 +10313,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计智能解决方案时，需要考虑的要素包括( )。',
@@ -10325,7 +10325,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '用户需求分析的目的是( )。',
@@ -10337,7 +10337,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在产品功能规划中，( )步骤是必不可少的。',
@@ -10349,7 +10349,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择人工智能算法时，训练师应关注算法的( )，以确保模型的高效运行。',
@@ -10361,7 +10361,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.模型训练.id, tags.模型评估.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在模型训练与验证的过程中，( )方法可以用来评估模型的性能。',
@@ -10373,7 +10373,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '系统集成设计时，应遵循的规则包括( )。',
@@ -10385,7 +10385,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在用户界面设计 UI 中，有助于提高用户体验的设计特点是( )。',
@@ -10397,7 +10397,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '用户体验设计 UX 的原则包括( )。',
@@ -10409,7 +10409,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.法律与知识产权.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在安全性和隐私保护方面，人工智能训练师确保产品差异化的方法有( )。',
@@ -10421,7 +10421,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在进行安全性考虑与设计时，( )因素是需要关注的。',
@@ -10433,7 +10433,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '云服务集成中的 API 集成通常采用( )方式。',
@@ -10445,7 +10445,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于代码优化，可以提升程序运行效率的实践是( )。',
@@ -10457,7 +10457,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.云平台与架构.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在可扩展性设计中，( )方法可以提高系统的灵活性。',
@@ -10469,7 +10469,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '代码审计与优化的重要性体现在( )方面。',
@@ -10481,7 +10481,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在处理用户数据时，公司应该遵循( )原则。',
@@ -10493,7 +10493,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '故障恢复的策略性设计需要考虑( )方面。',
@@ -10505,7 +10505,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.项目管理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '关于产品维护与升级的策略，( )是正确的描述。',
@@ -10517,7 +10517,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在用户反馈与迭代过程的管理中，( )因素可能会影响改进计划的制定。',
@@ -10529,7 +10529,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )与人工智能训练师和人机交互的定义紧密相关。',
@@ -10541,7 +10541,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人机交互的目的是( )。',
@@ -10553,7 +10553,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人机交互的模型包括( )方面。',
@@ -10565,7 +10565,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人机交互设计的基本原则包括( )。',
@@ -10577,7 +10577,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计输入与输出系统时，需要考虑的因素包括( )。',
@@ -10589,7 +10589,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '为了确保反馈机制的有效性，需要考虑的因素有( )。',
@@ -10601,7 +10601,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计过程中，为了提高产品的适应性，需要考虑的因素有( )。',
@@ -10613,7 +10613,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '电阻式触摸技术的缺点包括( )。',
@@ -10625,7 +10625,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '语音交互设计的关键细节包括( )。',
@@ -10637,7 +10637,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '增强现实 AR 在人工智能训练师的工作中，可以用于提升训练效果的方面包括( )。',
@@ -10649,7 +10649,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在虚拟现实 VR 交互设计中，( )方法可以提高用户的沉浸感。',
@@ -10661,7 +10661,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '多模态交互的综合设计需要考虑( )方面。',
@@ -10673,7 +10673,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '用户研究方法论的目的是( )。',
@@ -10685,7 +10685,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能训练师的工作流程中，原型设计与测试的实施过程包括( )。',
@@ -10697,7 +10697,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.测试.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在用户测试阶段，人工智能训练师应确保测试环境的( )以避免对用户产生误导。',
@@ -10709,7 +10709,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '通过( )，使 AI 系统更好地理解用户。',
@@ -10721,7 +10721,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.自然语言处理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '当用户向智能助手提问时，NLP 如何帮助 AI 理解问题并给出恰当的回答的原理是( )。',
@@ -10733,7 +10733,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人机交互系统的性能评价标准通常包括( )。',
@@ -10745,7 +10745,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '用户中心的设计原则包括( )。',
@@ -10757,7 +10757,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计过程中，为了提高产品的可用性，应该遵循( )原则。',
@@ -10769,7 +10769,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在设计 AI 助手的交互界面时，促进用户与 AI 进行有效沟通的关键因素是( )',
@@ -10781,7 +10781,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '当遇到与现有设计过程或预期目标相悖的用户反馈时，正确处理方式是( )。',
@@ -10793,7 +10793,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.项目管理.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '任务分解的输出结果应该包括( )。',
@@ -10805,7 +10805,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在界面设计中，为了提高信息的可读性和易理解性，通常会采用( )哪些布局策略。',
@@ -10817,7 +10817,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用情境的分析工具时，需要考虑的因素有( )。',
@@ -10829,7 +10829,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Adobe XD 中，( )是创建原型的方法。',
@@ -10841,7 +10841,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Adobe XD 的视觉设计工具适用于( )场景。',
@@ -10853,7 +10853,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id, tags.培训与教学.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能培训中，Axure RP 可以用来进行复杂交互模拟( )方面。',
@@ -10865,7 +10865,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用 Axure RP 进行原型设计时，条件逻辑设置可以用于实现( )交互特性。',
@@ -10877,7 +10877,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在使用 Balsamiq Mockups 进行低保真设计时，( )操作可以帮助你更好地组织和管理你的设计元素。',
@@ -10889,7 +10889,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Figma 的设计系统支持( )功能。',
@@ -10901,7 +10901,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.人机交互与UI.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Marvel 的简单交互设计中，用户可以通过( )方式进行操作。',
@@ -10913,7 +10913,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Marvel 的设计评审功能可以帮助设计师们发现设计中的( )问题。',
@@ -10925,7 +10925,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: 'Marvel 的响应式设计预览中，( )功能可以帮助用户在不同设备上获得最佳体验。',
@@ -10937,7 +10937,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Sketch 的插件生态系统中，( )插件可以帮助设计师提高工作效率。',
@@ -10949,7 +10949,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.设计工具.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在 Sketch 中，矢量图形的编辑可以通过( )来实现精确的节点控制。',
@@ -10961,7 +10961,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '编写培训讲义时，应遵循( )原则。',
@@ -10973,7 +10973,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '为了提高培训效果，培训讲义结构设计的方法是( )。',
@@ -10985,7 +10985,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在人工智能领域，成为一名合格的人工智能训练师需要具备( )能力或知识。',
@@ -10997,7 +10997,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在领导力培训中，常用的方法包括( )。',
@@ -11009,7 +11009,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '( )培训方法可以帮助员工更好地理解和掌握新知识。',
@@ -11021,7 +11021,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能训练师的培训方法中，( )可能导致培训效果不佳。',
@@ -11033,7 +11033,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在选择培训方法时，需要考虑的因素包括( )。',
@@ -11045,7 +11045,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '人工智能训练师在数据采集和处理流程中，需要关注( )以确保数据质量。',
@@ -11057,7 +11057,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据处理过程中，( )步骤可能会导致数据丢失或错误。',
@@ -11069,7 +11069,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在数据采集和处理流程中，常见的错误包括( )。',
@@ -11081,7 +11081,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据采集.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在解决数据采集和处理问题时，( )方法可以帮助我们提高数据质量。',
@@ -11093,7 +11093,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.业务与流程.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据标注流程中的重点分析包括( )。',
@@ -11105,7 +11105,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '数据标注过程中，解决标注人员水平参差不齐问题的方法有( )。',
@@ -11117,7 +11117,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.培训与教学.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '标注人员培训不足，可能会带来的负面影响包括( )。',
@@ -11129,7 +11129,7 @@ allCards.push({
 
 allCards.push({
   id: cid(), packId: "", tagIds: [tags.多选题.id, tags.数据标注.id],
-  type: 'multiple',
+  type: 'question',
   content: {
     type: 'multiple',
     question: '在解决数据标注问题时，( )可以提高标注的准确性。',
