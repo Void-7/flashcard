@@ -11,24 +11,36 @@ const tags = {
   单选题: T(tid(), "单选题"),
   多选题: T(tid(), "多选题"),
   判断题: T(tid(), "判断题"),
+  Office办公: T(tid(), "Office办公"),
+  Web_浏览器: T(tid(), "Web与浏览器"),
+  业务_流程: T(tid(), "业务与流程"),
+  云平台_架构: T(tid(), "云平台与架构"),
+  人机交互_UI: T(tid(), "人机交互与UI"),
+  培训_教学: T(tid(), "培训与教学"),
+  操作系统_工具: T(tid(), "操作系统与工具"),
+  数据处理: T(tid(), "数据处理"),
+  数据标注: T(tid(), "数据标注"),
+  数据清洗_预处理: T(tid(), "数据清洗与预处理"),
+  数据采集: T(tid(), "数据采集"),
+  机器学习: T(tid(), "机器学习"),
+  模型训练: T(tid(), "模型训练"),
+  模型评估: T(tid(), "模型评估"),
+  法律_知识产权: T(tid(), "法律与知识产权"),
+  测试: T(tid(), "测试"),
+  深度学习_神经网络: T(tid(), "深度学习与神经网络"),
+  特征工程_数据分析: T(tid(), "特征工程与数据分析"),
+  算法: T(tid(), "算法"),
+  职业道德: T(tid(), "职业道德"),
+  自然语言处理: T(tid(), "自然语言处理"),
+  计算机视觉: T(tid(), "计算机视觉"),
+  设计工具: T(tid(), "设计工具"),
+  项目管理: T(tid(), "项目管理"),
 }
 
 const allCards: CardItem[] = []
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '( )是调整职业个人、职业主体和社会成员之间关系的行为准则和规范。',
-    options: ['职业纪律', '职业责任', '职业良心', '职业作风'],
-    answer: 3,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -40,7 +52,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -52,7 +64,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -64,7 +76,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.操作系统_工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -76,7 +88,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -88,19 +100,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '知识产权法的基本原则包括保护创作成果、鼓励创新和技术进步以及( )。',
-    options: ['公平分配利益', '促进知识传播', '保障公共利益', '限制知识产权滥用'],
-    answer: 3,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -112,7 +112,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -124,7 +124,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -136,7 +136,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -148,7 +148,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -172,7 +172,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -184,7 +184,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -196,7 +196,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -220,7 +220,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -244,7 +244,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -268,7 +268,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -280,7 +280,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -292,7 +292,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -304,7 +304,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -316,7 +316,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -352,7 +352,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -364,7 +364,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -376,7 +376,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -388,7 +388,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -400,7 +400,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -412,7 +412,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -424,7 +424,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -436,7 +436,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -472,7 +472,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -484,7 +484,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -508,7 +508,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -532,7 +532,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -544,7 +544,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -556,7 +556,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -568,7 +568,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -580,7 +580,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -592,7 +592,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -616,7 +616,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -628,7 +628,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -652,7 +652,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -664,7 +664,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -676,7 +676,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -688,7 +688,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -700,7 +700,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -712,7 +712,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -724,7 +724,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -736,7 +736,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -748,31 +748,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '敏捷开发方法强调的是( )，以便快速响应变化并持续改进软件质量。',
-    options: ['频繁的代码审查和修复', '长期的项目规划和执行', '严格的需求分析和设计', '定期的项目评审和反馈'],
-    answer: 0,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '关于训练集、验证集和测试集的大小比例，( )属于常见合理的范围。',
-    options: ['训练集 50%，验证集 25%，测试集 25%', '训练集 20%，验证集 60%，测试集 20%', '训练集 70%，验证集 15%，测试集 15%', '训练集 40%，验证集 30%，测试集 30%'],
-    answer: 0,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -796,7 +772,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -832,7 +808,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -844,7 +820,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -868,7 +844,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -880,7 +856,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -892,7 +868,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -904,7 +880,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -916,7 +892,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -928,7 +904,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -940,7 +916,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.深度学习_神经网络.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -952,7 +928,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -964,7 +940,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -976,7 +952,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -988,7 +964,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1000,7 +976,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1012,7 +988,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1024,19 +1000,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在异常值检测中，( )方法通常用于基于数据分布的异常值识别。',
-    options: ['离群值检测', '聚类分析', '相关性分析', '频繁模式挖掘'],
-    answer: 1,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1048,24 +1012,12 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
     question: '在模型训练完成后，通常使用( )来选择最佳的模型参数。',
     options: ['网格搜索', '随机搜索', '贝叶斯优化', '线性回归'],
-    answer: 0,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在分布式系统中，( )实现负载均衡以提高系统的性能。',
-    options: ['网格搜索', '最少连接数算法', '源地址哈希算法', '随机算法'],
     answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
@@ -1084,19 +1036,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在产品维护与升级的制定过程中，( )步骤是确保产品质量的重要措施。',
-    options: ['制定详细的维护计划', '定期进行产品审查', '收集用户反馈', '实施严格的版本控制'],
-    answer: 3,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1108,7 +1048,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1120,7 +1060,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1132,7 +1072,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1144,7 +1084,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1156,7 +1096,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1168,7 +1108,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1180,7 +1120,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1192,7 +1132,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1204,7 +1144,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1216,7 +1156,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1228,7 +1168,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1252,7 +1192,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1264,7 +1204,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1276,7 +1216,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1288,7 +1228,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1300,7 +1240,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1324,7 +1264,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1348,7 +1288,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1360,7 +1300,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1372,7 +1312,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1384,7 +1324,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1396,7 +1336,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1420,7 +1360,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.项目管理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1432,7 +1372,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1444,7 +1384,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1456,7 +1396,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1468,7 +1408,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1480,7 +1420,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.操作系统_工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1492,7 +1432,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1504,7 +1444,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1516,7 +1456,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1528,7 +1468,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1540,7 +1480,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1552,7 +1492,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1564,7 +1504,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1576,7 +1516,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1588,7 +1528,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1600,7 +1540,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1636,7 +1576,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1648,7 +1588,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1660,7 +1600,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1684,7 +1624,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1696,7 +1636,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1708,7 +1648,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1720,7 +1660,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1732,7 +1672,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1744,7 +1684,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1756,7 +1696,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1768,7 +1708,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.项目管理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1804,7 +1744,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1816,7 +1756,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1828,7 +1768,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1840,7 +1780,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1852,7 +1792,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1864,7 +1804,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1876,7 +1816,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1888,7 +1828,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1912,7 +1852,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1924,7 +1864,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.数据采集.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1936,7 +1876,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1948,7 +1888,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1960,7 +1900,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1972,7 +1912,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1984,7 +1924,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -1996,7 +1936,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2008,7 +1948,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2020,7 +1960,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2032,7 +1972,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2044,7 +1984,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2056,7 +1996,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2068,7 +2008,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2080,7 +2020,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2092,7 +2032,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2104,7 +2044,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2128,7 +2068,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2140,7 +2080,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2152,7 +2092,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2176,7 +2116,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2188,7 +2128,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2200,7 +2140,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2212,7 +2152,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2224,7 +2164,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2248,7 +2188,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2260,7 +2200,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2284,7 +2224,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2296,7 +2236,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2320,7 +2260,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2332,7 +2272,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2344,7 +2284,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2356,7 +2296,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2368,7 +2308,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2380,7 +2320,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2392,7 +2332,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2404,7 +2344,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2416,7 +2356,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2428,7 +2368,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据清洗_预处理.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2440,7 +2380,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2452,7 +2392,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2488,7 +2428,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2500,7 +2440,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2512,19 +2452,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '当需要对图像中的多个对象进行精确边界框绘制时，通常会使用的标注工具是( )。',
-    options: ['多边形标注工具', '点云标注工具', '目标检测标注工具', '关键点标注工具'],
-    answer: 0,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2548,7 +2476,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2560,7 +2488,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2584,19 +2512,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在模型部署过程中，为了实现自动化的模型更新和版本管理，通常会使用( )工具。',
-    options: ['Git', 'SVN', 'Jenkins', 'Spinnaker'],
-    answer: 0,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.模型训练.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2608,7 +2524,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2620,7 +2536,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2644,7 +2560,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2656,7 +2572,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.计算机视觉.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2668,7 +2584,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2680,7 +2596,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2692,7 +2608,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2704,7 +2620,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2716,7 +2632,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2728,7 +2644,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2740,7 +2656,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2752,7 +2668,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2764,7 +2680,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2776,7 +2692,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2800,7 +2716,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2824,7 +2740,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2836,7 +2752,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2872,7 +2788,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2884,7 +2800,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2896,7 +2812,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2908,7 +2824,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2920,7 +2836,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2944,25 +2860,13 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
     question: '在自然语言处理中，( )方法可以用于文本预处理。',
     options: ['使用神经网络进行文本分类', '对文本进行情感分析', '对文本进行分词和去停用词', '使用 TF-IDF 进行特征选择'],
     answer: 2,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '安全性分析的原理是通过对系统进行( )，以识别潜在的安全威胁和脆弱性，从而采取相应的安全措施来降低风险。',
-    options: ['风险评估', '漏洞扫描', '入侵检测', '安全审计'],
-    answer: 3,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -2980,7 +2884,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -2992,7 +2896,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3004,7 +2908,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3016,7 +2920,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3040,7 +2944,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3064,7 +2968,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3076,7 +2980,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3088,7 +2992,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3136,7 +3040,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3160,7 +3064,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3184,7 +3088,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3196,7 +3100,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3220,7 +3124,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3232,7 +3136,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3244,7 +3148,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3256,7 +3160,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3280,7 +3184,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3292,7 +3196,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.测试.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3304,7 +3208,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3316,7 +3220,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3328,7 +3232,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3340,7 +3244,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3364,7 +3268,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3376,7 +3280,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3388,7 +3292,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3400,7 +3304,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3412,7 +3316,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3424,7 +3328,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3436,7 +3340,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3448,7 +3352,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3460,7 +3364,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3472,7 +3376,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3484,7 +3388,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3496,19 +3400,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在编写培训讲义的过程中，( )是至关重要的环节。',
-    options: ['收集资料', '设计课程大纲', '制作课件', '进行试讲'],
-    answer: 3,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3556,7 +3448,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3568,7 +3460,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3580,7 +3472,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3592,7 +3484,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.单选题.id],
   type: 'single',
   content: {
     type: 'single',
@@ -3604,19 +3496,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.单选题.id],
-  type: 'single',
-  content: {
-    type: 'single',
-    question: '在解决人工智能训练中的数据标注问题时，( )不是有效的方法。',
-    options: ['提高数据标注的自动化水平', '增加人工标注人员的数量', '引入主动学习的方法优化标注过程', '使用预标注和人工审核结合的半自动标注方法'],
-    answer: 3,
-  } as QuestionContent,
-  createdAt: Date.now(),
-})
-
-allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3629,7 +3509,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3642,7 +3522,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3655,7 +3535,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3668,7 +3548,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3681,7 +3561,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3694,7 +3574,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3707,7 +3587,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3733,7 +3613,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3746,7 +3626,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3759,7 +3639,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3785,7 +3665,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3798,7 +3678,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3811,7 +3691,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3824,7 +3704,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3837,7 +3717,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3850,7 +3730,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3863,7 +3743,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3876,7 +3756,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3889,7 +3769,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3915,7 +3795,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3928,7 +3808,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3941,7 +3821,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3954,7 +3834,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3967,7 +3847,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -3980,7 +3860,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4006,7 +3886,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4019,7 +3899,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4045,7 +3925,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4071,7 +3951,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4084,7 +3964,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4097,7 +3977,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4110,7 +3990,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4123,7 +4003,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4136,7 +4016,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4149,7 +4029,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4162,7 +4042,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4188,7 +4068,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4201,7 +4081,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4214,7 +4094,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4240,7 +4120,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4266,7 +4146,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4279,7 +4159,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4292,7 +4172,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4305,7 +4185,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4318,7 +4198,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4331,7 +4211,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4344,7 +4224,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4357,7 +4237,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4370,7 +4250,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.项目管理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4383,7 +4263,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4396,7 +4276,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4409,7 +4289,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4422,7 +4302,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4435,7 +4315,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4448,7 +4328,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4461,7 +4341,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4474,7 +4354,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4487,7 +4367,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4500,7 +4380,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4513,7 +4393,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4526,7 +4406,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4539,7 +4419,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4552,7 +4432,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4578,7 +4458,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4591,7 +4471,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4604,7 +4484,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4617,7 +4497,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4643,7 +4523,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4656,7 +4536,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4669,7 +4549,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4682,7 +4562,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4695,7 +4575,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4708,7 +4588,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4721,7 +4601,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4734,7 +4614,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4747,7 +4627,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4786,7 +4666,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4812,7 +4692,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4825,7 +4705,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4851,7 +4731,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4864,7 +4744,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4877,7 +4757,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4890,7 +4770,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4903,7 +4783,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4916,7 +4796,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4942,7 +4822,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4981,7 +4861,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -4994,7 +4874,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5020,7 +4900,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5033,7 +4913,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5046,7 +4926,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5059,7 +4939,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5085,7 +4965,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5098,7 +4978,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5111,7 +4991,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5137,7 +5017,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5150,7 +5030,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5163,7 +5043,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5176,7 +5056,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5189,7 +5069,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5202,7 +5082,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5215,7 +5095,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5228,7 +5108,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.云平台_架构.id, tags.项目管理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5241,7 +5121,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5254,7 +5134,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5267,7 +5147,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5280,7 +5160,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5293,7 +5173,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5306,7 +5186,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5319,7 +5199,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5358,7 +5238,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5371,7 +5251,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5384,7 +5264,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5397,7 +5277,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.机器学习.id, tags.模型评估.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5410,7 +5290,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5423,7 +5303,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5436,7 +5316,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5449,7 +5329,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5462,7 +5342,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.深度学习_神经网络.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5475,7 +5355,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5488,7 +5368,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5501,7 +5381,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5514,7 +5394,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.深度学习_神经网络.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5540,7 +5420,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5553,7 +5433,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5566,7 +5446,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5579,7 +5459,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5605,7 +5485,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5631,7 +5511,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5644,7 +5524,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5657,7 +5537,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5670,7 +5550,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5683,7 +5563,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5696,7 +5576,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5709,7 +5589,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.数据清洗_预处理.id, tags.机器学习.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5722,7 +5602,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5735,7 +5615,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5748,7 +5628,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型训练.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5761,7 +5641,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5774,7 +5654,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5787,7 +5667,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5800,7 +5680,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5813,7 +5693,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5826,7 +5706,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5839,7 +5719,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.数据清洗_预处理.id, tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5852,7 +5732,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.机器学习.id, tags.模型训练.id, tags.自然语言处理.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5865,7 +5745,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.模型训练.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5878,7 +5758,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5891,7 +5771,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5917,7 +5797,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5930,7 +5810,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5943,7 +5823,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.模型训练.id, tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5969,7 +5849,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5982,7 +5862,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -5995,7 +5875,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6008,7 +5888,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.模型训练.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6021,7 +5901,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.Web_浏览器.id, tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6034,7 +5914,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6047,7 +5927,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6060,7 +5940,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6073,7 +5953,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6099,7 +5979,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6112,7 +5992,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6125,7 +6005,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6138,7 +6018,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6151,7 +6031,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6164,7 +6044,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6177,7 +6057,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6190,7 +6070,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6203,7 +6083,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6216,7 +6096,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6229,7 +6109,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6242,7 +6122,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6281,7 +6161,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6294,7 +6174,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6307,7 +6187,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6320,7 +6200,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.数据清洗_预处理.id, tags.测试.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6346,7 +6226,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6359,7 +6239,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6372,7 +6252,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6398,7 +6278,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6411,7 +6291,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6424,7 +6304,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6437,7 +6317,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6450,7 +6330,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6463,7 +6343,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6476,7 +6356,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6489,7 +6369,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6541,7 +6421,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6580,7 +6460,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6593,7 +6473,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6606,7 +6486,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6619,7 +6499,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6632,7 +6512,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6645,7 +6525,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6658,7 +6538,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6671,7 +6551,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.深度学习_神经网络.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6684,7 +6564,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6697,7 +6577,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6710,7 +6590,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6723,7 +6603,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6736,7 +6616,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.特征工程_数据分析.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6749,7 +6629,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6775,7 +6655,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6788,7 +6668,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6801,7 +6681,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6827,7 +6707,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6840,7 +6720,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6879,7 +6759,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6892,7 +6772,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6944,7 +6824,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6957,7 +6837,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6970,7 +6850,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -6996,7 +6876,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7022,7 +6902,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.操作系统_工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7035,7 +6915,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.计算机视觉.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7048,7 +6928,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7061,7 +6941,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7087,7 +6967,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.测试.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7100,7 +6980,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7113,7 +6993,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7126,7 +7006,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7152,7 +7032,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7165,7 +7045,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7191,7 +7071,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.项目管理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7204,7 +7084,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7230,7 +7110,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7243,7 +7123,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7256,7 +7136,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7269,7 +7149,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7282,7 +7162,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7295,7 +7175,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7308,7 +7188,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7321,7 +7201,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7334,7 +7214,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7347,7 +7227,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7360,7 +7240,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7373,7 +7253,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7386,7 +7266,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7399,7 +7279,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7412,7 +7292,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7425,7 +7305,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7438,7 +7318,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7451,7 +7331,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.数据处理.id, tags.数据清洗_预处理.id, tags.数据采集.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7464,7 +7344,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7477,7 +7357,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7490,7 +7370,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.数据清洗_预处理.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7503,7 +7383,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.判断题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.判断题.id],
   type: 'true-false',
   content: {
     type: 'true-false',
@@ -7516,7 +7396,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7528,7 +7408,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7540,7 +7420,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7552,7 +7432,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7564,7 +7444,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7576,7 +7456,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7600,7 +7480,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7612,7 +7492,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7624,7 +7504,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7636,7 +7516,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7648,7 +7528,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7660,7 +7540,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7672,7 +7552,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.职业道德.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7696,7 +7576,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7708,7 +7588,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7720,7 +7600,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7732,7 +7612,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7744,7 +7624,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7756,7 +7636,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7768,7 +7648,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.操作系统_工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7780,7 +7660,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7792,7 +7672,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7804,7 +7684,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7816,7 +7696,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7828,7 +7708,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7840,7 +7720,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7852,7 +7732,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7864,7 +7744,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7876,7 +7756,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7888,7 +7768,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7900,7 +7780,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7912,7 +7792,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7924,7 +7804,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7948,7 +7828,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7960,7 +7840,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7972,7 +7852,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -7996,7 +7876,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8008,7 +7888,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8020,7 +7900,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8032,7 +7912,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8044,7 +7924,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8056,7 +7936,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8068,7 +7948,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8080,7 +7960,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8092,7 +7972,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8104,7 +7984,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8140,7 +8020,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8164,7 +8044,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8176,7 +8056,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8188,7 +8068,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8212,7 +8092,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8224,7 +8104,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8236,7 +8116,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8248,7 +8128,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8260,7 +8140,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8272,7 +8152,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8296,7 +8176,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8320,7 +8200,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8344,7 +8224,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8356,7 +8236,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8368,7 +8248,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.模型评估.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8392,7 +8272,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8404,7 +8284,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8416,7 +8296,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8452,7 +8332,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8476,7 +8356,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8524,7 +8404,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8536,7 +8416,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8548,7 +8428,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8596,7 +8476,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8608,7 +8488,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8620,7 +8500,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8632,7 +8512,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8644,7 +8524,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8656,7 +8536,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8668,7 +8548,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8680,7 +8560,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8692,7 +8572,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8704,7 +8584,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8740,7 +8620,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8752,7 +8632,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8764,7 +8644,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8776,7 +8656,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8788,7 +8668,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8800,7 +8680,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8812,7 +8692,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8824,7 +8704,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8836,7 +8716,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8860,7 +8740,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8872,7 +8752,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8884,7 +8764,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型评估.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8896,7 +8776,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8932,7 +8812,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8968,7 +8848,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -8980,7 +8860,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9004,7 +8884,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9016,7 +8896,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9040,7 +8920,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9052,7 +8932,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9076,7 +8956,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9088,7 +8968,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9100,7 +8980,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9112,7 +8992,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9124,7 +9004,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9136,7 +9016,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9148,7 +9028,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9160,7 +9040,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9172,7 +9052,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9184,7 +9064,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9196,7 +9076,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9208,7 +9088,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9220,7 +9100,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9232,7 +9112,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9244,7 +9124,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9256,7 +9136,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Office办公.id, tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9268,7 +9148,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9280,7 +9160,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.数据清洗_预处理.id, tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9316,7 +9196,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9328,7 +9208,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9340,7 +9220,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9352,7 +9232,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9364,7 +9244,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9376,7 +9256,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型评估.id, tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9400,7 +9280,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9424,7 +9304,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9436,7 +9316,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9448,7 +9328,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9460,7 +9340,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9496,7 +9376,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9508,7 +9388,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9520,7 +9400,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9568,7 +9448,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9580,7 +9460,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9592,7 +9472,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9604,7 +9484,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9616,7 +9496,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9628,7 +9508,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.模型评估.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9640,7 +9520,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9652,7 +9532,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9664,7 +9544,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9676,7 +9556,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9688,7 +9568,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9700,7 +9580,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9712,7 +9592,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9736,7 +9616,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9748,7 +9628,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9760,7 +9640,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9772,7 +9652,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.Web_浏览器.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9796,7 +9676,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9820,7 +9700,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9844,7 +9724,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9856,7 +9736,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9868,7 +9748,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9880,7 +9760,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9916,7 +9796,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型评估.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9928,7 +9808,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9940,7 +9820,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -9952,7 +9832,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10000,7 +9880,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.计算机视觉.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10012,7 +9892,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10024,7 +9904,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.特征工程_数据分析.id, tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10036,7 +9916,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10060,7 +9940,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10072,7 +9952,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10084,7 +9964,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.特征工程_数据分析.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10108,7 +9988,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10120,7 +10000,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10132,7 +10012,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10144,7 +10024,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10156,7 +10036,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10168,7 +10048,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10180,7 +10060,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10204,7 +10084,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.深度学习_神经网络.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10216,7 +10096,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.机器学习.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10228,7 +10108,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10240,7 +10120,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.算法.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10264,7 +10144,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据清洗_预处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10276,7 +10156,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10300,7 +10180,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10312,7 +10192,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10336,7 +10216,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.模型训练.id, tags.模型评估.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10360,7 +10240,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10372,7 +10252,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10384,7 +10264,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.法律_知识产权.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10432,7 +10312,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.云平台_架构.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10480,7 +10360,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10504,7 +10384,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10516,7 +10396,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10528,7 +10408,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10540,7 +10420,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10600,7 +10480,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10624,7 +10504,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10636,7 +10516,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10660,7 +10540,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10672,7 +10552,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.测试.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10696,7 +10576,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.自然语言处理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10708,7 +10588,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10732,7 +10612,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10744,7 +10624,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10768,7 +10648,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.项目管理.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10780,7 +10660,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10804,7 +10684,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10816,7 +10696,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10828,7 +10708,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.培训_教学.id, tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10840,7 +10720,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10852,7 +10732,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10864,7 +10744,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10876,7 +10756,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.人机交互_UI.id, tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10888,7 +10768,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10900,7 +10780,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10912,7 +10792,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10924,7 +10804,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.设计工具.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10936,7 +10816,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10948,7 +10828,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10972,7 +10852,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10984,7 +10864,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -10996,7 +10876,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11008,7 +10888,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11020,7 +10900,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11044,7 +10924,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11056,7 +10936,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据采集.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11068,7 +10948,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.业务_流程.id, tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11080,7 +10960,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11092,7 +10972,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.培训_教学.id, tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',
@@ -11104,7 +10984,7 @@ allCards.push({
 })
 
 allCards.push({
-  id: cid(), packId: "", tagIds: [tags.多选题.id],
+  id: cid(), packId: "", tagIds: [tags.数据标注.id, tags.多选题.id],
   type: 'multiple',
   content: {
     type: 'multiple',

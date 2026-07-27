@@ -9,8 +9,13 @@ import PackList from './components/PackList'
 import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
 
-function seedPack(pack: CardPack, cards: import('./types').CardItem[]) {
+function seedPack(pack: CardPack, cards: import('./types').CardItem[], force: boolean = false) {
   storage.savePack(pack)
+  if (force) {
+    storage.setCards(pack.id, cards)
+    storage.saveAllCardStates(cards.map((c) => ({ metaId: c.id, fsrsCard: initFsrsCard() })))
+    return
+  }
   storage.setCards(pack.id, cards)
   const existing = storage.getAllCardStates()
   const existingIds = new Set(existing.map((s) => s.metaId))
@@ -19,6 +24,11 @@ function seedPack(pack: CardPack, cards: import('./types').CardItem[]) {
     .map((c) => ({ metaId: c.id, fsrsCard: initFsrsCard() }))
   if (newStates.length > 0) {
     storage.saveAllCardStates([...existing, ...newStates])
+  } else if (existing.length !== cards.length) {
+    storage.saveAllCardStates(cards.map((c) => {
+      const s = existing.find((s) => s.metaId === c.id)
+      return s || { metaId: c.id, fsrsCard: initFsrsCard() }
+    }))
   }
 }
 
@@ -43,6 +53,11 @@ export default function App() {
     for (const { pack, cards } of PACK_BUILDERS) {
       if (!existingIds.has(pack.id)) {
         seedPack(pack, cards)
+      } else {
+        const oldCards = storage.getCards(pack.id)
+        if (oldCards.length !== cards.length) {
+          seedPack(pack, cards, true)
+        }
       }
     }
     setPacks(storage.getPacks())
