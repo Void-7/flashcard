@@ -92,14 +92,14 @@ export default function CardViewer({ pack, mode, tagId, onFinish }: Props) {
 
   if (!current) {
     return (
-      <div class="flex flex-col items-center justify-center min-h-dvh px-4">
-        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-sm w-full text-center">
-          <div class="text-4xl mb-3 text-green-500">完成!</div>
-          <h2 class="text-lg font-semibold text-gray-800 mb-2">本轮复习完成</h2>
-          <p class="text-sm text-gray-500 mb-4">共复习 {ratedIds.size} 张卡片 · 今日共 {reviewed} 张</p>
+      <div className="flex flex-col items-center justify-center min-h-dvh px-4">
+        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-sm w-full text-center">
+          <div className="text-4xl mb-3 text-green-500">完成!</div>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">本轮复习完成</h2>
+          <p className="text-sm text-gray-500 mb-4">共复习 {ratedIds.size} 张卡片 · 今日共 {reviewed} 张</p>
           <button
             onClick={onFinish}
-            class="w-full py-3 rounded-xl bg-blue-500 text-white font-semibold active:bg-blue-600"
+            className="w-full py-3 rounded-xl bg-blue-500 text-white font-semibold active:bg-blue-600"
           >
             返回
           </button>
@@ -114,28 +114,28 @@ export default function CardViewer({ pack, mode, tagId, onFinish }: Props) {
     .join(', ')
 
   return (
-    <div class="flex flex-col min-h-dvh">
-      <header class="flex items-center px-4 py-3 bg-white border-b border-gray-100">
-        <button onClick={onFinish} class="mr-3 text-gray-500 active:text-gray-700 p-1">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    <div className="flex flex-col min-h-dvh">
+      <header className="flex items-center px-4 py-3 bg-white border-b border-gray-100">
+        <button onClick={onFinish} className="mr-3 text-gray-500 active:text-gray-700 p-1">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div class="flex-1 min-w-0">
-          <h1 class="text-sm font-semibold text-gray-800 truncate">{pack.name}</h1>
+        <div className="flex-1 min-w-0">
+          <h1 className="text-sm font-semibold text-gray-800 truncate">{pack.name}</h1>
           <Progress total={totalCards} reviewed={reviewed} />
         </div>
-        <span class="text-xs text-gray-400 ml-2">
+        <span className="text-xs text-gray-400 ml-2">
           {ratedIds.size}/{ratedIds.size + remaining.length} · {tagNames}
         </span>
       </header>
 
-      <div class="flex-1 flex flex-col justify-center py-4">
-        <div class="text-center mb-2">
+      <div className="flex-1 flex flex-col justify-center py-4">
+        <div className="text-center mb-2">
           {current.tagIds.map((tid) => {
             const t = pack.tags.find((tag) => tag.id === tid)
             return t ? (
-              <span key={tid} class="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full mx-0.5">
+              <span key={tid} className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full mx-0.5">
                 {t.name}
               </span>
             ) : null

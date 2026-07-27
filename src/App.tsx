@@ -1,23 +1,32 @@
 import { useState, useEffect } from 'react'
 import type { AppView, CardPack, StudyMode } from './types'
 import { storage } from './utils/storage'
+import { initFsrsCard } from './utils/scheduler'
 import { createAITrainerPack, getAITrainerCards } from './data/knowledge'
+import { createExamAnswerPack, getExamAnswerCards } from './data/examAnswer'
+import { createTheoryPack, getTheoryCards } from './data/theoryQuestions'
 import PackList from './components/PackList'
 import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
 
-function seedDataIfEmpty() {
-  const existing = storage.getPacks()
-  if (existing.length > 0) return
-  const pack = createAITrainerPack()
-  const cards = getAITrainerCards()
+function seedPack(pack: CardPack, cards: import('./types').CardItem[]) {
   storage.savePack(pack)
   storage.setCards(pack.id, cards)
-  const states = storage.getAllCardStates()
-  if (states.length === 0) {
-    storage.saveAllCardStates(cards.map((c) => ({ metaId: c.id, fsrsCard: initFsrsCard() })))
+  const existing = storage.getAllCardStates()
+  const existingIds = new Set(existing.map((s) => s.metaId))
+  const newStates = cards
+    .filter((c) => !existingIds.has(c.id))
+    .map((c) => ({ metaId: c.id, fsrsCard: initFsrsCard() }))
+  if (newStates.length > 0) {
+    storage.saveAllCardStates([...existing, ...newStates])
   }
 }
+
+const PACK_BUILDERS: { pack: CardPack; cards: import('./types').CardItem[] }[] = [
+  { pack: createTheoryPack(), cards: getTheoryCards() },
+  { pack: createAITrainerPack(), cards: getAITrainerCards() },
+  { pack: createExamAnswerPack(), cards: getExamAnswerCards() },
+]
 
 export default function App() {
   const [view, setView] = useState<AppView>('pack-list')
@@ -26,13 +35,21 @@ export default function App() {
     tagId?: string
   } | null>(null)
   const [packs, setPacks] = useState<CardPack[]>([])
+  const [currentPackId, setCurrentPackId] = useState<string | null>(null)
 
   useEffect(() => {
-    seedDataIfEmpty()
+    const existing = storage.getPacks()
+    const existingIds = new Set(existing.map((p) => p.id))
+    for (const { pack, cards } of PACK_BUILDERS) {
+      if (!existingIds.has(pack.id)) {
+        seedPack(pack, cards)
+      }
+    }
     setPacks(storage.getPacks())
   }, [])
 
   function handleSelectPack(packId: string) {
+    setCurrentPackId(packId)
     setStudyConfig(null)
     setView('pack-detail')
   }
@@ -45,16 +62,16 @@ export default function App() {
   function handleFinish() {
     setStudyConfig(null)
     setView('pack-detail')
-    setPacks(storage.getPacks())
   }
 
   function handleBack() {
     setStudyConfig(null)
+    setCurrentPackId(null)
     setView('pack-list')
     setPacks(storage.getPacks())
   }
 
-  const currentPack = packs.length > 0 ? packs[0] : null
+  const currentPack = currentPackId ? packs.find((p) => p.id === currentPackId) : null
 
   if (view === 'study' && studyConfig && currentPack) {
     return (
@@ -77,18 +94,18 @@ export default function App() {
     )
   }
 
-  if (currentPack) {
+  if (packs.length > 0) {
     return (
       <PackList
-        pack={currentPack}
+        packs={packs}
         onSelect={handleSelectPack}
       />
     )
   }
 
   return (
-    <div class="flex items-center justify-center min-h-dvh">
-      <p class="text-gray-400">加载中...</p>
+    <div className="flex items-center justify-center min-h-dvh">
+      <p className="text-gray-400">加载中...</p>
     </div>
   )
 }

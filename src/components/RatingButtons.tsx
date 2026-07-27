@@ -14,13 +14,13 @@ const labels: { rating: Rating; label: string; color: string }[] = [
 
 export default function RatingButtons({ onRate, disabled }: Props) {
   return (
-    <div class="flex gap-2 w-full max-w-md mx-auto">
+    <div className="flex gap-2 w-full max-w-md mx-auto">
       {labels.map(({ rating, label, color }) => (
         <button
           key={label}
           onClick={() => onRate(rating)}
           disabled={disabled}
-          class={`flex-1 py-3 rounded-xl text-white font-semibold text-sm transition-opacity
+          className={`flex-1 py-3 rounded-xl text-white font-semibold text-sm transition-opacity
             ${color}
             ${disabled ? 'opacity-40 cursor-not-allowed' : 'shadow-md active:scale-95'}
           `}
