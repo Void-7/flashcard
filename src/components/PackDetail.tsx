@@ -4,6 +4,8 @@ import { getDueCounts, getTodayStats } from '../utils/scheduler'
 import { storage } from '../utils/storage'
 import QuestionCountDialog from './QuestionCountDialog'
 
+const TYPE_TAG_KEYS = ['单选题', '多选题', '判断题']
+
 interface Props {
   pack: CardPack
   onStart: (mode: StudyMode, tagId: string | undefined, limit: QuestionLimit) => void
@@ -17,6 +19,11 @@ export default function PackDetail({ pack, onStart, onBack, onOpenStats }: Props
   const dueCounts = getDueCounts(states, now)
   const stats = getTodayStats(now)
   const [pendingStart, setPendingStart] = useState<{ mode: StudyMode; tagId?: string } | null>(null)
+
+  const hasExamMode = useMemo(() => {
+    const names = new Set(TYPE_TAG_KEYS)
+    return pack.tags.filter((t) => names.has(t.name)).length === 3
+  }, [pack.tags])
 
   function handleModeClick(mode: StudyMode, tagId?: string) {
     setPendingStart({ mode, tagId })
@@ -82,6 +89,16 @@ export default function PackDetail({ pack, onStart, onBack, onOpenStats }: Props
 
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 mb-4">
         <h2 className="text-sm font-semibold text-gray-700 mb-3">学习模式</h2>
+
+        {hasExamMode && (
+          <button
+            onClick={() => onStart('mock-exam', undefined, 190)}
+            className="w-full text-left p-4 rounded-xl border-2 border-red-200 bg-red-50 mb-3 active:bg-red-100 transition-colors"
+          >
+            <div className="font-medium text-red-700 text-sm">模拟考试</div>
+            <p className="text-xs text-red-400 mt-1">单选题140道(70分) · 判断题40道(20分) · 多选题10道(10分)</p>
+          </button>
+        )}
 
         <button
           onClick={() => handleModeClick('random-tag')}

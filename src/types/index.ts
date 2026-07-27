@@ -2,7 +2,7 @@ import type { Card as FSRSCard, Rating } from 'ts-fsrs'
 
 export type QuestionType = 'single' | 'multiple' | 'true-false'
 export type CardType = 'knowledge' | 'question'
-export type StudyMode = 'random-tag' | 'tag-focused'
+export type StudyMode = 'random-tag' | 'tag-focused' | 'mock-exam'
 export type AppView = 'pack-list' | 'pack-detail' | 'study' | 'stats'
 
 export interface Tag {
@@ -88,4 +88,4 @@ export interface StudyConfig {
 }
 
 export const QUESTION_LIMITS = [20, 40, 50, 100] as const
-export type QuestionLimit = typeof QUESTION_LIMITS[number]
+export type QuestionLimit = (typeof QUESTION_LIMITS[number]) | 190

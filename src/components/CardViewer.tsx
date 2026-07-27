@@ -1,8 +1,8 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import { Rating } from 'ts-fsrs'
 import type { CardItem, CardPack, StudyMode, QuestionLimit, KnowledgeContent, QuestionContent } from '../types'
 import { storage } from '../utils/storage'
-import { applyRating, getDueCards, countReviewsToday, initFsrsCard } from '../utils/scheduler'
+import { applyRating, countReviewsToday, initFsrsCard } from '../utils/scheduler'
 import KnowledgeCard from './KnowledgeCard'
 import QuestionCard from './QuestionCard'
 import Progress from './Progress'
@@ -25,49 +25,72 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-function pickRandom<T>(arr: T[], n: number): T[] {
-  return shuffle(arr).slice(0, n)
-}
+const TYPE_TAG_KEYS = ['单选题', '多选题', '判断题']
 
 export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props) {
   const now = useMemo(() => new Date(), [])
 
+  const typeTags = useMemo(() => {
+    const names = new Set(TYPE_TAG_KEYS)
+    return pack.tags.filter((t) => names.has(t.name))
+  }, [pack.tags])
+
+  const hasTypeTags = typeTags.length === 3
+
+  const typeTagIdByName = useMemo(() => {
+    const m: Record<string, string> = {}
+    for (const t of typeTags) m[t.name] = t.id
+    return m
+  }, [typeTags])
+
   const sessionCards = useMemo(() => {
     const allCards = storage.getCards(pack.id)
-    const states = storage.getAllCardStates()
+
+    if (mode === 'mock-exam') {
+      const byType = (qtype: string) => {
+        const tid = typeTagIdByName[qtype]
+        if (!tid) return []
+        return allCards.filter((c) => c.type === 'question' && c.tagIds.includes(tid))
+      }
+      const singleAll = byType('单选题')
+      const tfAll = byType('判断题')
+      const multiAll = byType('多选题')
+
+      const take = (arr: CardItem[], n: number) => shuffle(arr).slice(0, Math.min(n, arr.length))
+      return [...take(singleAll, 140), ...take(tfAll, 40), ...take(multiAll, 10)]
+    }
 
     if (mode === 'tag-focused' && tagId) {
       return shuffle(allCards.filter((c) => c.tagIds.includes(tagId))).slice(0, limit)
     }
 
     if (mode === 'random-tag') {
-      const selected: CardItem[] = []
-      for (const tag of pack.tags) {
-        if (selected.length >= limit) break
-        const tagCards = shuffle(allCards.filter((c) => c.tagIds.includes(tag.id)))
-        const dueIds = new Set(
-          getDueCards(
-            tagCards.map((c) => states.find((s) => s.metaId === c.id)).filter(Boolean),
-            now,
-          ).map((d) => d.metaId),
-        )
-        const dueCards = tagCards.filter((c) => dueIds.has(c.id))
-        const newCards = tagCards.filter((c) => !dueIds.has(c.id))
-        const pick: CardItem[] = []
-        pick.push(...pickRandom(dueCards, Math.min(limit, dueCards.length)))
-        const remain = Math.min(limit, limit - selected.length - pick.length)
-        if (remain > 0) pick.push(...pickRandom(newCards, remain))
-        selected.push(...pick)
+      if (hasTypeTags) {
+        const sel: CardItem[] = []
+        const each = Math.floor(limit / 3)
+        const rem = limit - each * 3
+        const counts: Record<string, number> = { '单选题': each, '多选题': each, '判断题': each + rem }
+        for (const [name, count] of Object.entries(counts)) {
+          const tid = typeTagIdByName[name]
+          if (!tid) continue
+          const pool = allCards.filter((c) => c.type === 'question' && c.tagIds.includes(tid))
+          sel.push(...shuffle(pool).slice(0, Math.min(count, pool.length)))
+        }
+        return shuffle(sel)
       }
-      return shuffle(selected).slice(0, limit)
+      return shuffle(allCards).slice(0, limit)
     }
 
     return allCards.slice(0, limit)
-  }, [pack, mode, tagId, limit, now])
+  }, [pack, mode, tagId, limit, typeTagIdByName, hasTypeTags])
 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [ratedIdxSet, setRatedIdxSet] = useState<Set<number>>(new Set())
-  const [waiting, setWaiting] = useState(false)
+  const autoTimer = useRef<ReturnType<typeof setTimeout>>()
+
+  const [examCorrect, setExamCorrect] = useState<boolean[] | null>(
+    mode === 'mock-exam' ? new Array(sessionCards.length).fill(null) : null
+  )
 
   const current = sessionCards[currentIdx]
 
@@ -81,7 +104,17 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     return -1
   }
 
-  const handleRate = useCallback((rating: Rating) => {
+  function goNext() {
+    const next = findNextUnrated(currentIdx + 1)
+    if (next < 0) {
+      if (mode === 'mock-exam') return
+      onFinish()
+      return
+    }
+    setCurrentIdx(next)
+  }
+
+  function handleRate(rating: Rating) {
     const card = sessionCards[currentIdx]
     if (!card) return
     const now = new Date()
@@ -90,27 +123,70 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     const updated = applyRating(state.fsrsCard, rating, now, card.id)
     storage.saveCardState({ metaId: card.id, fsrsCard: updated })
     setRatedIdxSet((prev) => new Set(prev).add(currentIdx))
-    setWaiting(true)
-  }, [currentIdx, sessionCards])
+    if (autoTimer.current) clearTimeout(autoTimer.current)
+    autoTimer.current = setTimeout(goNext, 600)
+  }
 
-  function handleNext() {
-    const next = findNextUnrated(currentIdx + 1)
-    if (next < 0) {
-      onFinish()
-      return
-    }
-    setCurrentIdx(next)
-    setWaiting(false)
+  function handleExamAnswer(correct: boolean) {
+    if (!examCorrect) return
+    const next = [...examCorrect]
+    next[currentIdx] = correct
+    setExamCorrect(next)
+    setRatedIdxSet((prev) => new Set(prev).add(currentIdx))
   }
 
   function handleJump(idx: number) {
+    if (autoTimer.current) clearTimeout(autoTimer.current)
     setCurrentIdx(idx)
-    setWaiting(false)
   }
 
   const reviewed = countReviewsToday(now)
 
-  if (!current && ratedIdxSet.size > 0) {
+  const done = mode === 'mock-exam'
+    ? examCorrect && examCorrect.every((r) => r !== null) && examCorrect.length > 0
+    : !current && ratedIdxSet.size > 0
+
+  if (done && mode === 'mock-exam' && examCorrect) {
+    const sections = ['单选题', '判断题', '多选题']
+    const sectionDefs = [
+      { label: '单选题', start: 0, end: 140 },
+      { label: '判断题', start: 140, end: 180 },
+      { label: '多选题', start: 180, end: 190 },
+    ]
+    const sectionScores = sectionDefs.map((sec) => {
+      const results = examCorrect.slice(sec.start, sec.end)
+      const correct = results.filter(Boolean).length
+      const total = sec.end - sec.start
+      return { label: sec.label, correct, total }
+    })
+    const points = sectionScores.map((s, i) => {
+      const weight = i === 2 ? 1 : 0.5
+      return s.correct * weight
+    })
+    const totalScore = points.reduce((a, b) => a + b, 0)
+
+    return (
+      <div className="flex flex-col items-center justify-center min-h-dvh px-4">
+        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-sm w-full text-center">
+          <div className="text-4xl mb-3 text-blue-500">考试完成!</div>
+          <div className="text-3xl font-bold text-gray-800 mb-4">{totalScore.toFixed(1)} / 100</div>
+          <div className="space-y-2 text-sm text-left">
+            {sectionScores.map((s) => (
+              <div key={s.label} className="flex justify-between px-2 py-1 bg-gray-50 rounded-lg">
+                <span className="text-gray-600">{s.label}</span>
+                <span className="font-medium text-gray-800">{s.correct} / {s.total} 正确</span>
+              </div>
+            ))}
+          </div>
+          <button onClick={onFinish} className="mt-6 w-full py-3 rounded-xl bg-blue-500 text-white font-semibold active:bg-blue-600">
+            返回
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (done) {
     return (
       <div className="flex flex-col items-center justify-center min-h-dvh px-4">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 max-w-sm w-full text-center">
@@ -129,7 +205,17 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
     return <div className="flex items-center justify-center min-h-dvh text-gray-400">暂无卡片</div>
   }
 
-  const isNew = !ratedIdxSet.has(currentIdx)
+  const isMock = mode === 'mock-exam'
+
+  const sectionDefs = isMock
+    ? [
+        { label: '单选题 1-140', start: 0, end: 140 },
+        { label: '判断题 141-180', start: 140, end: 180 },
+        { label: '多选题 181-190', start: 180, end: 190 },
+      ]
+    : undefined
+
+  const examRes = isMock ? examCorrect : undefined
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -140,7 +226,9 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
           </svg>
         </button>
         <div className="flex-1 min-w-0">
-          <h1 className="text-sm font-semibold text-gray-800 truncate">{pack.name}</h1>
+          <h1 className="text-sm font-semibold text-gray-800 truncate">
+            {isMock ? '模拟考试' : pack.name}
+          </h1>
           <Progress total={sessionCards.length} reviewed={ratedIdxSet.size} />
         </div>
         <span className="text-xs text-gray-400 ml-2">
@@ -153,21 +241,21 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
           total={sessionCards.length}
           currentIndex={currentIdx}
           ratedIds={ratedIdxSet}
+          examResults={examRes ?? undefined}
+          sections={sectionDefs}
           onJump={handleJump}
         />
       )}
 
       <div className="flex-1 flex flex-col justify-center py-4">
-        {current.tagIds.map((tid) => {
-          const t = pack.tags.find((tag) => tag.id === tid)
-          return t ? (
-            <span key={tid} className="text-xs text-gray-400 text-center mb-1">
-              {t.name} · {current.type === 'knowledge' ? '知识' : '题目'}
-            </span>
-          ) : null
-        })}
+        {isMock && (
+          <span className="text-xs text-gray-400 text-center mb-1">
+            {(current.content as QuestionContent).type === 'single' ? '单选题' :
+             (current.content as QuestionContent).type === 'multiple' ? '多选题' : '判断题'}
+          </span>
+        )}
 
-        {current.type === 'knowledge' && (
+        {current.type === 'knowledge' && !isMock && (
           <KnowledgeCard
             key={current.id}
             content={current.content as KnowledgeContent}
@@ -175,11 +263,24 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish }: Props
           />
         )}
         {current.type === 'question' && (
-          <QuestionCard
-            key={current.id}
-            content={current.content as QuestionContent}
-            onRate={handleRate}
-          />
+          isMock ? (
+            <QuestionCard
+              key={current.id}
+              content={current.content as QuestionContent}
+              onRate={handleRate}
+              examMode
+              onExamNext={(correct) => {
+                handleExamAnswer(correct)
+                goNext()
+              }}
+            />
+          ) : (
+            <QuestionCard
+              key={current.id}
+              content={current.content as QuestionContent}
+              onRate={handleRate}
+            />
+          )
         )}
       </div>
     </div>

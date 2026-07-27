@@ -15,9 +15,11 @@ function shuffleIndices(n: number): number[] {
 interface Props {
   content: QuestionContent
   onRate: (rating: Rating) => void
+  examMode?: boolean
+  onExamNext?: (correct: boolean) => void
 }
 
-export default function QuestionCard({ content, onRate }: Props) {
+export default function QuestionCard({ content, onRate, examMode, onExamNext }: Props) {
   const [selected, setSelected] = useState<number[]>([])
   const [submitted, setSubmitted] = useState(false)
   const [rated, setRated] = useState(false)
@@ -59,7 +61,7 @@ export default function QuestionCard({ content, onRate }: Props) {
     onRate(r)
   }
 
-  if (rated) {
+  if (rated && !examMode) {
     return (
       <div className="flex flex-col items-center justify-center min-h-0 flex-1 w-full px-4">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-lg border border-gray-100 p-8 text-center">
@@ -131,9 +133,20 @@ export default function QuestionCard({ content, onRate }: Props) {
           )}
         </div>
 
-        {submitted && (
+        {submitted && !examMode && (
           <div className="border-t border-gray-100 p-6">
             <RatingButtons onRate={handleRate} />
+          </div>
+        )}
+
+        {submitted && examMode && (
+          <div className="border-t border-gray-100 p-6">
+            <button
+              onClick={() => onExamNext?.(isCorrect)}
+              className="w-full py-3 rounded-xl bg-blue-500 text-white font-semibold shadow-md active:bg-blue-600 active:scale-[0.98] transition-all"
+            >
+              下一题
+            </button>
           </div>
         )}
       </div>
