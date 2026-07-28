@@ -126,8 +126,23 @@ export default function QuestionCard({ content, onRate, examMode, onExamNext }: 
           {submitted && (
             <div className={`mt-4 text-center ${isCorrect ? 'text-green-600' : 'text-red-600'} font-semibold`}>
               {isCorrect ? '回答正确！' : '回答错误'}
+              {!isCorrect && (
+                <div className="text-sm font-normal text-green-700 mt-2 leading-relaxed">
+                  {'正确答案：'}
+                  {shuffledAnswer.length === 1 ? (
+                    <>{String.fromCharCode(65 + shuffledAnswer[0])}. {shuffledOptions[shuffledAnswer[0]]}</>
+                  ) : (
+                    shuffledAnswer.map((si, idx) => (
+                      <span key={si}>
+                        {idx > 0 && '、'}
+                        {String.fromCharCode(65 + si)}. {shuffledOptions[si]}
+                      </span>
+                    ))
+                  )}
+                </div>
+              )}
               {content.explanation && (
-                <p className="text-sm font-normal text-gray-500 mt-1">{content.explanation}</p>
+                <p className="text-sm font-normal text-gray-500 mt-2">{content.explanation}</p>
               )}
             </div>
           )}
