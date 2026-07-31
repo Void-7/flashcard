@@ -262,7 +262,7 @@ allCards.push({
     type: 'single',
     question: '智能控制功能模块的原理主要包括( )。',
     options: ['人工智能技术', '自动控制理论', '传感器技术', '通信技术'],
-    answer: 0,
+    answer: 1,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -1006,7 +1006,7 @@ allCards.push({
     type: 'single',
     question: '循环神经网络 RNN 的核心思想是( )。',
     options: ['通过反向传播算法优化网络参数', '利用门控机制处理序列数据', '使用注意力机制捕捉长距离依赖关系', '采用自编码器进行特征提取'],
-    answer: 0,
+    answer: 1,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -1318,7 +1318,7 @@ allCards.push({
     type: 'single',
     question: '职业道德真正形成于( )。',
     options: ['原始社会', '奴隶社会', '封建社会', '资本主义社会'],
-    answer: 3,
+    answer: 1,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -2542,7 +2542,7 @@ allCards.push({
     type: 'single',
     question: '当需要对图像中的多个对象进行精确边界框绘制时，通常会使用的标注工具是( )。',
     options: ['多边形标注工具', '点云标注工具', '目标检测标注工具', '关键点标注工具'],
-    answer: 0,
+    answer: 2,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -2614,7 +2614,7 @@ allCards.push({
     type: 'single',
     question: '在模型部署过程中，为了实现自动化的模型更新和版本管理，通常会使用( )工具。',
     options: ['Git', 'SVN', 'Jenkins', 'Spinnaker'],
-    answer: 0,
+    answer: 3,
   } as QuestionContent,
   createdAt: Date.now(),
 })
