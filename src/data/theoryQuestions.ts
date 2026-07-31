@@ -754,7 +754,7 @@ allCards.push({
     type: 'single',
     question: '在进行数据多样性与公平性测试时，( )原则是最重要的。',
     options: ['确保数据的全面性', '关注数据的代表性', '评估算法的公平性', '保证数据的准确性'],
-    answer: 1,
+    answer: 2,
   } as QuestionContent,
   createdAt: Date.now(),
 })
