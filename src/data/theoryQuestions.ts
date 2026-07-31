@@ -58,7 +58,7 @@ allCards.push({
     type: 'single',
     question: '职业道德是职业守则的核心内容之一，不属于职业道德强调的关系是( )。',
     options: ['个人与集体', '个人与社会', '个人与他人', '个人与工作职责'],
-    answer: 3,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
