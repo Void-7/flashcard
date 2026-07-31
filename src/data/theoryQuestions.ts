@@ -3526,7 +3526,7 @@ allCards.push({
     type: 'single',
     question: '在编写培训讲义的过程中，( )是至关重要的环节。',
     options: ['收集资料', '设计课程大纲', '制作课件', '进行试讲'],
-    answer: 3,
+    answer: 1,
   } as QuestionContent,
   createdAt: Date.now(),
 })
