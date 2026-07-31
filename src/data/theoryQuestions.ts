@@ -1330,7 +1330,7 @@ allCards.push({
     type: 'single',
     question: '古人所谓的“鞠躬尽瘁，死而后已”。揭示了职业活动内在的道德准则中的( )准则。',
     options: ['忠诚', '审慎', '勤勉', '民主'],
-    answer: 0,
+    answer: 2,
   } as QuestionContent,
   createdAt: Date.now(),
 })
