@@ -3854,7 +3854,7 @@ allCards.push({
     type: 'true-false',
     question: '数据去重技术主要是通过哈希表来实现的。',
     options: ['正确', '错误'],
-    answer: 0,
+    answer: 1,
     explanation: '解析：数据去重技术主要是通过哈希表来实现的哈希表可以快速地检测重复的数据项，从 而实现数据去重',
   } as QuestionContent,
   createdAt: Date.now(),
