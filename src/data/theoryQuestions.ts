@@ -7870,7 +7870,7 @@ allCards.push({
     type: 'multiple',
     question: '作为人工智能训练师，在使用 Excel 进行数据可视化时，( )方法可以帮助提高图表的清晰度和专业度。',
     options: ['选择合适的图表类型', '使用统一的色调和风格', '添加图表标题和数据标签', '调整图表的大小以适应更多数据', '避免过多的图表特效和颜色'],
-    answer: [0, 1, 2, 3, 4],
+    answer: [0, 1, 2, 4],
   } as QuestionContent,
   createdAt: Date.now(),
 })
