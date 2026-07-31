@@ -2434,7 +2434,7 @@ allCards.push({
     type: 'single',
     question: '为了确保数据可追溯性，组织应该建立一套完整的数据管理流程，包括数据的( )、存储、传输和销毁等环节。',
     options: ['创建', '收集', '分析', '应用'],
-    answer: 1,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
