@@ -2986,7 +2986,7 @@ allCards.push({
     type: 'single',
     question: '安全性分析的原理是通过对系统进行( )，以识别潜在的安全威胁和脆弱性，从而采取相应的安全措施来降低风险。',
     options: ['风险评估', '漏洞扫描', '入侵检测', '安全审计'],
-    answer: 3,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
