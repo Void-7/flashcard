@@ -1282,7 +1282,7 @@ allCards.push({
     type: 'single',
     question: '案例分析法( )。',
     options: ['需要大量时间准备案例', '适用于所有学科', '可以提高学生的实践能力', '无法培养学生的理论素养'],
-    answer: 2,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -8266,7 +8266,7 @@ allCards.push({
     type: 'multiple',
     question: '数据采集的策略包括( )。',
     options: ['数据源的选择', '数据采集的方法', '数据清洗和预处理', '数据存储和管理', '数据分析和挖掘'],
-    answer: [0, 1, 3],
+    answer: [0, 1, 2, 3],
   } as QuestionContent,
   createdAt: Date.now(),
 })

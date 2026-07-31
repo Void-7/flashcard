@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import { Rating, type Grade } from 'ts-fsrs'
 import type { CardItem, CardPack, StudyMode, QuestionLimit, KnowledgeContent, QuestionContent } from '../types'
 import { storage } from '../utils/storage'
@@ -26,6 +26,14 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+const EMPTY_SET: Set<string> = new Set()
+
+function shuffleFresh<T extends CardItem>(arr: T[], drawnIds: Set<string>): T[] {
+  const fresh = arr.filter((c) => !drawnIds.has(c.id))
+  const used = arr.filter((c) => drawnIds.has(c.id))
+  return [...shuffle(fresh), ...shuffle(used)]
+}
+
 const TYPE_TAG_KEYS = ['单选题', '多选题', '判断题']
 
 type QType = 'single' | 'true-false' | 'multiple'
@@ -46,7 +54,7 @@ function splitByType(cards: CardItem[]): Record<QType, CardItem[]> {
   return pools
 }
 
-function distributeByType(target: number, pools: Record<QType, CardItem[]>): CardItem[] {
+function distributeByType(target: number, pools: Record<QType, CardItem[]>, drawnIds: Set<string>): CardItem[] {
   let remaining = target
   const picks: Record<QType, number> = { single: 0, 'true-false': 0, multiple: 0 }
   for (const t of QTYPE_ORDER) {
@@ -63,7 +71,7 @@ function distributeByType(target: number, pools: Record<QType, CardItem[]>): Car
   }
   const sel: CardItem[] = []
   for (const t of QTYPE_ORDER) {
-    sel.push(...shuffle(pools[t]).slice(0, picks[t]))
+    sel.push(...shuffleFresh(pools[t], drawnIds).slice(0, picks[t]))
   }
   return shuffle(sel)
 }
@@ -82,11 +90,15 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
     return m
   }, [typeTags])
 
+  const [drawnIds] = useState<Set<string>>(() => new Set(storage.getDrawnIds()))
+
   const sessionCards = useMemo(() => {
     const allCards = storage.getCards(pack.id)
     const wrongIds = wrongOnly ? new Set(storage.getWrongCardIds()) : null
     const filtered = wrongIds ? allCards.filter((c) => wrongIds.has(c.id)) : allCards
     if (wrongOnly && filtered.length === 0) return []
+
+    const fresh = wrongOnly ? EMPTY_SET : drawnIds
 
     if (mode === 'mock-exam') {
       const byType = (qtype: string) => {
@@ -98,24 +110,29 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
       const tfAll = byType('判断题')
       const multiAll = byType('多选题')
 
-      const take = (arr: CardItem[], n: number) => shuffle(arr).slice(0, Math.min(n, arr.length))
+      const take = (arr: CardItem[], n: number) => shuffleFresh(arr, fresh).slice(0, Math.min(n, arr.length))
       return [...take(singleAll, 140), ...take(tfAll, 40), ...take(multiAll, 10)]
     }
 
     if (mode === 'tag-focused' && tagId) {
-      return shuffle(filtered.filter((c) => c.tagIds.includes(tagId))).slice(0, limit)
+      return shuffleFresh(filtered.filter((c) => c.tagIds.includes(tagId)), fresh).slice(0, limit)
     }
 
     if (mode === 'random-tag') {
       const questions = filtered.filter((c) => c.type === 'question')
       if (questions.length > 0) {
-        return distributeByType(limit, splitByType(questions))
+        return distributeByType(limit, splitByType(questions), fresh)
       }
-      return shuffle(filtered).slice(0, limit)
+      return shuffleFresh(filtered, fresh).slice(0, limit)
     }
 
     return filtered.slice(0, limit)
-  }, [pack, mode, tagId, limit, typeTagIdByName, wrongOnly])
+  }, [pack, mode, tagId, limit, typeTagIdByName, wrongOnly, drawnIds])
+
+  useEffect(() => {
+    if (wrongOnly || sessionCards.length === 0) return
+    storage.recordDrawn(sessionCards.map((c) => c.id))
+  }, [sessionCards, wrongOnly])
 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [ratedIdxSet, setRatedIdxSet] = useState<Set<number>>(new Set())

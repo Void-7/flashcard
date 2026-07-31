@@ -5,6 +5,7 @@ const CARDS_KEY = (pid: string) => `fc_cards_${pid}`
 const STATES_KEY = 'fc_states'
 const LOGS_KEY = 'fc_logs'
 const WRONG_KEY = 'fc_wrong'
+const DRAWN_KEY = 'fc_drawn'
 
 function json<T>(key: string, fallback: T): T {
   try {
@@ -146,5 +147,16 @@ export const storage: IStorage = {
 
   clearWrongCardIds(): void {
     localStorage.setItem(WRONG_KEY, JSON.stringify({}))
+  },
+
+  getDrawnIds(): string[] {
+    return json<string[]>(DRAWN_KEY, [])
+  },
+
+  recordDrawn(ids: string[]): void {
+    if (ids.length === 0) return
+    const existing = new Set(this.getDrawnIds())
+    for (const id of ids) existing.add(id)
+    localStorage.setItem(DRAWN_KEY, JSON.stringify([...existing]))
   },
 }

@@ -86,6 +86,9 @@ export interface IStorage {
   addWrongCardId(id: string): void
   removeWrongCardId(id: string): void
   clearWrongCardIds(): void
+
+  getDrawnIds(): string[]
+  recordDrawn(ids: string[]): void
 }
 
 export interface StudyConfig {
