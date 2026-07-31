@@ -778,7 +778,7 @@ allCards.push({
     type: 'single',
     question: '敏捷开发方法强调的是( )，以便快速响应变化并持续改进软件质量。',
     options: ['频繁的代码审查和修复', '长期的项目规划和执行', '严格的需求分析和设计', '定期的项目评审和反馈'],
-    answer: 0,
+    answer: 3,
   } as QuestionContent,
   createdAt: Date.now(),
 })
