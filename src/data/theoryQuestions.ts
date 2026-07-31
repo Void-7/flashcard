@@ -3129,7 +3129,7 @@ allCards.push({
   content: {
     type: 'single',
     question: '人工智能训练师通过( )数据策略实现产品差异化。',
-    options: ['使用公开可用的通用数据集', '降低数据清洗和预处理的标准', '避免使用实时数据以简化模型训练'],
+    options: ['使用公开可用的通用数据集', '高质量领域数据集', '降低数据清洗和预处理的标准', '避免使用实时数据以简化模型训练'],
     answer: 1,
   } as QuestionContent,
   createdAt: Date.now(),
