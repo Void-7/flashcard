@@ -5,6 +5,7 @@ const CARDS_KEY = (pid: string) => `fc_cards_${pid}`
 const STATES_KEY = 'fc_states'
 const LOGS_KEY = 'fc_logs'
 const WRONG_KEY = 'fc_wrong'
+const WRONG_HISTORY_KEY = 'fc_wrong_history'
 const DRAWN_KEY = 'fc_drawn'
 const DATA_VERSION_KEY = 'fc_data_version'
 
@@ -138,6 +139,9 @@ export const storage: IStorage = {
     const counts = this.getWrongCounts()
     counts[id] = (counts[id] ?? 0) + 1
     localStorage.setItem(WRONG_KEY, JSON.stringify(counts))
+    const history = this.getWrongHistoryCounts()
+    history[id] = (history[id] ?? 0) + 1
+    localStorage.setItem(WRONG_HISTORY_KEY, JSON.stringify(history))
   },
 
   removeWrongCardId(id: string): void {
@@ -148,6 +152,14 @@ export const storage: IStorage = {
 
   clearWrongCardIds(): void {
     localStorage.setItem(WRONG_KEY, JSON.stringify({}))
+  },
+
+  getWrongHistoryCounts(): Record<string, number> {
+    return json<Record<string, number>>(WRONG_HISTORY_KEY, {})
+  },
+
+  getWrongHistoryCount(id: string): number {
+    return this.getWrongHistoryCounts()[id] ?? 0
   },
 
   getDrawnIds(): string[] {

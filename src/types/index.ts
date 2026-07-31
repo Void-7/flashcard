@@ -87,6 +87,9 @@ export interface IStorage {
   removeWrongCardId(id: string): void
   clearWrongCardIds(): void
 
+  getWrongHistoryCounts(): Record<string, number>
+  getWrongHistoryCount(id: string): number
+
   getDrawnIds(): string[]
   recordDrawn(ids: string[]): void
 
@@ -99,6 +102,7 @@ export interface StudyConfig {
   mode: StudyMode
   tagId?: string
   wrongOnly?: boolean
+  wrongHistory?: boolean
 }
 
 export const QUESTION_LIMITS = [20, 40, 50, 100] as const

@@ -15,6 +15,7 @@ interface Props {
   limit: QuestionLimit
   onFinish: () => void
   wrongOnly?: boolean
+  wrongHistory?: boolean
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -76,7 +77,7 @@ function distributeByType(target: number, pools: Record<QType, CardItem[]>, draw
   return shuffle(sel)
 }
 
-export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOnly }: Props) {
+export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOnly, wrongHistory }: Props) {
   const now = useMemo(() => new Date(), [])
 
   const typeTags = useMemo(() => {
@@ -94,7 +95,9 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
 
   const sessionCards = useMemo(() => {
     const allCards = storage.getCards(pack.id)
-    const wrongIds = wrongOnly ? new Set(storage.getWrongCardIds()) : null
+    const wrongIds = wrongOnly
+      ? new Set(wrongHistory ? Object.keys(storage.getWrongHistoryCounts()) : storage.getWrongCardIds())
+      : null
     const filtered = wrongIds ? allCards.filter((c) => wrongIds.has(c.id)) : allCards
     if (wrongOnly && filtered.length === 0) return []
 
@@ -127,7 +130,7 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
     }
 
     return filtered.slice(0, limit)
-  }, [pack, mode, tagId, limit, typeTagIdByName, wrongOnly, drawnIds])
+  }, [pack, mode, tagId, limit, typeTagIdByName, wrongOnly, wrongHistory, drawnIds])
 
   useEffect(() => {
     if (wrongOnly || sessionCards.length === 0) return

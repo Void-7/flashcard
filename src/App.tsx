@@ -48,6 +48,7 @@ export default function App() {
     tagId?: string
     limit: QuestionLimit
     wrongOnly?: boolean
+    wrongHistory?: boolean
   } | null>(null)
   const [packs, setPacks] = useState<CardPack[]>([])
   const [currentPackId, setCurrentPackId] = useState<string | null>(null)
@@ -80,14 +81,19 @@ export default function App() {
     setView('pack-detail')
   }
 
-  function handleStart(mode: StudyMode, tagId: string | undefined, limit: QuestionLimit, wrongOnly?: boolean) {
-    setStudyConfig({ mode, tagId, limit, wrongOnly: wrongOnly ?? false })
+  function handleStart(mode: StudyMode, tagId: string | undefined, limit: QuestionLimit, wrongOnly?: boolean, wrongHistory?: boolean) {
+    setStudyConfig({ mode, tagId, limit, wrongOnly: wrongOnly ?? false, wrongHistory: wrongHistory ?? false })
     setView('study')
   }
 
   function handleWrongStudy(pack: CardPack, limit: QuestionLimit) {
     setCurrentPackId(pack.id)
     handleStart('random-tag', undefined, limit, true)
+  }
+
+  function handleWrongHistoryStudy(pack: CardPack, limit: QuestionLimit) {
+    setCurrentPackId(pack.id)
+    handleStart('random-tag', undefined, limit, true, true)
   }
 
   function handleFinish() {
@@ -127,6 +133,7 @@ export default function App() {
         limit={studyConfig.limit}
         onFinish={handleFinish}
         wrongOnly={studyConfig.wrongOnly}
+        wrongHistory={studyConfig.wrongHistory}
       />
     )
   }
@@ -136,6 +143,7 @@ export default function App() {
       <WrongBook
         packs={packs}
         onStartWrongStudy={handleWrongStudy}
+        onStartWrongHistoryStudy={handleWrongHistoryStudy}
         onBack={handleBack}
       />
     )
