@@ -286,7 +286,7 @@ allCards.push({
     type: 'single',
     question: '计算智能的核心技术是( )。',
     options: ['机器学习', '深度学习', '进化计算', '模糊逻辑'],
-    answer: 2,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
