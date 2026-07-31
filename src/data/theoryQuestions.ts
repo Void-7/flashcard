@@ -3646,7 +3646,7 @@ allCards.push({
     type: 'true-false',
     question: '职业守则仅仅是一种软约束，不具备法律效力。',
     options: ['正确', '错误'],
-    answer: 0,
+    answer: 1,
     explanation: '职业守则虽然不具有直接的法律效力，但它可以作为行业规范，对从业人员具有约束力， 并可能作为法律判决的参考',
   } as QuestionContent,
   createdAt: Date.now(),
