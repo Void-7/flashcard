@@ -7606,7 +7606,7 @@ allCards.push({
     type: 'multiple',
     question: '在人工智能训练过程中，训练师需要遵循的职业道德规范包括( )。',
     options: ['尊重知识产权', '保持公正客观', '注重数据安全', '勇于创新', '个人利益优先'],
-    answer: [0, 1, 2],
+    answer: [0, 1, 2, 3],
   } as QuestionContent,
   createdAt: Date.now(),
 })
