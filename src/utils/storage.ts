@@ -114,23 +114,37 @@ export const storage: IStorage = {
   },
 
   getWrongCardIds(): string[] {
-    return json<string[]>(WRONG_KEY, [])
+    const counts = this.getWrongCounts()
+    return Object.keys(counts).filter((id) => counts[id] > 0)
+  },
+
+  getWrongCounts(): Record<string, number> {
+    const raw = json<Record<string, number> | string[]>(WRONG_KEY, {})
+    if (Array.isArray(raw)) {
+      const map: Record<string, number> = {}
+      for (const id of raw) map[id] = 1
+      return map
+    }
+    return raw
+  },
+
+  getWrongCount(id: string): number {
+    return this.getWrongCounts()[id] ?? 0
   },
 
   addWrongCardId(id: string): void {
-    const ids = this.getWrongCardIds()
-    if (!ids.includes(id)) {
-      ids.push(id)
-      localStorage.setItem(WRONG_KEY, JSON.stringify(ids))
-    }
+    const counts = this.getWrongCounts()
+    counts[id] = (counts[id] ?? 0) + 1
+    localStorage.setItem(WRONG_KEY, JSON.stringify(counts))
   },
 
   removeWrongCardId(id: string): void {
-    const ids = this.getWrongCardIds().filter((i) => i !== id)
-    localStorage.setItem(WRONG_KEY, JSON.stringify(ids))
+    const counts = this.getWrongCounts()
+    delete counts[id]
+    localStorage.setItem(WRONG_KEY, JSON.stringify(counts))
   },
 
   clearWrongCardIds(): void {
-    localStorage.setItem(WRONG_KEY, JSON.stringify([]))
+    localStorage.setItem(WRONG_KEY, JSON.stringify({}))
   },
 }

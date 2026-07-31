@@ -17,9 +17,10 @@ interface Props {
   onRate: (rating: Rating) => void
   examMode?: boolean
   onExamNext?: (correct: boolean) => void
+  onAnswered?: (correct: boolean) => void
 }
 
-export default function QuestionCard({ content, onRate, examMode, onExamNext }: Props) {
+export default function QuestionCard({ content, onRate, examMode, onExamNext, onAnswered }: Props) {
   const [selected, setSelected] = useState<number[]>([])
   const [submitted, setSubmitted] = useState(false)
   const [rated, setRated] = useState(false)
@@ -54,6 +55,9 @@ export default function QuestionCard({ content, onRate, examMode, onExamNext }: 
 
   function handleSubmit() {
     setSubmitted(true)
+    const correct = selected.length === shuffledAnswer.length &&
+      selected.every((s) => shuffledAnswer.includes(s))
+    onAnswered?.(correct)
   }
 
   function handleRate(r: Rating) {

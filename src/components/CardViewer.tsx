@@ -28,6 +28,46 @@ function shuffle<T>(arr: T[]): T[] {
 
 const TYPE_TAG_KEYS = ['单选题', '多选题', '判断题']
 
+type QType = 'single' | 'true-false' | 'multiple'
+const QTYPE_ORDER: QType[] = ['single', 'true-false', 'multiple']
+const QTYPE_WEIGHTS: Record<QType, number> = { single: 0.6, 'true-false': 0.3, multiple: 0.1 }
+
+function qTypeOf(card: CardItem): QType | null {
+  if (card.type !== 'question') return null
+  return (card.content as QuestionContent).type as QType
+}
+
+function splitByType(cards: CardItem[]): Record<QType, CardItem[]> {
+  const pools: Record<QType, CardItem[]> = { single: [], 'true-false': [], multiple: [] }
+  for (const c of cards) {
+    const t = qTypeOf(c)
+    if (t && t in pools) pools[t].push(c)
+  }
+  return pools
+}
+
+function distributeByType(target: number, pools: Record<QType, CardItem[]>): CardItem[] {
+  let remaining = target
+  const picks: Record<QType, number> = { single: 0, 'true-false': 0, multiple: 0 }
+  for (const t of QTYPE_ORDER) {
+    const want = Math.floor(target * QTYPE_WEIGHTS[t])
+    picks[t] = Math.min(want, pools[t].length)
+    remaining -= picks[t]
+  }
+  for (const t of QTYPE_ORDER) {
+    if (remaining <= 0) break
+    const avail = pools[t].length - picks[t]
+    const add = Math.min(remaining, Math.max(0, avail))
+    picks[t] += add
+    remaining -= add
+  }
+  const sel: CardItem[] = []
+  for (const t of QTYPE_ORDER) {
+    sel.push(...shuffle(pools[t]).slice(0, picks[t]))
+  }
+  return shuffle(sel)
+}
+
 export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOnly }: Props) {
   const now = useMemo(() => new Date(), [])
 
@@ -35,8 +75,6 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
     const names = new Set(TYPE_TAG_KEYS)
     return pack.tags.filter((t) => names.has(t.name))
   }, [pack.tags])
-
-  const hasTypeTags = typeTags.length === 3
 
   const typeTagIdByName = useMemo(() => {
     const m: Record<string, string> = {}
@@ -69,24 +107,15 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
     }
 
     if (mode === 'random-tag') {
-      if (hasTypeTags) {
-        const sel: CardItem[] = []
-        const each = Math.floor(limit / 3)
-        const rem = limit - each * 3
-        const counts: Record<string, number> = { '单选题': each, '多选题': each, '判断题': each + rem }
-        for (const [name, count] of Object.entries(counts)) {
-          const tid = typeTagIdByName[name]
-          if (!tid) continue
-          const pool = filtered.filter((c) => c.type === 'question' && c.tagIds.includes(tid))
-          sel.push(...shuffle(pool).slice(0, Math.min(count, pool.length)))
-        }
-        return shuffle(sel)
+      const questions = filtered.filter((c) => c.type === 'question')
+      if (questions.length > 0) {
+        return distributeByType(limit, splitByType(questions))
       }
       return shuffle(filtered).slice(0, limit)
     }
 
     return filtered.slice(0, limit)
-  }, [pack, mode, tagId, limit, typeTagIdByName, hasTypeTags, wrongOnly])
+  }, [pack, mode, tagId, limit, typeTagIdByName, wrongOnly])
 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [ratedIdxSet, setRatedIdxSet] = useState<Set<number>>(new Set())
@@ -290,6 +319,9 @@ export default function CardViewer({ pack, mode, tagId, limit, onFinish, wrongOn
               key={current.id}
               content={current.content as QuestionContent}
               onRate={handleRate}
+              onAnswered={(correct) => {
+                if (!correct) storage.addWrongCardId(current.id)
+              }}
             />
           )
         )}

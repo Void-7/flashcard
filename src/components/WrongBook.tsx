@@ -11,17 +11,20 @@ interface Props {
 
 export default function WrongBook({ packs, onStartWrongStudy, onBack }: Props) {
   const [pendingLimit, setPendingLimit] = useState<CardPack | null>(null)
-  const wrongIds = useMemo(() => new Set(storage.getWrongCardIds()), [])
+  const wrongCounts = useMemo(() => storage.getWrongCounts(), [])
+  const wrongIds = useMemo(() => new Set(Object.keys(wrongCounts).filter((id) => wrongCounts[id] > 0)), [wrongCounts])
 
   const packWrongCounts = useMemo(() => {
     return packs.map((p) => {
       const cards = storage.getCards(p.id)
-      const count = cards.filter((c) => wrongIds.has(c.id)).length
-      return { pack: p, count }
+      const wrongCards = cards.filter((c) => wrongIds.has(c.id))
+      const totalMistakes = wrongCards.reduce((s, c) => s + (wrongCounts[c.id] ?? 0), 0)
+      return { pack: p, count: wrongCards.length, totalMistakes }
     }).filter((x) => x.count > 0)
-  }, [packs, wrongIds])
+  }, [packs, wrongIds, wrongCounts])
 
   const totalWrong = packWrongCounts.reduce((s, x) => s + x.count, 0)
+  const totalMistakes = packWrongCounts.reduce((s, x) => s + x.totalMistakes, 0)
 
   if (totalWrong === 0) {
     return (
@@ -49,12 +52,12 @@ export default function WrongBook({ packs, onStartWrongStudy, onBack }: Props) {
         </button>
         <div className="flex-1">
           <h1 className="text-lg font-bold text-gray-800">错题本</h1>
-          <p className="text-xs text-gray-400">共 {totalWrong} 道错题</p>
+          <p className="text-xs text-gray-400">共 {totalWrong} 道错题 · 累计做错 {totalMistakes} 次</p>
         </div>
       </header>
 
       <div className="space-y-3">
-        {packWrongCounts.map(({ pack, count }) => (
+        {packWrongCounts.map(({ pack, count, totalMistakes }) => (
           <button
             key={pack.id}
             onClick={() => setPendingLimit(pack)}
@@ -62,9 +65,9 @@ export default function WrongBook({ packs, onStartWrongStudy, onBack }: Props) {
           >
             <div className="flex items-center justify-between">
               <span className="font-medium text-gray-800">{pack.name}</span>
-              <span className="text-xs text-red-500 font-medium">{count} 题</span>
+              <span className="text-xs text-red-500 font-medium">{count} 题 / 错 {totalMistakes} 次</span>
             </div>
-            <p className="text-xs text-gray-400 mt-1">点击选择学习数量</p>
+            <p className="text-xs text-gray-400 mt-1">点击选择学习数量，随机抽取错题练习</p>
           </button>
         ))}
       </div>

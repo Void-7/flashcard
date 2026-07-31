@@ -81,6 +81,8 @@ export interface IStorage {
   clearReviewLogs(): void
 
   getWrongCardIds(): string[]
+  getWrongCounts(): Record<string, number>
+  getWrongCount(id: string): number
   addWrongCardId(id: string): void
   removeWrongCardId(id: string): void
   clearWrongCardIds(): void
