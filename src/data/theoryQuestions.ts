@@ -3562,7 +3562,7 @@ allCards.push({
     type: 'single',
     question: '在数据处理过程中，( )步骤不会导致数据丢失或错误。',
     options: ['数据清洗', '数据转换', '数据加载', '数据计算'],
-    answer: 2,
+    answer: 3,
   } as QuestionContent,
   createdAt: Date.now(),
 })
