@@ -418,7 +418,7 @@ allCards.push({
     type: 'single',
     question: '在模型训练时，( )策略可以帮助模型更快地收敛到最优解。',
     options: ['学习率调整', '动量减速', '梯度裁剪', '早停法'],
-    answer: 3,
+    answer: 0,
   } as QuestionContent,
   createdAt: Date.now(),
 })
