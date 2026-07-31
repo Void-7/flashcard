@@ -7570,7 +7570,7 @@ allCards.push({
     type: 'multiple',
     question: '在社会主义社会时期，职业道德的发展有特点包括 ( )。',
     options: ['个人主义盛行', '注重社会责任', '提倡无私奉献', '追求公平正义', '鼓励创新和发展'],
-    answer: [1, 2, 3],
+    answer: [1, 2, 3, 4],
   } as QuestionContent,
   createdAt: Date.now(),
 })
@@ -7666,7 +7666,7 @@ allCards.push({
     type: 'multiple',
     question: '在制定职业守则时，应遵循( )原则。',
     options: ['公平性', '公正性', '公开性', '透明性', '保密性'],
-    answer: [0, 1, 2],
+    answer: [0, 1, 2, 3],
   } as QuestionContent,
   createdAt: Date.now(),
 })
