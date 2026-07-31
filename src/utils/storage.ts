@@ -6,6 +6,7 @@ const STATES_KEY = 'fc_states'
 const LOGS_KEY = 'fc_logs'
 const WRONG_KEY = 'fc_wrong'
 const DRAWN_KEY = 'fc_drawn'
+const DATA_VERSION_KEY = 'fc_data_version'
 
 function json<T>(key: string, fallback: T): T {
   try {
@@ -158,5 +159,13 @@ export const storage: IStorage = {
     const existing = new Set(this.getDrawnIds())
     for (const id of ids) existing.add(id)
     localStorage.setItem(DRAWN_KEY, JSON.stringify([...existing]))
+  },
+
+  getDataVersion(): string | null {
+    return localStorage.getItem(DATA_VERSION_KEY)
+  },
+
+  setDataVersion(version: string): void {
+    localStorage.setItem(DATA_VERSION_KEY, version)
   },
 }

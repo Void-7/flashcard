@@ -89,6 +89,9 @@ export interface IStorage {
 
   getDrawnIds(): string[]
   recordDrawn(ids: string[]): void
+
+  getDataVersion(): string | null
+  setDataVersion(version: string): void
 }
 
 export interface StudyConfig {

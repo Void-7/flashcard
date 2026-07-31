@@ -5,6 +5,7 @@ import { initFsrsCard } from './utils/scheduler'
 import { createAITrainerPack, getAITrainerCards } from './data/knowledge'
 import { createExamAnswerPack, getExamAnswerCards } from './data/examAnswer'
 import { createTheoryPack, getTheoryCards } from './data/theoryQuestions'
+import { DATA_VERSION } from './data/version'
 import PackList from './components/PackList'
 import PackDetail from './components/PackDetail'
 import CardViewer from './components/CardViewer'
@@ -54,16 +55,22 @@ export default function App() {
   useEffect(() => {
     const existing = storage.getPacks()
     const existingIds = new Set(existing.map((p) => p.id))
+    const versionChanged = storage.getDataVersion() !== String(DATA_VERSION)
     for (const { pack, cards } of PACK_BUILDERS) {
       if (!existingIds.has(pack.id)) {
         seedPack(pack, cards)
-      } else {
-        const oldCards = storage.getCards(pack.id)
-        if (oldCards.length !== cards.length || cards.length > 0 && cards[0].id !== oldCards[0]?.id) {
-          seedPack(pack, cards, true)
-        }
+        continue
+      }
+      const oldCards = storage.getCards(pack.id)
+      const countChanged = oldCards.length !== cards.length
+      const firstIdChanged = cards.length > 0 && oldCards[0]?.id !== cards[0]?.id
+      if (versionChanged && !countChanged && !firstIdChanged) {
+        seedPack(pack, cards)
+      } else if (countChanged || firstIdChanged) {
+        seedPack(pack, cards, true)
       }
     }
+    if (versionChanged) storage.setDataVersion(String(DATA_VERSION))
     setPacks(storage.getPacks())
   }, [])
 
